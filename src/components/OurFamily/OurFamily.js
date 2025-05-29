@@ -106,10 +106,15 @@ const OurFamily = () => {
             variant="h2"
             component="h2"
             sx={{
-              fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
+              fontSize: { xs: '1.6rem', sm: '2.2rem', md: '2.8rem' },
               fontWeight: 'bold',
               mb: 4,
               textAlign: 'center',
+              background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
+              backgroundClip: 'text',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              textShadow: '0px 2px 4px rgba(0,0,0,0.1)',
             }}
           >
             Our Family

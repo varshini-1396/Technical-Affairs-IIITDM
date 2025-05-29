@@ -78,7 +78,7 @@ const Achievements = () => {
             variant="h2"
             component="h2"
             sx={{
-              fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
+              fontSize: { xs: '1.6rem', sm: '2.2rem', md: '2.8rem' },
               fontWeight: 'bold',
               mb: 4,
               textAlign: 'center',

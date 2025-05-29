@@ -28,7 +28,7 @@ const Techfest = () => {
             variant="h2"
             component="h2"
             sx={{
-              fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
+              fontSize: { xs: '1.6rem', sm: '2.2rem', md: '2.8rem' },
               fontWeight: 'bold',
               mb: 4,
               textAlign: 'center',
@@ -49,26 +49,6 @@ const Techfest = () => {
           </Grid>
 
           <Grid item xs={12} md={8}>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <Typography
-                variant="h4"
-                component="h3"
-                sx={{
-                  mb: 3,
-                  fontWeight: 600,
-                  color: 'text.primary',
-                  textAlign: 'left',
-                }}
-              >
-                Unleashing Technical Prowess
-              </Typography>
-            </motion.div>
-
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

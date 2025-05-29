@@ -92,7 +92,7 @@ const Hero = () => {
         alignItems: 'center',
         position: 'relative',
         overflow: 'hidden',
-        pt: { xs: 8, md: 0 },
+        pt: { xs: 4, md: 0 },
       }}
     >
       <Particles
@@ -117,7 +117,7 @@ const Hero = () => {
             textAlign: 'center', 
             maxWidth: '800px', 
             margin: '0 auto',
-            paddingTop: '100px' // Add some top padding to account for navbar
+            paddingTop: { xs: '40px', md: '100px' }
           }}
         >
           <motion.div variants={itemVariants}>
@@ -125,15 +125,17 @@ const Hero = () => {
               variant="h2"
               component="h1"
               sx={{
-                fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
+                fontSize: { xs: '1.8rem', sm: '2.2rem', md: '3rem' },
                 fontWeight: 700,
-                mb: 2,
+                mb: { xs: 1, md: 2 },
                 background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
                 backgroundClip: 'text',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 textShadow: '0px 2px 4px rgba(0,0,0,0.1)',
                 lineHeight: 1.2,
+                textAlign: 'center',
+                px: { xs: 2, sm: 0 },
               }}
             >
               Empowering Innovation at
@@ -142,15 +144,17 @@ const Hero = () => {
               variant="h1"
               component="h1"
               sx={{
-                fontSize: { xs: '2.5rem', sm: '3.5rem', md: '4.5rem' },
-                fontWeight: 700,
-                mb: 4,
+                fontSize: { xs: '1.6rem', sm: '2.3rem', md: '3.5rem' },
+                fontWeight: 'bold',
+                mb: { xs: 3, md: 4 },
                 background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
                 backgroundClip: 'text',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 textShadow: '0px 2px 4px rgba(0,0,0,0.1)',
                 lineHeight: 1.2,
+                textAlign: 'center',
+                px: { xs: 2, sm: 0 },
               }}
             >
               IIITDM Kancheepuram
@@ -162,16 +166,28 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center' }}>
+            <Box sx={{ 
+              display: 'flex', 
+              flexDirection: { xs: 'column', sm: 'row' },
+              gap: { xs: 2, sm: 2 }, 
+              justifyContent: { xs: 'center', sm: 'center' },
+              px: { xs: 2, sm: 0 },
+              width: { xs: '100%', sm: 'auto' },
+              maxWidth: { xs: '250px', sm: 'none' },
+              margin: { xs: '0 auto', sm: 'inherit' },
+            }}>
               <Button
                 variant="contained"
                 size="large"
                 component="a"
                 href="#clubs"
                 sx={{
-                  px: 4,
+                  px: { xs: 2, md: 4 },
                   py: 1.5,
-                  fontSize: '1.1rem',
+                  fontSize: { xs: '1rem', md: '1.1rem' },
+                  whiteSpace: 'nowrap',
+                  width: { xs: '100%', sm: 'auto' },
+                  maxWidth: { xs: '230px', sm: 'none' },
                 }}
               >
                 Explore Clubs
@@ -182,9 +198,12 @@ const Hero = () => {
                 component="a"
                 href="#teams"
                 sx={{
-                  px: 4,
+                  px: { xs: 2, md: 4 },
                   py: 1.5,
-                  fontSize: '1.1rem',
+                  fontSize: { xs: '1rem', md: '1.1rem' },
+                  whiteSpace: 'nowrap',
+                  width: { xs: '100%', sm: 'auto' },
+                  maxWidth: { xs: '230px', sm: 'none' },
                 }}
               >
                 Explore Teams
