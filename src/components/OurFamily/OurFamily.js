@@ -130,7 +130,6 @@ const OurFamily = () => {
                 fontSize: '1.1rem',
                 fontWeight: 600,
                 textTransform: 'none',
-                minWidth: 200,
               },
             }}
           >
