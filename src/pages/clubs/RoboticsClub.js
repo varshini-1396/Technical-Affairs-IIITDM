@@ -13,6 +13,9 @@ import { styled } from '@mui/material/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import Button from '@mui/material/Button';
 
 // Styled components
 const TeamMemberCard = styled(Card)(({ theme }) => ({
@@ -27,11 +30,7 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
 const clubData = {
   name: 'Robotics Club',
   logo: '/images/clubs/robotics-logo.jpg',
-  description: `The Robotics Club at IIITDM Kancheepuram is a hub of innovation and technical excellence. 
-    We focus on developing practical robotics solutions through hands-on projects, workshops, and competitions. 
-    Our members work on various aspects of robotics including mechanical design, electronics, control systems, 
-    and artificial intelligence. The club regularly participates in national and international robotics 
-    competitions and organizes workshops to spread knowledge about robotics among the student community.`,
+  description: `The Robotics Club at IIITDM Kancheepuram is a hub of innovation and technical excellence. We focus on developing practical robotics solutions through hands-on projects, workshops, and competitions. Our members work on various aspects of robotics including mechanical design, electronics, control systems, and artificial intelligence. The club regularly participates in national and international robotics competitions and organizes workshops to spread knowledge about robotics among the student community.`,
   core: [
     {
       name: 'John Doe',
@@ -101,17 +100,29 @@ function RoboticsClub() {
   return (
     <Box sx={{ py: 8, bgcolor: 'background.default' }}>
       <Container maxWidth="lg">
-        {/* Header Section */}
-        <Box sx={{ mb: 8, textAlign: 'center' }}>
+        {/* Logo Section */}
+        <Box sx={{ mb: 4, display: 'flex', justifyContent: 'center' }}>
+          <CardMedia
+            component="img"
+            image={clubData.logo}
+            alt={`${clubData.name} Logo`}
+            sx={{
+              width: '100%%',
+              maxWidth: '300px',
+              height: 'auto',
+              borderRadius: 2,
+            }}
+          />
+        </Box>
+
+        {/* Club Name */}
+        <Box sx={{ mb: 4, textAlign: 'center' }}>
           <Typography
             variant="h2"
             component="h1"
-            gutterBottom
             sx={{
               fontSize: { xs: '1.6rem', sm: '2.2rem', md: '2.8rem' },
               fontWeight: 'bold',
-              mb: 4,
-              textAlign: 'center',
               background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
@@ -123,22 +134,21 @@ function RoboticsClub() {
           </Typography>
         </Box>
 
-        {/* Club Logo and Description */}
-        <Grid container spacing={4} sx={{ mb: 8 }}>
-          <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
-            <CardMedia
-              component="img"
-              image={clubData.logo}
-              alt={`${clubData.name} Logo`}
-              sx={{
-                width: '100%',
-                maxWidth: '300px',
-                height: 'auto',
-                borderRadius: 2,
-              }}
-            />
-          </Grid>
-          <Grid item xs={12} md={8}>
+        {/* Description and Links Container */}
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column', md: 'row' },
+            gap: { xs: 4, md: 8 },
+            mb: 6,
+            maxWidth: '1000px',
+            mx: 'auto',
+            px: { xs: 2, sm: 3, md: 4 },
+            alignItems: 'flex-start',
+          }}
+        >
+          {/* Description */}
+          <Box sx={{ flex: 1, textAlign: 'left' }}>
             <Typography
               variant="body1"
               sx={{
@@ -150,8 +160,59 @@ function RoboticsClub() {
             >
               {clubData.description}
             </Typography>
-          </Grid>
-        </Grid>
+          </Box>
+
+          {/* Links */}
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: { xs: 'row', md: 'column' },
+              gap: 2,
+              alignItems: 'flex-start',
+              flexWrap: 'wrap',
+            }}
+          >
+            {/* Website Link */}
+            <Button
+              component="a"
+              href={clubData.links.website}
+              target="_blank"
+              variant="text"
+              color="primary"
+              size="large"
+              sx={{
+                fontSize: '1.1rem',
+                '&:hover': {
+                  transform: 'scale(1.05)',
+                  transition: 'transform 0.2s ease-in-out',
+                },
+              }}
+              startIcon={<LanguageIcon />}
+            >
+              Website
+            </Button>
+
+            {/* WhatsApp Link (Placeholder) */}
+            <Button
+              component="a"
+              href="#whatsapp-link" // Replace with actual WhatsApp link
+              target="_blank"
+              variant="text"
+              color="success"
+              size="large"
+              sx={{
+                fontSize: '1.1rem',
+                '&:hover': {
+                  transform: 'scale(1.05)',
+                  transition: 'transform 0.2s ease-in-out',
+                },
+              }}
+              startIcon={/* Replace with WhatsAppIcon */ null}
+            >
+              Join Community
+            </Button>
+          </Box>
+        </Box>
 
         {/* Core Team Section */}
         <Typography
@@ -166,10 +227,10 @@ function RoboticsClub() {
         >
           Core Team
         </Typography>
-        <Grid 
-          container 
-          spacing={4} 
-          sx={{ 
+        <Grid
+          container
+          spacing={4}
+          sx={{
             mb: 8,
             justifyContent: 'center',
             maxWidth: '1000px',
@@ -231,10 +292,10 @@ function RoboticsClub() {
         >
           Team Members
         </Typography>
-        <Grid 
-          container 
-          spacing={4} 
-          sx={{ 
+        <Grid
+          container
+          spacing={4}
+          sx={{
             mb: 8,
             justifyContent: 'center',
             maxWidth: '1200px',
@@ -313,7 +374,7 @@ function RoboticsClub() {
               color="primary"
               size="large"
             >
-              <LanguageIcon />
+              <InstagramIcon />
             </IconButton>
             <IconButton
               component="a"
@@ -322,7 +383,7 @@ function RoboticsClub() {
               color="primary"
               size="large"
             >
-              <LanguageIcon />
+              <GitHubIcon />
             </IconButton>
           </Box>
         </Box>
@@ -331,4 +392,4 @@ function RoboticsClub() {
   );
 }
 
-export default RoboticsClub; 
+export default RoboticsClub;

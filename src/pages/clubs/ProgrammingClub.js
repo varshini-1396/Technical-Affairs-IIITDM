@@ -8,11 +8,14 @@ import {
   CardMedia,
   Avatar,
   IconButton,
+  Button,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 // Styled components
 const TeamMemberCard = styled(Card)(({ theme }) => ({
@@ -27,9 +30,7 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
 const clubData = {
   name: 'Programming Club',
   logo: '/images/clubs/programming-logo.jpg',
-  description: `The Programming Club at IIITDM Kancheepuram is dedicated to fostering a culture of competitive programming and software development. 
-    We organize regular coding competitions, hackathons, and workshops to enhance students' problem-solving skills and programming expertise. 
-    Our members participate in various national and international coding competitions, contributing to the institute's reputation in the programming community.`,
+  description: `The Programming Club at IIITDM Kancheepuram is dedicated to fostering a culture of competitive programming and software development. We organize regular coding competitions, hackathons, and workshops to enhance students' problem-solving skills and programming expertise. Our members participate in various national and international coding competitions, contributing to the institute's reputation in the programming community.`,
   core: [
     {
       name: 'John Doe',
@@ -99,17 +100,29 @@ function ProgrammingClub() {
   return (
     <Box sx={{ py: 8, bgcolor: 'background.default' }}>
       <Container maxWidth="lg">
-        {/* Header Section */}
-        <Box sx={{ mb: 8, textAlign: 'center' }}>
+        {/* Logo Section */}
+        <Box sx={{ mb: 4, display: 'flex', justifyContent: 'center' }}>
+          <CardMedia
+            component="img"
+            image={clubData.logo}
+            alt={`${clubData.name} Logo`}
+            sx={{
+              width: '100%%',
+              maxWidth: '300px',
+              height: 'auto',
+              borderRadius: 2,
+            }}
+          />
+        </Box>
+
+        {/* Club Name */}
+        <Box sx={{ mb: 4, textAlign: 'center' }}>
           <Typography
             variant="h2"
             component="h1"
-            gutterBottom
             sx={{
               fontSize: { xs: '1.6rem', sm: '2.2rem', md: '2.8rem' },
               fontWeight: 'bold',
-              mb: 4,
-              textAlign: 'center',
               background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
@@ -121,22 +134,21 @@ function ProgrammingClub() {
           </Typography>
         </Box>
 
-        {/* Club Logo and Description */}
-        <Grid container spacing={4} sx={{ mb: 8 }}>
-          <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
-            <CardMedia
-              component="img"
-              image={clubData.logo}
-              alt={`${clubData.name} Logo`}
-              sx={{
-                width: '100%',
-                maxWidth: '300px',
-                height: 'auto',
-                borderRadius: 2,
-              }}
-            />
-          </Grid>
-          <Grid item xs={12} md={8}>
+        {/* Description and Links Container */}
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column', md: 'row' },
+            gap: { xs: 4, md: 8 },
+            mb: 6,
+            maxWidth: '1000px',
+            mx: 'auto',
+            px: { xs: 2, sm: 3, md: 4 },
+            alignItems: 'flex-start',
+          }}
+        >
+          {/* Description */}
+          <Box sx={{ flex: 1, textAlign: 'left' }}>
             <Typography
               variant="body1"
               sx={{
@@ -148,8 +160,58 @@ function ProgrammingClub() {
             >
               {clubData.description}
             </Typography>
-          </Grid>
-        </Grid>
+          </Box>
+
+          {/* Links */}
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 2,
+              alignItems: 'flex-start',
+            }}
+          >
+            {/* Website Link */}
+            <Button
+              component="a"
+              href={clubData.links.website}
+              target="_blank"
+              variant="text"
+              color="primary"
+              size="large"
+              sx={{
+                fontSize: '1.1rem',
+                '&:hover': {
+                  transform: 'scale(1.05)',
+                  transition: 'transform 0.2s ease-in-out',
+                },
+              }}
+              startIcon={<LanguageIcon />}
+            >
+              Website
+            </Button>
+
+            {/* WhatsApp Link (Placeholder) */}
+            <Button
+              component="a"
+              href="#whatsapp-link" // Replace with actual WhatsApp link
+              target="_blank"
+              variant="text"
+              color="success"
+              size="large"
+              sx={{
+                fontSize: '1.1rem',
+                '&:hover': {
+                  transform: 'scale(1.05)',
+                  transition: 'transform 0.2s ease-in-out',
+                },
+              }}
+              startIcon={/* Replace with WhatsAppIcon */ null}
+            >
+              Join Community
+            </Button>
+          </Box>
+        </Box>
 
         {/* Core Team Section */}
         <Typography
@@ -311,7 +373,7 @@ function ProgrammingClub() {
               color="primary"
               size="large"
             >
-              <LanguageIcon />
+              <InstagramIcon />
             </IconButton>
             <IconButton
               component="a"
@@ -320,7 +382,7 @@ function ProgrammingClub() {
               color="primary"
               size="large"
             >
-              <LanguageIcon />
+              <GitHubIcon />
             </IconButton>
           </Box>
         </Box>

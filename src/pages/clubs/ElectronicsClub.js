@@ -8,11 +8,14 @@ import {
   CardMedia,
   Avatar,
   IconButton,
+  Button,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 // Styled components
 const TeamMemberCard = styled(Card)(({ theme }) => ({
@@ -27,10 +30,7 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
 const clubData = {
   name: 'Electronics Club',
   logo: '/images/clubs/electronics-logo.jpg',
-  description: `The Electronics Club at IIITDM Kancheepuram is a platform for students to explore and innovate in the field of electronics. 
-    We focus on circuit design, embedded systems, and IoT projects. The club organizes workshops, hands-on sessions, and competitions 
-    to enhance practical knowledge in electronics. Our members work on various projects ranging from basic circuits to complex 
-    embedded systems, contributing to both academic and industrial applications.`,
+  description: `The Electronics Club at IIITDM Kancheepuram is a platform for students to explore and innovate in the field of electronics. We focus on circuit design, embedded systems, and IoT projects. The club organizes workshops, hands-on sessions, and competitions to enhance practical knowledge in electronics. Our members work on various projects ranging from basic circuits to complex embedded systems, contributing to both academic and industrial applications.`,
   core: [
     {
       name: 'John Doe',
@@ -100,17 +100,29 @@ function ElectronicsClub() {
   return (
     <Box sx={{ py: 8, bgcolor: 'background.default' }}>
       <Container maxWidth="lg">
-        {/* Header Section */}
-        <Box sx={{ mb: 8, textAlign: 'center' }}>
+        {/* Logo Section */}
+        <Box sx={{ mb: 4, display: 'flex', justifyContent: 'center' }}>
+          <CardMedia
+            component="img"
+            image={clubData.logo}
+            alt={`${clubData.name} Logo`}
+            sx={{
+              width: '100%',
+              maxWidth: '300px',
+              height: 'auto',
+              borderRadius: 2,
+            }}
+          />
+        </Box>
+
+        {/* Club Name */}
+        <Box sx={{ mb: 4, textAlign: 'center' }}>
           <Typography
             variant="h2"
             component="h1"
-            gutterBottom
             sx={{
               fontSize: { xs: '1.6rem', sm: '2.2rem', md: '2.8rem' },
               fontWeight: 'bold',
-              mb: 4,
-              textAlign: 'center',
               background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
@@ -122,22 +134,21 @@ function ElectronicsClub() {
           </Typography>
         </Box>
 
-        {/* Club Logo and Description */}
-        <Grid container spacing={4} sx={{ mb: 8 }}>
-          <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
-            <CardMedia
-              component="img"
-              image={clubData.logo}
-              alt={`${clubData.name} Logo`}
-              sx={{
-                width: '100%',
-                maxWidth: '300px',
-                height: 'auto',
-                borderRadius: 2,
-              }}
-            />
-          </Grid>
-          <Grid item xs={12} md={8}>
+        {/* Description and Links Container */}
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column', md: 'row' },
+            gap: { xs: 4, md: 8 },
+            mb: 6,
+            maxWidth: '1000px',
+            mx: 'auto',
+            px: { xs: 2, sm: 3, md: 4 },
+            alignItems: 'flex-start',
+          }}
+        >
+          {/* Description */}
+          <Box sx={{ flex: 1, textAlign: 'left' }}>
             <Typography
               variant="body1"
               sx={{
@@ -149,8 +160,59 @@ function ElectronicsClub() {
             >
               {clubData.description}
             </Typography>
-          </Grid>
-        </Grid>
+          </Box>
+
+          {/* Links */}
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: { xs: 'row', md: 'column' },
+              gap: 2,
+              alignItems: 'flex-start',
+              flexWrap: 'wrap',
+            }}
+          >
+            {/* Website Link */}
+            <Button
+              component="a"
+              href={clubData.links.website}
+              target="_blank"
+              variant="text"
+              color="primary"
+              size="large"
+              sx={{
+                fontSize: '1.1rem',
+                '&:hover': {
+                  transform: 'scale(1.05)',
+                  transition: 'transform 0.2s ease-in-out',
+                },
+              }}
+              startIcon={<LanguageIcon />}
+            >
+              Website
+            </Button>
+
+            {/* WhatsApp Link (Placeholder) */}
+            <Button
+              component="a"
+              href="#whatsapp-link" // Replace with actual WhatsApp link
+              target="_blank"
+              variant="text"
+              color="success"
+              size="large"
+              sx={{
+                fontSize: '1.1rem',
+                '&:hover': {
+                  transform: 'scale(1.05)',
+                  transition: 'transform 0.2s ease-in-out',
+                },
+              }}
+              startIcon={/* Replace with WhatsAppIcon */ null}
+            >
+              Join Community
+            </Button>
+          </Box>
+        </Box>
 
         {/* Core Team Section */}
         <Typography
@@ -312,7 +374,7 @@ function ElectronicsClub() {
               color="primary"
               size="large"
             >
-              <LanguageIcon />
+              <InstagramIcon />
             </IconButton>
             <IconButton
               component="a"
@@ -321,7 +383,7 @@ function ElectronicsClub() {
               color="primary"
               size="large"
             >
-              <LanguageIcon />
+              <GitHubIcon />
             </IconButton>
           </Box>
         </Box>
