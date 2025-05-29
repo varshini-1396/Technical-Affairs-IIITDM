@@ -15,7 +15,7 @@ function App() {
     <ThemeProvider>
       <Router>
         <Box sx={{ minHeight: '100vh', bgcolor: 'background.default', overflowX: 'hidden' }}>
-          <Navbar />
+        <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/clubs" element={<Clubs />} />
@@ -23,8 +23,8 @@ function App() {
             <Route path="/achievements" element={<Achievements />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-          <Footer />
-        </Box>
+        <Footer />
+      </Box>
       </Router>
     </ThemeProvider>
   );

@@ -25,11 +25,12 @@ const Techfest = () => {
           transition={{ duration: 0.5 }}
         >
           <Typography
-            variant="h3"
+            variant="h2"
             component="h2"
             sx={{
-              fontWeight: 700,
-              mb: 6,
+              fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
+              fontWeight: 'bold',
+              mb: 4,
               textAlign: 'center',
               background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
               backgroundClip: 'text',
