@@ -4,45 +4,41 @@ import {
   Container,
   Typography,
   Grid,
-  Card,
-  CardContent,
-  CardMedia,
-  Button,
   Tabs,
   Tab,
+  CardMedia,
 } from '@mui/material';
 import { motion } from 'framer-motion';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const clubs = [
   {
     name: 'Robotics Club',
     description: 'Exploring the world of robotics through hands-on projects and competitions.',
-    image: '/clubs/robotics.jpg',
+    image: '/club.png',
     category: 'Technical',
   },
   {
     name: 'Coding Club',
     description: 'Fostering programming skills through workshops and coding competitions.',
-    image: '/clubs/coding.jpg',
+    image: '/club.png',
     category: 'Technical',
   },
   {
     name: 'Electronics Club',
     description: 'Building electronic circuits and exploring embedded systems.',
-    image: '/clubs/electronics.jpg',
+    image: '/club.png',
     category: 'Technical',
   },
   {
     name: 'Aeromodelling Club',
     description: 'Designing and building aircraft models and drones.',
-    image: '/clubs/aeromodelling.jpg',
+    image: '/club.png',
     category: 'Technical',
   },
   {
     name: 'Web Development Club',
     description: 'Learning modern web technologies and building web applications.',
-    image: '/clubs/webdev.jpg',
+    image: '/club.png',
     category: 'Technical',
   },
 ];
@@ -51,31 +47,31 @@ const teams = [
   {
     name: 'Team Robocon',
     description: 'Representing IIITDM in ABU Robocon competition.',
-    image: '/teams/robocon.jpg',
+    image: '/club.png',
     category: 'Competitive',
   },
   {
     name: 'Team SAE',
     description: 'Designing and building formula-style racing cars.',
-    image: '/teams/sae.jpg',
+    image: '/club.png',
     category: 'Competitive',
   },
   {
     name: 'Team AUV',
     description: 'Developing autonomous underwater vehicles.',
-    image: '/teams/auv.jpg',
+    image: '/club.png',
     category: 'Competitive',
   },
   {
     name: 'Team Aero',
     description: 'Designing and building unmanned aerial vehicles.',
-    image: '/teams/aero.jpg',
+    image: '/club.png',
     category: 'Competitive',
   },
   {
     name: 'Team Efficycle',
     description: 'Building energy-efficient hybrid vehicles.',
-    image: '/teams/efficycle.jpg',
+    image: '/club.png',
     category: 'Competitive',
   },
 ];
@@ -128,7 +124,7 @@ const OurFamily = () => {
             centered
             sx={{
               '& .MuiTab-root': {
-                fontSize: '1.1rem',
+                fontSize: { xs: '0.9rem', sm: '1rem' },
                 fontWeight: 600,
                 textTransform: 'none',
               },
@@ -139,7 +135,7 @@ const OurFamily = () => {
           </Tabs>
         </Box>
 
-        <Grid container spacing={4}>
+        <Grid container spacing={4} justifyContent="center">
           {(activeTab === 0 ? clubs : teams).map((item, index) => (
             <Grid item xs={12} sm={6} md={4} key={item.name}>
               <motion.div
@@ -148,57 +144,47 @@ const OurFamily = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Card
+                <Box
+                  component="a"
+                  href="/clubs"
                   sx={{
-                    height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
-                    transition: 'transform 0.2s ease-in-out',
+                    alignItems: 'center',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    width: '100%',
                     '&:hover': {
-                      transform: 'translateY(-5px)',
+                      opacity: 0.8,
                     },
                   }}
                 >
                   <CardMedia
                     component="img"
-                    height="200"
                     image={item.image}
                     alt={item.name}
                     sx={{
                       objectFit: 'cover',
+                      width: { xs: '80px', sm: '100px' },
+                      height: { xs: '80px', sm: '100px' },
+                      borderRadius: '8px',
+                      mb: 1,
                     }}
                   />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography
-                      gutterBottom
-                      variant="h5"
-                      component="h3"
-                      sx={{
-                        fontWeight: 600,
-                        color: 'text.primary',
-                      }}
-                    >
-                      {item.name}
-                    </Typography>
-                    <Typography
-                      variant="body1"
-                      color="text.secondary"
-                      sx={{ mb: 2 }}
-                    >
-                      {item.description}
-                    </Typography>
-                    <Button
-                      variant="outlined"
-                      endIcon={<ArrowForwardIcon />}
-                      sx={{
-                        mt: 'auto',
-                        textTransform: 'none',
-                      }}
-                    >
-                      Learn More
-                    </Button>
-                  </CardContent>
-                </Card>
+                  <Typography
+                    variant="body1"
+                    component="p"
+                    sx={{
+                      fontWeight: 600,
+                      color: 'text.primary',
+                      fontSize: { xs: '0.9rem', sm: '1rem' },
+                    }}
+                  >
+                    {item.name}
+                  </Typography>
+                </Box>
               </motion.div>
             </Grid>
           ))}
