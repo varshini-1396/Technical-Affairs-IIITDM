@@ -31,7 +31,7 @@ const About = () => {
             component="h2"
             sx={{
               fontWeight: 700,
-              mb: 2,
+              mb: 4,
               textAlign: 'center',
               background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
               backgroundClip: 'text',
@@ -69,7 +69,7 @@ const About = () => {
           </Typography>
         </motion.div>
 
-        <Grid container spacing={4}>
+        <Grid container spacing={4} justifyContent="center">
           {stats.map((stat, index) => (
             <Grid item xs={12} sm={6} md={2.4} key={stat.label}>
               <motion.div
@@ -93,6 +93,7 @@ const About = () => {
                     '&:hover': {
                       transform: 'translateY(-5px)',
                     },
+                    mx: 'auto',
                   }}
                 >
                   <Typography

@@ -14,7 +14,7 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
-        <Box sx={{ minHeight: '100vh', bgcolor: 'background.default' }}>
+        <Box sx={{ minHeight: '100vh', bgcolor: 'background.default', overflowX: 'hidden' }}>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
