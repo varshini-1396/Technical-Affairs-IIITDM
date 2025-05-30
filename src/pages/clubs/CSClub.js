@@ -5,18 +5,16 @@ import {
   Typography,
   Grid,
   Card,
-  CardMedia,
   Avatar,
   IconButton,
   Button,
 } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { styled, useTheme } from '@mui/material/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { useTheme } from '@mui/material/styles';
 
 // Styled components
 const TeamMemberCard = styled(Card)(({ theme }) => ({
@@ -32,9 +30,9 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
 }));
 
 const clubData = {
-  name: 'Robotics Club',
-  logo: '/clubs/robotics/logo.png',
-  description: `The Robotics Club at IIITDM Kancheepuram is dedicated to fostering innovation in robotics and automation. Our club focuses on developing practical robotics solutions, participating in national and international competitions, and conducting workshops on robotics fundamentals. Members work on projects spanning various domains including autonomous vehicles, industrial automation, computer vision, and control systems. We emphasize hands-on learning through regular workshops, hackathons, and collaborative projects with industry partners.`,
+  name: 'CS Club',
+  logo: '/clubs/csclub/logo.png',
+  description: `The Computer Science Club at IIITDM Kancheepuram is dedicated to advancing computer science knowledge and skills among students. We focus on core computer science concepts, algorithms, data structures, and software development. The club organizes coding competitions, workshops on emerging technologies, and hackathons. Our members actively participate in national and international programming contests, contributing to the institute's reputation in the field of computer science.`,
   core: [
     {
       name: 'John Doe',
@@ -43,7 +41,8 @@ const clubData = {
       email: 'john.doe@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/johndoe',
       year: 'B.Tech 3rd Year',
-      department: 'Mechanical Engineering'
+      department: 'Computer Science Engineering',
+      roll: 'cs23b1001'
     },
     {
       name: 'Jane Smith',
@@ -52,7 +51,8 @@ const clubData = {
       email: 'jane.smith@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/janesmith',
       year: 'B.Tech 3rd Year',
-      department: 'Electronics Engineering'
+      department: 'Computer Science Engineering',
+      roll: 'cs23b1002'
     }
   ],
   team: [
@@ -63,7 +63,8 @@ const clubData = {
       email: 'alice.johnson@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/alicejohnson',
       year: 'B.Tech 2nd Year',
-      department: 'Mechanical Engineering'
+      department: 'Computer Science Engineering',
+      roll: 'cs23b1003'
     },
     {
       name: 'Bob Wilson',
@@ -72,72 +73,60 @@ const clubData = {
       email: 'bob.wilson@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/bobwilson',
       year: 'B.Tech 2nd Year',
-      department: 'Electronics Engineering'
-    },
-    {
-      name: 'Carol Brown',
-      role: 'Team Member',
-      image: '/images/team/carol-brown.jpg',
-      email: 'carol.brown@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/carolbrown',
-      year: 'B.Tech 2nd Year',
-      department: 'Computer Science'
-    },
-    {
-      name: 'David Lee',
-      role: 'Team Member',
-      image: '/images/team/david-lee.jpg',
-      email: 'david.lee@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/davidlee',
-      year: 'B.Tech 2nd Year',
-      department: 'Mechanical Engineering'
+      department: 'Computer Science Engineering',
+      roll: 'cs23b1004'
     }
   ],
   links: {
-    website: 'https://robotics.iiitdm.ac.in',
-    instagram: 'https://instagram.com/robotics_iiitdm',
-    github: 'https://github.com/robotics-iiitdm'
+    website: 'https://cs.iiitdm.ac.in',
+    instagram: 'https://instagram.com/cs_iiitdm',
+    github: 'https://github.com/cs-iiitdm'
   }
 };
 
-function RoboticsClub() {
+function CSClub() {
   const theme = useTheme();
   return (
     <Box sx={{ py: 8, pt: { xs: 12, sm: 14, md: 16 }, bgcolor: 'background.default' }}>
       <Container maxWidth="lg">
         {/* Header Section with Logo and Title */}
-        <Grid container spacing={4} alignItems="center" sx={{ mb: 6, justifyContent: { xs: 'center', md: 'flex-start' } }}>
+        <Grid container spacing={4} alignItems="center" sx={{ mb: 8, justifyContent: { xs: 'center', md: 'flex-start' } }}>
           {/* Logo on the left */}
           <Grid item xs={12} md={4}>
-            <Box sx={{ 
-              display: 'flex', 
+            <Box sx={{
+              display: 'flex',
               justifyContent: { xs: 'center', md: 'flex-start' },
               alignItems: 'center',
-              pt: { md: 4 }, // Top padding on laptops
-              pb: { xs: 2, md: 0 }, // Bottom padding on mobile
-              pr: { md: 4 }, // Right padding on laptops
+              pt: { md: 4 },
+              pb: { xs: 2, md: 0 },
+              pr: { md: 4 },
               height: '100%'
             }}>
-              <CardMedia
+              <Box
                 component="img"
-                image={clubData.logo}
-                alt={`${clubData.name} Logo`}
+                src={clubData.logo}
+                alt={`${clubData.name} logo`}
                 sx={{
+                  display: 'block',
                   width: '200px',
                   height: '200px',
                   objectFit: 'contain',
-                  borderRadius: 0, 
-                  boxShadow: 0, 
+                  borderRadius: 0,
+                  boxShadow: 0,
+                  marginLeft: { xs: 'auto', md: '0' },
+                  marginRight: { xs: 'auto', md: '0' },
+                  
                 }}
               />
             </Box>
           </Grid>
 
           {/* Title and Description on the right */}
-          <Grid item xs={12} md={8} sx={{ textAlign: { xs: 'center', md: 'center' } }}>
+          <Grid item xs={12} md={8}>
             <Box sx={{ 
               display: 'flex', 
               flexDirection: 'column',
+              alignItems: { xs: 'center', md: 'center' },
             }}>
               <Typography
                 variant="h2"
@@ -152,7 +141,7 @@ function RoboticsClub() {
                   WebkitTextFillColor: 'transparent',
                   textShadow: '0px 2px 4px rgba(0,0,0,0.1)',
                   width: '100%', 
-                  textAlign: 'inherit'
+                  textAlign: { xs: 'center', md: 'center' }
                 }}
               >
                 {clubData.name}
@@ -164,7 +153,7 @@ function RoboticsClub() {
                   lineHeight: 1.8,
                   color: 'text.secondary',
                   maxWidth: '800px',
-                  textAlign: 'inherit'
+                  textAlign: { xs: 'center', md: 'center' }
                 }}
               >
                 {clubData.description}
@@ -177,8 +166,6 @@ function RoboticsClub() {
                 size="medium"
                 sx={{
                   mt: 3,
-                  maxWidth: 200,
-                  mx:'auto',
                   background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
                   color: 'white',
                   boxShadow: '0 3px 5px 2px rgba(33, 203, 243, .3)',
@@ -208,7 +195,7 @@ function RoboticsClub() {
         </Typography>
         <Grid 
           container 
-          spacing={2}
+          spacing={2} 
           justifyContent='center'
           sx={{ 
             mb: 8,
@@ -226,13 +213,13 @@ function RoboticsClub() {
               sx={{
                 display: 'flex', 
                 justifyContent: 'center',
-                minWidth: 0,
+                minWidth: 0, 
               }}
             >
               <TeamMemberCard sx={{ 
-                 width: '100%',
-                 minWidth: 0,
-                 flexGrow: 1
+                width: '100%', 
+                minWidth: 0,
+                flexGrow: 1
               }}>
                 <Avatar
                   src={member.image}
@@ -250,7 +237,7 @@ function RoboticsClub() {
                   sx={{
                     fontSize: { xs: '0.8rem', sm: '0.9rem', md: '1.1rem' },
                     mb: { xs: 0.5, sm: 0.75, md: 0.75 },
-                     wordBreak: 'break-word',
+                    wordBreak: 'break-word', 
                   }}
                 >
                   {member.name}
@@ -262,7 +249,7 @@ function RoboticsClub() {
                   sx={{
                     fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.9rem' },
                     mb: { xs: 0.5, sm: 0.5, md: 0.75 },
-                    wordBreak: 'break-word',
+                    wordBreak: 'break-word', 
                   }}
                 >
                   {member.role}
@@ -274,29 +261,17 @@ function RoboticsClub() {
                   sx={{
                     fontSize: { xs: '0.6rem', sm: '0.7rem', md: '0.8rem' },
                     mb: { xs: 0.25, sm: 0.25, md: 0.5 },
-                     wordBreak: 'break-word',
+                     wordBreak: 'break-word', 
                   }}
                 >
-                  {member.year}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  gutterBottom
-                  sx={{
-                    fontSize: { xs: '0.6rem', sm: '0.7rem', md: '0.8rem' },
-                    mb: { xs: 0.25, sm: 0.25, md: 0.5 },
-                     wordBreak: 'break-word',
-                  }}
-                >
-                  {member.department}
+                  {member.roll}
                 </Typography>
                 <Box sx={{ 
                   mt: { xs: 0.75, sm: 1, md: 1.5 },
                   display: 'flex',
                   gap: { xs: 0.4, sm: 0.6, md: 0.8 },
-                  flexWrap: 'wrap',
-                  justifyContent: 'center',
+                  flexWrap: 'wrap', 
+                  justifyContent: 'center', 
                 }}>
                   <IconButton
                     component="a"
@@ -360,13 +335,12 @@ function RoboticsClub() {
               sx={{
                 display: 'flex', 
                 justifyContent: 'center',
-                minWidth: 0,
+                minWidth: 0, 
               }}
             >
               <TeamMemberCard sx={{ 
                 width: '100%', 
                 minWidth: 0,
-                maxWidth: { xs: '140px', sm: '180px', md: '250px' },
                 flexGrow: 1
               }}>
                 <Avatar
@@ -385,7 +359,7 @@ function RoboticsClub() {
                   sx={{
                     fontSize: { xs: '0.8rem', sm: '0.9rem', md: '1.1rem' },
                     mb: { xs: 0.5, sm: 0.75, md: 0.75 },
-                    wordBreak: 'break-word', 
+                     wordBreak: 'break-word', 
                   }}
                 >
                   {member.name}
@@ -409,10 +383,10 @@ function RoboticsClub() {
                   sx={{
                     fontSize: { xs: '0.6rem', sm: '0.7rem', md: '0.8rem' },
                     mb: { xs: 0.25, sm: 0.25, md: 0.5 },
-                    wordBreak: 'break-word', 
+                     wordBreak: 'break-word', 
                   }}
                 >
-                  {member.year}
+                  {member.roll}
                 </Typography>
                 <Box sx={{ 
                   mt: { xs: 0.75, sm: 1, md: 1.5 },
@@ -498,4 +472,4 @@ function RoboticsClub() {
   );
 }
 
-export default RoboticsClub;
+export default CSClub; 

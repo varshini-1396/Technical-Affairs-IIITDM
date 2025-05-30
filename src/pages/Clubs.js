@@ -13,7 +13,8 @@ import { styled } from '@mui/material/styles';
 
 // Styled components
 const StyledCard = styled(Card)(({ theme }) => ({
-  height: '100%',
+  height: 350,
+  width: 320,
   display: 'flex',
   flexDirection: 'column',
   transition: 'transform 0.2s ease-in-out',
@@ -25,40 +26,50 @@ const StyledCard = styled(Card)(({ theme }) => ({
 
 const clubsData = [
   {
+    name: 'Mars Club',
+    image: '/clubs/mars/logo.png',
+    link: '/clubs/mars',
+  },
+  {
+    name: 'CS Club',
+    image: '/clubs/csclub/logo.png',
+    link: '/clubs/cs',
+  },
+  {
+    name: 'Developers Club',
+    image: '/clubs/devclub/logo.jpg',
+    link: '/clubs/dev',
+  },
+  {
+    name: 'AUV Society',
+    image: '/clubs/auv/logo.png',
+    link: '/clubs/auv',
+  },
+  {
+    name: 'TAD',
+    image: '/clubs/tad/logo.jpg',
+    link: '/clubs/tad',
+  },
+  {
     name: 'Robotics Club',
-    image: '/images/clubs/robotics.jpg',
+    image: '/clubs/robotics/logo.png',
     link: '/clubs/robotics',
   },
   {
-    name: 'Programming Club',
-    image: '/images/clubs/programming.jpg',
-    link: '/clubs/programming',
-  },
-  {
-    name: 'Electronics Club',
-    image: '/images/clubs/electronics.jpg',
-    link: '/clubs/electronics',
-  },
-  {
-    name: 'Aeromodelling Club',
-    image: '/images/clubs/aeromodelling.jpg',
-    link: '/clubs/aeromodelling',
-  },
-  {
-    name: 'Web Development Club',
-    image: '/images/clubs/webdev.jpg',
-    link: '/clubs/webdev',
-  },
-  {
-    name: 'AI/ML Club',
-    image: '/images/clubs/aiml.jpg',
-    link: '/clubs/aiml',
+    name: 'SAE Collegiate<br />Club',
+    image: '/clubs/sae-collegiate/logo.png',
+    link: '/clubs/sae',
   },
 ];
 
 function Clubs() {
   return (
-    <Box sx={{ py: 8, bgcolor: 'background.default' }}>
+    <Box sx={{ 
+      py: 8, 
+      pt: { xs: 12, sm: 14, md: 16 },
+      pb: 8, 
+      bgcolor: 'background.default' 
+    }}>
       <Container maxWidth="lg">
         {/* Header Section */}
         <Box sx={{ mb: 8, textAlign: 'center' }}>
@@ -94,57 +105,106 @@ function Clubs() {
         {/* Clubs Grid */}
         <Grid 
           container 
-          spacing={4} 
+          spacing={3} 
           justifyContent="center"
           sx={{ 
             maxWidth: '1200px',
             mx: 'auto',
-            px: { xs: 2, sm: 3, md: 4 }
+            px: { xs: 1, sm: 2, md: 3 }
           }}
         >
           {clubsData.map((club) => (
             <Grid 
               item 
               key={club.name} 
-              xs={12} 
-              sm={6} 
-              md={4}
+              xs={6} 
+              sm={4} 
+              md={3}
               sx={{ 
                 display: 'flex',
                 justifyContent: 'center'
               }}
             >
-              <StyledCard sx={{ width: '100%', maxWidth: '350px' }}>
-                <CardMedia
-                  component="img"
-                  height="200"
-                  image={club.image}
-                  alt={club.name}
-                  sx={{
-                    objectFit: 'cover',
-                    bgcolor: 'grey.200',
-                  }}
-                />
+              <StyledCard sx={{ 
+                width: '100%', 
+                maxWidth: '330px',
+                bgcolor: 'background.paper',
+                '&:hover': {
+                  transform: 'translateY(-4px)',
+                  boxShadow: (theme) => theme.palette.mode === 'dark' ? '0 8px 24px rgba(0,0,0,0.4)' : theme.shadows[8],
+                },
+              }}>
+                <Box sx={{ 
+                  display: 'flex', 
+                  justifyContent: 'center', 
+                  alignItems: 'center',
+                  width: 200,
+                  height: 200,
+                  bgcolor: (theme) => theme.palette.mode === 'dark' ? 'rgba(0, 0, 0, 0.4)' : 'white',
+                  boxShadow: (theme) => theme.palette.mode === 'dark' ? '0 4px 12px rgba(0,0,0,0.3)' : 2,
+                  borderRadius: 2,
+                }}>
+                  <CardMedia
+                    component="img"
+                    image={club.image}
+                    alt={club.name}
+                    sx={{
+                      width: '100%',
+                      height: '100%',
+                      borderRadius: 2,
+                      objectFit: 'contain',
+                      objectPosition: 'center',
+                      p: 3,
+                    }}
+                  />
+                </Box>
                 <CardContent sx={{ 
                   flexGrow: 1,
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
-                  textAlign: 'center'
+                  textAlign: 'center',
+                  justifyContent: 'space-between',
+                  bgcolor: 'background.paper',
+                  py: 2
                 }}>
                   <Typography
-                    gutterBottom
-                    variant="h5"
+                    variant="h6"
                     component="h2"
-                    sx={{ fontWeight: 'bold' }}
+                    sx={{
+                      fontWeight: 'bold',
+                      color: 'text.primary',
+                      textAlign: 'center',
+                      maxWidth: '100%',
+                      overflow: 'hidden',
+                      display: '-webkit-box',
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: 'vertical',
+                      mb: 2,
+                    }}
                   >
-                    {club.name}
+                    {club.name.split('<br />').map((line, index) => (
+                      <React.Fragment key={index}>
+                        {line}
+                        {index < club.name.split('<br />').length - 1 && <br />}
+                      </React.Fragment>
+                    ))}
                   </Typography>
                   <Button
                     variant="contained"
                     color="primary"
                     href={club.link}
-                    sx={{ mt: 'auto' }}
+                    size="small"
+                    sx={{
+                      mt: 'auto',
+                      height: 40,
+                      background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
+                      color: 'white',
+                      boxShadow: '0 3px 5px 2px rgba(33, 203, 243, .3)',
+                      '&:hover': {
+                        bgcolor: 'primary.dark'
+                      }
+                    }}
                   >
                     Learn More
                   </Button>

@@ -32,13 +32,13 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
 }));
 
 const clubData = {
-  name: 'Robotics Club',
-  logo: '/clubs/robotics/logo.png',
-  description: `The Robotics Club at IIITDM Kancheepuram is dedicated to fostering innovation in robotics and automation. Our club focuses on developing practical robotics solutions, participating in national and international competitions, and conducting workshops on robotics fundamentals. Members work on projects spanning various domains including autonomous vehicles, industrial automation, computer vision, and control systems. We emphasize hands-on learning through regular workshops, hackathons, and collaborative projects with industry partners.`,
+  name: 'AUV Society',
+  logo: '/clubs/auv/logo.png',
+  description: `The Autonomous Underwater Vehicle (AUV) Society at IIITDM Kancheepuram is dedicated to developing underwater robotics and autonomous systems. We focus on designing, building, and programming AUVs for various applications including underwater exploration, research, and competitions. Our members work on mechanical design, electronics, control systems, and computer vision. The society participates in national and international AUV competitions and conducts workshops to spread knowledge about underwater robotics.`,
   core: [
     {
       name: 'John Doe',
-      role: 'Club Head',
+      role: 'Society Head',
       image: '/images/team/john-doe.jpg',
       email: 'john.doe@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/johndoe',
@@ -73,34 +73,16 @@ const clubData = {
       linkedin: 'https://linkedin.com/in/bobwilson',
       year: 'B.Tech 2nd Year',
       department: 'Electronics Engineering'
-    },
-    {
-      name: 'Carol Brown',
-      role: 'Team Member',
-      image: '/images/team/carol-brown.jpg',
-      email: 'carol.brown@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/carolbrown',
-      year: 'B.Tech 2nd Year',
-      department: 'Computer Science'
-    },
-    {
-      name: 'David Lee',
-      role: 'Team Member',
-      image: '/images/team/david-lee.jpg',
-      email: 'david.lee@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/davidlee',
-      year: 'B.Tech 2nd Year',
-      department: 'Mechanical Engineering'
     }
   ],
   links: {
-    website: 'https://robotics.iiitdm.ac.in',
-    instagram: 'https://instagram.com/robotics_iiitdm',
-    github: 'https://github.com/robotics-iiitdm'
+    website: 'https://auv.iiitdm.ac.in',
+    instagram: 'https://instagram.com/auv_iiitdm',
+    github: 'https://github.com/auv-iiitdm'
   }
 };
 
-function RoboticsClub() {
+function AUVSociety() {
   const theme = useTheme();
   return (
     <Box sx={{ py: 8, pt: { xs: 12, sm: 14, md: 16 }, bgcolor: 'background.default' }}>
@@ -177,8 +159,8 @@ function RoboticsClub() {
                 size="medium"
                 sx={{
                   mt: 3,
-                  maxWidth: 200,
-                  mx:'auto',
+                  maxWidth: 150,
+                  mx: 'auto',
                   background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
                   color: 'white',
                   boxShadow: '0 3px 5px 2px rgba(33, 203, 243, .3)',
@@ -498,4 +480,4 @@ function RoboticsClub() {
   );
 }
 
-export default RoboticsClub;
+export default AUVSociety; 

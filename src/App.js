@@ -11,12 +11,13 @@ import Footer from './components/Footer/Footer';
 import { Box } from '@mui/material';
 
 // Import club pages
+import MarsClub from './pages/clubs/MarsClub';
+import CSClub from './pages/clubs/CSClub';
+import DevClub from './pages/clubs/DevClub';
+import AUVSociety from './pages/clubs/AUVSociety';
+import TAD from './pages/clubs/TAD';
 import RoboticsClub from './pages/clubs/RoboticsClub';
-import ProgrammingClub from './pages/clubs/ProgrammingClub';
-import ElectronicsClub from './pages/clubs/ElectronicsClub';
-import AeromodellingClub from './pages/clubs/AeromodellingClub';
-import WebDevClub from './pages/clubs/WebDevClub';
-import AIMLClub from './pages/clubs/AIMLClub';
+import SAECollegiateClub from './pages/clubs/SAECollegiateClub';
 
 function App() {
   return (
@@ -27,12 +28,13 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/clubs" element={<Clubs />} />
+            <Route path="/clubs/mars" element={<MarsClub />} />
+            <Route path="/clubs/cs" element={<CSClub />} />
+            <Route path="/clubs/dev" element={<DevClub />} />
+            <Route path="/clubs/auv" element={<AUVSociety />} />
+            <Route path="/clubs/tad" element={<TAD />} />
             <Route path="/clubs/robotics" element={<RoboticsClub />} />
-            <Route path="/clubs/programming" element={<ProgrammingClub />} />
-            <Route path="/clubs/electronics" element={<ElectronicsClub />} />
-            <Route path="/clubs/aeromodelling" element={<AeromodellingClub />} />
-            <Route path="/clubs/webdev" element={<WebDevClub />} />
-            <Route path="/clubs/aiml" element={<AIMLClub />} />
+            <Route path="/clubs/sae" element={<SAECollegiateClub />} />
             <Route path="/teams" element={<Teams />} />
             <Route path="/achievements" element={<Achievements />} />
             <Route path="/contact" element={<Contact />} />
