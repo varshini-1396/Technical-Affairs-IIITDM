@@ -180,7 +180,7 @@ const Hero = () => {
                 variant="contained"
                 size="large"
                 component="a"
-                href="#clubs"
+                href="/clubs"
                 sx={{
                   px: { xs: 2, md: 4 },
                   py: 1.5,
@@ -196,7 +196,7 @@ const Hero = () => {
                 variant="outlined"
                 size="large"
                 component="a"
-                href="#teams"
+                href="/teams"
                 sx={{
                   px: { xs: 2, md: 4 },
                   py: 1.5,

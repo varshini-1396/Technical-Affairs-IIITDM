@@ -12,67 +12,66 @@ import { motion } from 'framer-motion';
 
 const clubs = [
   {
+    name: 'Mars Club',
+    image: '/clubs/mars/logo.png',
+    link: '/clubs/mars',
+  },
+  {
+    name: 'CS Club',
+    image: '/clubs/csclub/logo.png',
+    link: '/clubs/cs',
+  },
+  {
+    name: 'Developers Club',
+    image: '/clubs/devclub/logo.jpg',
+    link: '/clubs/dev',
+  },
+  {
+    name: 'AUV Society',
+    image: '/clubs/auv/logo.png',
+    link: '/clubs/auv',
+  },
+  {
+    name: 'TAD',
+    image: '/clubs/tad/logo.jpg',
+    link: '/clubs/tad',
+  },
+  {
     name: 'Robotics Club',
-    description: 'Exploring the world of robotics through hands-on projects and competitions.',
-    image: '/club.png',
-    category: 'Technical',
+    image: '/clubs/robotics/logo.png',
+    link: '/clubs/robotics',
   },
   {
-    name: 'Coding Club',
-    description: 'Fostering programming skills through workshops and coding competitions.',
-    image: '/club.png',
-    category: 'Technical',
-  },
-  {
-    name: 'Electronics Club',
-    description: 'Building electronic circuits and exploring embedded systems.',
-    image: '/club.png',
-    category: 'Technical',
-  },
-  {
-    name: 'Aeromodelling Club',
-    description: 'Designing and building aircraft models and drones.',
-    image: '/club.png',
-    category: 'Technical',
-  },
-  {
-    name: 'Web Development Club',
-    description: 'Learning modern web technologies and building web applications.',
-    image: '/club.png',
-    category: 'Technical',
+    name: 'SAE Collegiate Club',
+    image: '/clubs/sae-collegiate/logo.png',
+    link: '/clubs/sae',
   },
 ];
 
 const teams = [
   {
-    name: 'Team Robocon',
-    description: 'Representing IIITDM in ABU Robocon competition.',
-    image: '/club.png',
-    category: 'Competitive',
+    name: 'Nira',
+    description: 'AUV Society',
+    image: '/teams/nira/logo.png',
+    link: '/teams/nira',
   },
   {
-    name: 'Team SAE',
-    description: 'Designing and building formula-style racing cars.',
-    image: '/club.png',
-    category: 'Competitive',
+    name: 'Team Astra',
+    description: 'SAE Club',
+    image: '/teams/astra/logo.png',
+    link: '/teams/astra',
   },
   {
-    name: 'Team AUV',
-    description: 'Developing autonomous underwater vehicles.',
-    image: '/club.png',
-    category: 'Competitive',
+    name: 'Revolt Racers',
+    description: 'SAE Club',
+    image: '/teams/revolt/logo.png',
+    link: '/teams/revolt',
   },
   {
-    name: 'Team Aero',
-    description: 'Designing and building unmanned aerial vehicles.',
-    image: '/club.png',
-    category: 'Competitive',
-  },
-  {
-    name: 'Team Efficycle',
-    description: 'Building energy-efficient hybrid vehicles.',
-    image: '/club.png',
-    category: 'Competitive',
+    name: 'Team Shunya',
+    description: 'Mars Club',
+    image: '/teams/shunya/logo.png',
+    link: '/teams/shunya',
   },
 ];
 
@@ -146,7 +145,7 @@ const OurFamily = () => {
               >
                 <Box
                   component="a"
-                  href="/clubs"
+                  href= {item.link}
                   sx={{
                     display: 'flex',
                     flexDirection: 'column',
@@ -166,11 +165,11 @@ const OurFamily = () => {
                     image={item.image}
                     alt={item.name}
                     sx={{
-                      objectFit: 'cover',
+                      objectFit: 'contain',
                       width: { xs: '80px', sm: '100px' },
                       height: { xs: '80px', sm: '100px' },
                       borderRadius: '8px',
-                      mb: 1,
+                      mb: 2,
                     }}
                   />
                   <Typography

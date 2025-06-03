@@ -2,12 +2,12 @@ import React from 'react';
 import { Box } from '@mui/material';
 
 // Import section components
-import Hero from '../components/Hero/Hero';
-import About from '../components/About/About';
-import OurFamily from '../components/OurFamily/OurFamily';
-import Achievements from '../components/Achievements/Achievements';
-import Techfest from '../components/Techfest/Techfest';
-import Sponsors from '../components/Sponsors/Sponsors';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import OurFamily from '../components/OurFamily';
+import Achievements from '../components/Achievements';
+import Techfest from '../components/Techfest';
+import Sponsors from '../components/Sponsors';
 
 function Home() {
   return (
