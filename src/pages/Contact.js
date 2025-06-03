@@ -126,38 +126,38 @@ function Contact() {
       transform: 'scale(1.02)',
     },
     width: '100%',
-    minWidth: '160px',
-    maxWidth: '160px',
+    minWidth: '140px',
+    maxWidth: '140px',
   };
 
   const imageStyle = {
-    height: 200,
+    height: 160,
     objectFit: 'cover',
     width: '100%',
   };
 
   const nameStyle = {
     fontSize: {
-      xs: '0.8rem',
-      sm: '0.9rem',
-      md: '1rem'
+      xs: '0.7rem',
+      sm: '0.8rem',
+      md: '0.9rem'
     },
     width: '100%',
     textAlign: 'center',
     wordWrap: 'break-word',
-    padding: '0 8px'
+    padding: '0 4px'
   };
 
   const descriptionStyle = {
     fontSize: {
-      xs: '0.65rem',
-      sm: '0.75rem',
-      md: '0.85rem'
+      xs: '0.6rem',
+      sm: '0.7rem',
+      md: '0.8rem'
     },
     width: '100%',
     textAlign: 'center',
     wordWrap: 'break-word',
-    padding: '0 8px'
+    padding: '0 4px'
   };
 
   const titleStyle = {
@@ -181,8 +181,8 @@ function Contact() {
         >
           Technical Affairs Secretary
         </Typography>
-        <Grid container spacing={2} justifyContent="center">
-          <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', width: '160px' }}>
+        <Grid container spacing={1} justifyContent="center">
+          <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', width: '140px' }}>
             <Card sx={cardStyle}>
               <CardMedia
                 component="img"
@@ -240,8 +240,8 @@ function Contact() {
         >
           Technical Affairs Joint Secretary
         </Typography>
-        <Grid container spacing={2} justifyContent="center">
-          <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', width: '160px' }}>
+        <Grid container spacing={1} justifyContent="center">
+          <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', width: '140px' }}>
             <Card sx={cardStyle}>
               <CardMedia
                 component="img"
@@ -299,9 +299,9 @@ function Contact() {
         >
           Core Team
         </Typography>
-        <Grid container spacing={2} justifyContent="center">
+        <Grid container spacing={1} justifyContent="center">
           {teamData.coreTeam.map((member, index) => (
-            <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', width: '160px' }} key={index}>
+            <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', width: '140px' }} key={index}>
               <Card sx={cardStyle}>
                 <CardMedia
                   component="img"
