@@ -49,6 +49,12 @@ const teamsData = [
     image: '/teams/shunya/logo.png',
     link: '/teams/shunya',
   },
+  {
+    name: 'Team TAD',
+    description: 'TAD Club',
+    image: '/teams/tad/logo.png',
+    link: '/teams/tad',
+  },
 ];
 
 function Teams() {

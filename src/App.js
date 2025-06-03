@@ -24,7 +24,7 @@ import Nira from './pages/teams/Nira';
 import Astra from './pages/teams/Astra';
 import Revolt from './pages/teams/Revolt';
 import Shunya from './pages/teams/Shunya';
-
+import Tad from './pages/teams/Tad';
 function App() {
   return (
     <ThemeProvider>
@@ -46,6 +46,7 @@ function App() {
             <Route path="/teams/astra" element={<Astra />} />
             <Route path="/teams/revolt" element={<Revolt />} />
             <Route path="/teams/shunya" element={<Shunya />} />
+            <Route path="/teams/tad" element={<Tad />} />
             <Route path="/achievements" element={<Achievements />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
