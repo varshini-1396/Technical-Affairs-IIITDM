@@ -8,7 +8,6 @@ import {
   Avatar,
   IconButton,
   CardMedia,
-  Button,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
