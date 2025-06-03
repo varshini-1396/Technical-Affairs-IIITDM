@@ -16,13 +16,19 @@ export const useThemeContext = () => {
 export const ThemeProvider = ({ children }) => {
   // Initialize theme from localStorage or default to false (light mode)
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    const savedTheme = localStorage.getItem('theme');
-    return savedTheme ? JSON.parse(savedTheme) : false;
+    // Check if we're in the browser environment
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme');
+      return savedTheme ? JSON.parse(savedTheme) : false;
+    }
+    return false;
   });
 
   // Update localStorage when theme changes
   useEffect(() => {
-    localStorage.setItem('theme', JSON.stringify(isDarkMode));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('theme', JSON.stringify(isDarkMode));
+    }
   }, [isDarkMode]);
 
   const toggleTheme = () => {
