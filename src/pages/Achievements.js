@@ -84,7 +84,7 @@ const Achievements = () => {
   return (
     <Box sx={{ 
       padding: {
-        xs: '48px 16px',
+        xs: '80px 16px 48px 16px',
         sm: '96px 32px 48px 32px'
       },
       textAlign: 'center' 
