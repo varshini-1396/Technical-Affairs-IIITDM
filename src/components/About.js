@@ -83,8 +83,7 @@ const About = () => {
                   sx={{
                     p: 3,
                     borderRadius: 2,
-                    bgcolor: 'background.paper',
-                    boxShadow: 1,
+                    bgcolor: 'background.default',
                     textAlign: 'center',
                     height: '100%',
                     display: 'flex',
