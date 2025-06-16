@@ -107,11 +107,11 @@ const Navbar = () => {
           transition: 'all 0.3s ease-in-out',
         }}
         style={{
-          '--Paper-overlay': 'none !important', // Force override
+          '--Paper-overlay': 'none !important', // Fix for material UI bug trying to set transparent background
         }}
         enableColorOnDark={true}
       >
-        <Toolbar sx={{ px: { xs: 2, md: 3 }}} className='override-toolbar'>
+        <Toolbar sx={{ px: { xs: 2, md: 3 }}}>
           <Box
             component="img"
             src="/logo.png"
