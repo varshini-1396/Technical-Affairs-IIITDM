@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.grids-dark {
+    background-image: url("/grids-dark.svg");
+    background-color: oklch(0.269 0 0);
+    background-attachment: fixed;
+}
+ 
+.grids-light {
+  background-image: url("/grids-light.svg");
+  background-color: oklch(0.9 0 0);
+  background-attachment: fixed;
+}

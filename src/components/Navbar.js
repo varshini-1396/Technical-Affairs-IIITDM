@@ -101,17 +101,17 @@ const Navbar = () => {
       <AppBar
         position="fixed"
         sx={{
-          bgcolor: scrolled
-            ? theme.palette.mode === 'dark'
-              ? 'rgba(18, 18, 18, 0.9)'
-              : 'rgba(255, 255, 255, 0.9)'
-            : 'transparent',
+          bgcolor: 'transparent',
           backdropFilter: scrolled ? 'blur(8px)' : 'none',
           boxShadow: scrolled ? theme.shadows[4] : 'none',
           transition: 'all 0.3s ease-in-out',
         }}
+        style={{
+          '--Paper-overlay': 'none !important', // Fix for material UI bug trying to set transparent background
+        }}
+        enableColorOnDark={true}
       >
-        <Toolbar sx={{ px: { xs: 2, md: 3 } }}>
+        <Toolbar sx={{ px: { xs: 2, md: 3 }}}>
           <Box
             component="img"
             src="/logo.png"
@@ -203,4 +203,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

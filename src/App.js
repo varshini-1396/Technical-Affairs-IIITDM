@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider } from './context/ThemeContext';
+import { useThemeContext } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
@@ -26,8 +26,17 @@ import Revolt from './pages/teams/Revolt';
 import Shunya from './pages/teams/Shunya';
 import Tad from './pages/teams/Tad';
 function App() {
+  const { isDarkMode } = useThemeContext();
+
+
+  React.useEffect(() => {
+    if (typeof window !== 'undefined') {
+      document.body.classList.remove('grids-dark', 'grids-light');
+      document.body.classList.add(isDarkMode === true ? 'grids-dark' : 'grids-light');
+    }
+  }, [isDarkMode]);
+
   return (
-    <ThemeProvider>
       <Router>
         <Box sx={{ minHeight: '100vh', bgcolor: 'background.default', overflowX: 'hidden' }}>
           <Navbar />
@@ -53,7 +62,6 @@ function App() {
           <Footer />
         </Box>
       </Router>
-    </ThemeProvider>
   );
 }
 
