@@ -37,22 +37,22 @@ const clubData = {
   description: `The Robotics Club at IIITDM Kancheepuram is dedicated to fostering innovation in robotics and automation. Our club focuses on developing practical robotics solutions, participating in national and international competitions, and conducting workshops on robotics fundamentals. Members work on projects spanning various domains including autonomous vehicles, industrial automation, computer vision, and control systems. We emphasize hands-on learning through regular workshops, hackathons, and collaborative projects with industry partners.`,
   core: [
     {
-      name: 'John Doe',
+      name: 'Dhanvanth Saravanan',
       role: 'Club Head',
-      image: '/images/team/john-doe.jpg',
-      email: 'john.doe@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/johndoe',
+      image: '/clubs/dhanvanth.jpg',
+      email: 'ec23b1097@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/dhanvanth-saravanan-366956288',
       year: 'B.Tech 3rd Year',
-      department: 'Mechanical Engineering'
+      department: 'Electronics and Communication Engineering'
     },
     {
-      name: 'Jane Smith',
-      role: 'Technical Head',
+      name: 'Hemachandra K S',
+      role: 'Club Head',
       image: '/images/team/jane-smith.jpg',
-      email: 'jane.smith@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/janesmith',
+      email: 'me23b2020@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/hemachandra-k-s-323382332',
       year: 'B.Tech 3rd Year',
-      department: 'Electronics Engineering'
+      department: 'Mechanical Engineering'
     }
   ],
   team: [
@@ -95,7 +95,7 @@ const clubData = {
   ],
   links: {
     website: 'https://robotics.iiitdm.ac.in',
-    instagram: 'https://instagram.com/robotics_iiitdm',
+    instagram: 'https://www.instagram.com/roboticsclub.iiitdm/',
     github: 'https://github.com/robotics-iiitdm'
   }
 };

@@ -37,24 +37,24 @@ const clubData = {
   description: `The Mars Club at IIITDM Kancheepuram is dedicated to fostering innovation and research in space technology and exploration. We focus on developing skills in rocketry, satellite systems, and space science. Our members work on various projects including rocket design, payload development, and participate in national-level competitions. The club organizes workshops, seminars, and hands-on sessions to enhance practical knowledge in aerospace engineering and related fields.`,
   core: [
     {
-      name: 'John Doe',
-      role: 'Club Head',
-      image: '/images/team/john-doe.jpg',
-      email: 'john.doe@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/johndoe',
+      name: 'Avichal Anurag',
+      role: 'Club Lead',
+      image: 'images/team/jane-smith.jpg/',
+      email: 'ec23i1015@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/avichal-anurag-0757392b2',
       year: 'B.Tech 3rd Year',
-      department: 'Mechanical Engineering',
-      roll: 'me23b1001'
+      department: 'Electronics and Communication Engineering',
+      roll: 'ec23i1015'
     },
     {
-      name: 'Jane Smith',
-      role: 'Technical Head',
-      image: '/images/team/jane-smith.jpg',
-      email: 'jane.smith@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/janesmith',
+      name: 'R Sarang',
+      role: 'Technical Lead',
+      image: '/clubs/sarang.jpg',
+      email: 'ec23i2015@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/sarang-raghavan-a04a2b308',
       year: 'B.Tech 3rd Year',
-      department: 'Electronics Engineering',
-      roll: 'ec23b1002'
+      department: 'Electronics and Communication Engineering',
+      roll: 'ec23i2015'
     }
   ],
   team: [
@@ -80,8 +80,8 @@ const clubData = {
     }
   ],
   links: {
-    website: 'https://mars.iiitdm.ac.in',
-    instagram: 'https://instagram.com/mars_iiitdm',
+    website: 'https://marsiiitdmk.netlify.app/',
+    instagram: 'https://www.instagram.com/mars_iiitdm/',
     github: 'https://github.com/mars-iiitdm'
   }
 };

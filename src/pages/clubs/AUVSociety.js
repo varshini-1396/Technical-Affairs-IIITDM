@@ -37,22 +37,22 @@ const clubData = {
   description: `The Autonomous Underwater Vehicle (AUV) Society at IIITDM Kancheepuram is dedicated to developing underwater robotics and autonomous systems. We focus on designing, building, and programming AUVs for various applications including underwater exploration, research, and competitions. Our members work on mechanical design, electronics, control systems, and computer vision. The society participates in national and international AUV competitions and conducts workshops to spread knowledge about underwater robotics.`,
   core: [
     {
-      name: 'John Doe',
-      role: 'Society Head',
-      image: '/images/team/john-doe.jpg',
-      email: 'john.doe@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/johndoe',
+      name: 'Shree Mithun N',
+      role: 'Soceity Head',
+      image: '/clubs/shreemithun.jpg',
+      email: 'me23b2024@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/shree-mithun-n-43ba49241',
       year: 'B.Tech 3rd Year',
       department: 'Mechanical Engineering'
     },
     {
-      name: 'Jane Smith',
-      role: 'Technical Head',
-      image: '/images/team/jane-smith.jpg',
-      email: 'jane.smith@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/janesmith',
+      name: 'Abinav R',
+      role: 'Soceity Head',
+      image: '/clubs/abinav.jpg',
+      email: 'me23b1004@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/abinav-rajagopal-2ba65a286',
       year: 'B.Tech 3rd Year',
-      department: 'Electronics Engineering'
+      department: 'Mechanical Engineering'
     }
   ],
   team: [
@@ -76,8 +76,8 @@ const clubData = {
     }
   ],
   links: {
-    website: 'https://auv.iiitdm.ac.in',
-    instagram: 'https://instagram.com/auv_iiitdm',
+    website: 'https://auviiitdm.github.io/',
+    instagram: 'https://www.instagram.com/auv_iiitdm/',
     github: 'https://github.com/auv-iiitdm'
   }
 };
