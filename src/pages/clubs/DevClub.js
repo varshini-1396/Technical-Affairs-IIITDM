@@ -38,7 +38,7 @@ const clubData = {
     {
       name: 'Sai Pranav',
       role: 'Club Head',
-      image: '/clubs/Sai Pranav.jpg',
+      image: '/clubs/devclub/Sai Pranav.jpg',
       email: 'cs22b1027@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/sai-pranav-m-3340a0251',
       year: 'B.Tech 4th Year',
@@ -48,7 +48,7 @@ const clubData = {
     {
       name: 'Madhav',
       role: 'Technical Head',
-      image: '/clubs/sainath.jpg',
+      image: '/clubs/devclub/sainath.jpg',
       email: 'cs22b1005@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/janesmith',
       year: 'B.Tech 4th Year',

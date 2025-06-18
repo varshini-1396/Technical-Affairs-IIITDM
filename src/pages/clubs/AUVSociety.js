@@ -39,7 +39,7 @@ const clubData = {
     {
       name: 'Shree Mithun N',
       role: 'Soceity Head',
-      image: '/clubs/shreemithun.jpg',
+      image: '/clubs/auv/shreemithun.jpg',
       email: 'me23b2024@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/shree-mithun-n-43ba49241',
       year: 'B.Tech 3rd Year',
@@ -48,7 +48,7 @@ const clubData = {
     {
       name: 'Abinav R',
       role: 'Soceity Head',
-      image: '/clubs/abinav.jpg',
+      image: '/clubs/auv/abinav.jpg',
       email: 'me23b1004@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/abinav-rajagopal-2ba65a286',
       year: 'B.Tech 3rd Year',

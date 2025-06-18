@@ -49,7 +49,7 @@ const clubData = {
     {
       name: 'R Sarang',
       role: 'Technical Lead',
-      image: '/clubs/sarang.jpg',
+      image: '/clubs/mars/sarang.jpg',
       email: 'ec23i2015@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/sarang-raghavan-a04a2b308',
       year: 'B.Tech 3rd Year',

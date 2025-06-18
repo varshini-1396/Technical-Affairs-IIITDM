@@ -39,7 +39,7 @@ const clubData = {
     {
       name: 'Dhanvanth Saravanan',
       role: 'Club Head',
-      image: '/clubs/dhanvanth.jpg',
+      image: '/clubs/robotics/dhanvanth.jpg',
       email: 'ec23b1097@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/dhanvanth-saravanan-366956288',
       year: 'B.Tech 3rd Year',
