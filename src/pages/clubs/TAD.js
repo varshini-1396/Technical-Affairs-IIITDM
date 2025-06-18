@@ -37,22 +37,22 @@ const clubData = {
   description: `The Technical Arts and Design (TAD) Club at IIITDM Kancheepuram bridges the gap between technology and creativity. We focus on digital art, graphic design, UI/UX design, and technical visualization. Our members work on various projects including poster design, website interfaces, 3D modeling, and digital art. The club organizes workshops on design tools, conducts design competitions, and collaborates with other technical clubs to enhance their visual communication.`,
   core: [
     {
-      name: 'John Doe',
+      name: 'Vamsi J S',
       role: 'Club Head',
       image: '/images/team/john-doe.jpg',
-      email: 'john.doe@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/johndoe',
+      email: 'me22b1031@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/vamsi-j-s-bba475257',
       year: 'B.Tech 3rd Year',
-      department: 'Design Engineering'
+      department: 'Mechanical Engineering'
     },
     {
-      name: 'Jane Smith',
-      role: 'Creative Head',
+      name: 'DeerajPrasanth S',
+      role: 'Club Head',
       image: '/images/team/jane-smith.jpg',
-      email: 'jane.smith@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/janesmith',
-      year: 'B.Tech 3rd Year',
-      department: 'Design Engineering'
+      email: 'ec23b1066@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/s-deerajprasanth-16522a289',
+      year: 'B.Tech 2nd Year',
+      department: 'Electronics and Communication Engineering'
     }
   ],
   team: [
@@ -77,7 +77,7 @@ const clubData = {
   ],
   links: {
     website: 'https://tad.iiitdm.ac.in',
-    instagram: 'https://instagram.com/tad_iiitdm',
+    instagram: 'https://www.instagram.com/tad_.iiitdm/',
     github: 'https://github.com/tad-iiitdm'
   }
 };
