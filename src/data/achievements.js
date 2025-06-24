@@ -183,6 +183,30 @@ export const achievements = [
     club: 'Mars Club',
     logo: '/clubs/mars/logo.png',
   },
+  {
+    id: 24,
+    title: 'IIT Bombay Competition 2024',
+    description: 'Two teams in the top 50 out of 500, clearing the abstract round and flying RC planes with payload.',
+    year: '2024',
+    club: 'TAD',
+    logo: '/clubs/tad/logo.jpg',
+  },
+  {
+    id: 25,
+    title: 'IIT Madras – Boeing National Aeromodelling Competition 2024',
+    description: 'Six teams cleared the abstract round, gaining experience in design thinking and teamwork.',
+    year: '2024',
+    club: 'TAD',
+    logo: '/clubs/tad/logo.jpg',
+  },
+  {
+    id: 26,
+    title: 'IAC-Conference 2024 by ASoI',
+    description: 'Won Runner-up for designing a docking mechanism to charge electric-hybrid UAVs.',
+    year: '2024',
+    club: 'TAD',
+    logo: '/clubs/tad/logo.jpg',
+  },
 ];
 
 // Helper function to get achievements by club
