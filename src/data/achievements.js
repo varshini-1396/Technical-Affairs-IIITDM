@@ -231,6 +231,38 @@ export const achievements = [
     club: 'SAE Collegiate Club',
     logo: '/clubs/sae-collegiate/logo.png',
   },
+  {
+    id: 30,
+    title: 'SAE mBaja 2025 - Phase 1',
+    description: 'Achieved an overall All India Rank of 9 and 2nd in Tamil Nadu.',
+    year: '2025',
+    club: 'SAE Collegiate Club',
+    logo: '/clubs/sae-collegiate/logo.png',
+  },
+  {
+    id: 31,
+    title: 'SAE mBaja 2025 - Phase 2',
+    description: 'Secured top ranks in multiple categories: Design (AIR 7), Cost (AIR 7), and Sustainability (AIR 10).',
+    year: '2025',
+    club: 'SAE Collegiate Club',
+    logo: '/clubs/sae-collegiate/logo.png',
+  },
+  {
+    id: 32,
+    title: 'SAE mBaja 2025 - Phase 3 (Statics)',
+    description: 'Achieved top final ranks in key static events: Design (AIR 7), Cost (AIR 5), and CAE (AIR 5).',
+    year: '2025',
+    club: 'SAE Collegiate Club',
+    logo: '/clubs/sae-collegiate/logo.png',
+  },
+  {
+    id: 33,
+    title: 'SAE mBaja 2025 - Overall',
+    description: 'Secured an impressive overall All India Rank (AIR) of 18.',
+    year: '2025',
+    club: 'SAE Collegiate Club',
+    logo: '/clubs/sae-collegiate/logo.png',
+  },
 ];
 
 // Helper function to get achievements by club
