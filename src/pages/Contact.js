@@ -140,12 +140,11 @@ function Contact() {
     fontSize: {
       xs: '0.7rem',
       sm: '0.8rem',
-      md: '0.9rem'
+      md: '0.8rem'
     },
     width: '100%',
     textAlign: 'center',
-    wordWrap: 'break-word',
-    padding: '0 4px'
+    fontWeight: 'bold',
   };
 
   const descriptionStyle = {
@@ -156,7 +155,6 @@ function Contact() {
     },
     width: '100%',
     textAlign: 'center',
-    wordWrap: 'break-word',
     padding: '0 4px'
   };
 
@@ -191,20 +189,22 @@ function Contact() {
                 sx={imageStyle}
               />
               <CardContent sx={{ py: 1, px: 1 }}>
-                <Typography 
-                  variant="h6" 
-                  component="h3" 
-                  sx={nameStyle}
-                >
-                  {teamData.secretary.name}
-                </Typography>
-                <Typography 
-                  variant="body2" 
-                  color="text.secondary" 
-                  sx={descriptionStyle}
-                >
-                  {teamData.secretary.position}
-                </Typography>
+                <Box sx={{ minHeight: '5em' }}>
+                  <Typography 
+                    variant="h6" 
+                    component="h3" 
+                    sx={nameStyle}
+                  >
+                    {teamData.secretary.name}
+                  </Typography>
+                  <Typography 
+                    variant="body2" 
+                    color="text.secondary" 
+                    sx={descriptionStyle}
+                  >
+                    {teamData.secretary.position}
+                  </Typography>
+                </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1, mt: 1 }}>
                   <IconButton 
                     size="small" 
@@ -250,20 +250,22 @@ function Contact() {
                 sx={imageStyle}
               />
               <CardContent sx={{ py: 1, px: 1 }}>
-                <Typography 
-                  variant="h6" 
-                  component="h3" 
-                  sx={nameStyle}
-                >
-                  {teamData.jointSecretary.name}
-                </Typography>
-                <Typography 
-                  variant="body2" 
-                  color="text.secondary" 
-                  sx={descriptionStyle}
-                >
-                  {teamData.jointSecretary.position}
-                </Typography>
+                <Box sx={{ minHeight: '5em' }}>
+                  <Typography 
+                    variant="h6" 
+                    component="h3" 
+                    sx={nameStyle}
+                  >
+                    {teamData.jointSecretary.name}
+                  </Typography>
+                  <Typography 
+                    variant="body2" 
+                    color="text.secondary" 
+                    sx={descriptionStyle}
+                  >
+                    {teamData.jointSecretary.position}
+                  </Typography>
+                </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1, mt: 1 }}>
                   <IconButton 
                     size="small" 
@@ -310,20 +312,22 @@ function Contact() {
                   sx={imageStyle}
                 />
                 <CardContent sx={{ py: 1, px: 1 }}>
-                  <Typography 
-                    variant="h6" 
-                    component="h3" 
-                    sx={nameStyle}
-                  >
-                    {member.name}
-                  </Typography>
-                  <Typography 
-                    variant="body2" 
-                    color="text.secondary" 
-                    sx={descriptionStyle}
-                  >
-                    {member.position}
-                  </Typography>
+                  <Box sx={{ minHeight: '5em' }}>
+                    <Typography 
+                      variant="h6" 
+                      component="h3" 
+                      sx={nameStyle}
+                    >
+                      {member.name}
+                    </Typography>
+                    <Typography 
+                      variant="body2" 
+                      color="text.secondary" 
+                      sx={descriptionStyle}
+                    >
+                      {member.position}
+                    </Typography>
+                  </Box>
                   <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1, mt: 1 }}>
                     <IconButton 
                       size="small" 
