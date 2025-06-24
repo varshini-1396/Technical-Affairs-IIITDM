@@ -119,6 +119,70 @@ export const achievements = [
     club: 'AUV Society',
     logo: '/clubs/auv/logo.png',
   },
+  {
+    id: 16,
+    title: 'European Rover Challenge 2023 (Remote)',
+    description: '6th place internationally',
+    year: '2023',
+    club: 'Mars Club',
+    logo: '/clubs/mars/logo.png',
+  },
+  {
+    id: 17,
+    title: 'European Rover Challenge 2023 (Onsite)',
+    description: '21st place internationally',
+    year: '2023',
+    club: 'Mars Club',
+    logo: '/clubs/mars/logo.png',
+  },
+  {
+    id: 18,
+    title: 'International Rover Challenge 2024 (Onsite)',
+    description: '21st place internationally',
+    year: '2024',
+    club: 'Mars Club',
+    logo: '/clubs/mars/logo.png',
+  },
+  {
+    id: 19,
+    title: 'Australian Rover Challenge 2024 (Documentation)',
+    description: '5th place internationally',
+    year: '2024',
+    club: 'Mars Club',
+    logo: '/clubs/mars/logo.png',
+  },
+  {
+    id: 20,
+    title: 'Australian Rover Challenge 2024 (Onsite)',
+    description: '12th place internationally',
+    year: '2024',
+    club: 'Mars Club',
+    logo: '/clubs/mars/logo.png',
+  },
+  {
+    id: 21,
+    title: 'ISRO Robotics Challenge 2024 (Onsite)',
+    description: '6th place internationally',
+    year: '2024',
+    club: 'Mars Club',
+    logo: '/clubs/mars/logo.png',
+  },
+  {
+    id: 22,
+    title: 'International Rover Challenge 2025 (Onsite)',
+    description: '16th place internationally',
+    year: '2025',
+    club: 'Mars Club',
+    logo: '/clubs/mars/logo.png',
+  },
+  {
+    id: 23,
+    title: 'ERC 2023 (Remote) Proposal Round',
+    description: '2nd place internationally',
+    year: '2023',
+    club: 'Mars Club',
+    logo: '/clubs/mars/logo.png',
+  },
 ];
 
 // Helper function to get achievements by club
@@ -143,4 +207,4 @@ export const getUniqueYears = () => {
 export const getUniqueClubs = () => {
   const clubs = new Set(achievements.map(a => a.club));
   return Array.from(clubs).sort();
-}; 
+};
