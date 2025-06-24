@@ -168,7 +168,7 @@ function Contact() {
 
   return (
     <Container maxWidth="lg" sx={{ py: 12 }}>
-      {/* Secretary Section */}
+      {/* SAC Technical Affairs Section */}
       <Box sx={{ mb: 6 }}>
         <Typography 
           variant="h4" 
@@ -177,10 +177,11 @@ function Contact() {
           gutterBottom
           sx={titleStyle}
         >
-          Technical Affairs Secretary
+          SAC Technical Affairs
         </Typography>
-        <Grid container spacing={1} justifyContent="center">
-          <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', width: '140px' }}>
+        <Grid container spacing={2} justifyContent="center">
+          {/* Secretary */}
+          <Grid item xs="auto" sx={{ display: 'flex', justifyContent: 'center' }}>
             <Card sx={cardStyle}>
               <CardMedia
                 component="img"
@@ -226,22 +227,8 @@ function Contact() {
               </CardContent>
             </Card>
           </Grid>
-        </Grid>
-      </Box>
-
-      {/* Joint Secretary Section */}
-      <Box sx={{ mb: 6 }}>
-        <Typography 
-          variant="h4" 
-          component="h2" 
-          align="center" 
-          gutterBottom
-          sx={titleStyle}
-        >
-          Technical Affairs Joint Secretary
-        </Typography>
-        <Grid container spacing={1} justifyContent="center">
-          <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', width: '140px' }}>
+          {/* Joint Secretary */}
+          <Grid item xs="auto" sx={{ display: 'flex', justifyContent: 'center' }}>
             <Card sx={cardStyle}>
               <CardMedia
                 component="img"
