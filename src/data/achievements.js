@@ -207,6 +207,30 @@ export const achievements = [
     club: 'TAD',
     logo: '/clubs/tad/logo.jpg',
   },
+  {
+    id: 27,
+    title: 'SAE eBaja 2025 - Phase 1',
+    description: 'Achieved All India Rank of 16 out of 86 teams, standing 4th in Tamil Nadu.',
+    year: '2025',
+    club: 'SAE Collegiate Club',
+    logo: '/clubs/sae-collegiate/logo.png',
+  },
+  {
+    id: 28,
+    title: 'SAE eBaja 2025 - Phase 2 (Virtuals)',
+    description: 'Secured strong ranks: Design (25th), Cost (20th), Sustainability (7th), and IPG Event (5th).',
+    year: '2025',
+    club: 'SAE Collegiate Club',
+    logo: '/clubs/sae-collegiate/logo.png',
+  },
+  {
+    id: 29,
+    title: 'SAE eBaja 2025 - Overall',
+    description: 'Finished with an overall All-India Rank of 35 out of 86 teams.',
+    year: '2025',
+    club: 'SAE Collegiate Club',
+    logo: '/clubs/sae-collegiate/logo.png',
+  },
 ];
 
 // Helper function to get achievements by club
