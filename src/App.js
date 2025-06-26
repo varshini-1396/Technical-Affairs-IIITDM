@@ -9,6 +9,7 @@ import Achievements from './pages/Achievements';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import { Box } from '@mui/material';
+import ScrollToTop from './components/ScrollToTop';
 
 // Import club pages
 import MarsClub from './pages/clubs/MarsClub';
@@ -38,29 +39,31 @@ function App() {
 
   return (
       <Router>
-        <Box sx={{ minHeight: '100vh', bgcolor: 'background.default', overflowX: 'hidden' }}>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/clubs" element={<Clubs />} />
-            <Route path="/clubs/mars" element={<MarsClub />} />
-            <Route path="/clubs/cs" element={<CSClub />} />
-            <Route path="/clubs/dev" element={<DevClub />} />
-            <Route path="/clubs/auv" element={<AUVSociety />} />
-            <Route path="/clubs/tad" element={<TAD />} />
-            <Route path="/clubs/robotics" element={<RoboticsClub />} />
-            <Route path="/clubs/sae" element={<SAECollegiateClub />} />
-            <Route path="/teams" element={<Teams />} />
-            <Route path="/teams/nira" element={<Nira />} />
-            <Route path="/teams/astra" element={<Astra />} />
-            <Route path="/teams/revolt" element={<Revolt />} />
-            <Route path="/teams/shunya" element={<Shunya />} />
-            <Route path="/teams/tad" element={<Tad />} />
-            <Route path="/achievements" element={<Achievements />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          <Footer />
-        </Box>
+        <ScrollToTop>
+          <Box sx={{ minHeight: '100vh', bgcolor: 'background.default', overflowX: 'hidden' }}>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/clubs" element={<Clubs />} />
+              <Route path="/clubs/mars" element={<MarsClub />} />
+              <Route path="/clubs/cs" element={<CSClub />} />
+              <Route path="/clubs/dev" element={<DevClub />} />
+              <Route path="/clubs/auv" element={<AUVSociety />} />
+              <Route path="/clubs/tad" element={<TAD />} />
+              <Route path="/clubs/robotics" element={<RoboticsClub />} />
+              <Route path="/clubs/sae" element={<SAECollegiateClub />} />
+              <Route path="/teams" element={<Teams />} />
+              <Route path="/teams/nira" element={<Nira />} />
+              <Route path="/teams/astra" element={<Astra />} />
+              <Route path="/teams/revolt" element={<Revolt />} />
+              <Route path="/teams/shunya" element={<Shunya />} />
+              <Route path="/teams/tad" element={<Tad />} />
+              <Route path="/achievements" element={<Achievements />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+            <Footer />
+          </Box>
+        </ScrollToTop>
       </Router>
   );
 }

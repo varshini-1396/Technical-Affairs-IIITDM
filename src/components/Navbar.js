@@ -119,7 +119,6 @@ const Navbar = () => {
             sx={{
               height: 40,
               mr: 2,
-              display: { xs: 'none', md: 'block' },
               filter: theme.palette.mode === 'dark' ? 'brightness(1.2)' : 'invert(1)',
             }}
           />
@@ -127,7 +126,6 @@ const Navbar = () => {
             variant="h6"
             component="div"
             sx={{
-              flexGrow: 1,
               display: { xs: 'none', md: 'block' },
               fontWeight: 700,
               color: theme.palette.mode === 'dark' ? 'white' : 'text.primary',
@@ -135,6 +133,8 @@ const Navbar = () => {
           >
             Technical Affairs
           </Typography>
+
+          <Box sx={{ flexGrow: 1 }} />
 
           <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gap: 2 }}>
             {navItems.map((item) => (
