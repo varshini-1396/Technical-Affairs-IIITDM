@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import { Box } from '@mui/material';
 import ScrollToTop from './components/ScrollToTop';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 // Import club pages
 import MarsClub from './pages/clubs/MarsClub';
@@ -64,6 +65,7 @@ function App() {
             <Footer />
           </Box>
         </ScrollToTop>
+        <ScrollToTopButton />
       </Router>
   );
 }

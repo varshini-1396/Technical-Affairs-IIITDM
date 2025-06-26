@@ -18,7 +18,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { useThemeContext } from '../context/ThemeContext';
-import { Link as RouterLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const navItems = [
   { name: 'Home', path: '/' },
@@ -64,13 +64,17 @@ const Navbar = () => {
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
             <ListItemButton
-              component={RouterLink}
+              component={NavLink}
               to={item.path}
               sx={{
                 textAlign: 'center',
                 color: theme.palette.mode === 'dark' ? 'white' : 'text.primary',
                 '&:hover': {
                   color: 'primary.main',
+                },
+                '&.active': {
+                  color: 'primary.main',
+                  fontWeight: 'bold',
                 },
               }}
             >
@@ -140,13 +144,17 @@ const Navbar = () => {
             {navItems.map((item) => (
               <Button
                 key={item.name}
-                component={RouterLink}
+                component={NavLink}
                 to={item.path}
                 color="inherit"
                 sx={{
                   color: theme.palette.mode === 'dark' ? 'white' : 'text.primary',
                   '&:hover': {
                     color: 'primary.main',
+                  },
+                  '&.active': {
+                    color: 'primary.main',
+                    fontWeight: 'bold',
                   },
                 }}
               >
