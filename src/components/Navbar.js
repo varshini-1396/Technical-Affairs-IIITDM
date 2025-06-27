@@ -126,7 +126,6 @@ const Navbar = () => {
             sx={{
               height: 40,
               mr: 2,
-              filter: theme.palette.mode === 'dark' ? 'brightness(1.2)' : 'invert(1)',
             }}
           />
           <Typography
