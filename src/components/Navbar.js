@@ -47,16 +47,19 @@ const Navbar = () => {
     setMobileOpen(!mobileOpen);
   };
 
+  const getLogoSrc = () => {
+    return theme.palette.mode === 'light' ? '/nav_logo_inv.png' : '/nav_logo.png';
+  };
+
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Box
         component="img"
-        src="/logo.png"
+        src={getLogoSrc()}
         alt="Technical Affairs Logo"
         sx={{
           height: 40,
           my: 2,
-          filter: theme.palette.mode === 'dark' ? 'brightness(1.2)' : 'invert(1)',
         }}
       />
       <Divider />
@@ -114,13 +117,12 @@ const Navbar = () => {
         <Toolbar sx={{ px: { xs: 2, md: 3 }}}>
           <Box
             component="img"
-            src="/logo.png"
+            src={getLogoSrc()}
             alt="Technical Affairs Logo"
             sx={{
               height: 40,
               mr: 2,
               display: { xs: 'none', md: 'block' },
-              filter: theme.palette.mode === 'dark' ? 'brightness(1.2)' : 'invert(1)',
             }}
           />
           <Typography
