@@ -3,6 +3,7 @@ import { Box, Typography, Button, Container } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   const theme = useTheme();
