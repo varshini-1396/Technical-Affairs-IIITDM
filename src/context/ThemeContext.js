@@ -19,7 +19,11 @@ export const ThemeProvider = ({ children }) => {
     // Check if we're in the browser environment
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('theme');
-      return savedTheme ? JSON.parse(savedTheme) : false;
+      try {
+        return savedTheme ? JSON.parse(savedTheme) : false;
+      } catch (err) {
+        return false;
+      }
     }
     return false;
   });
