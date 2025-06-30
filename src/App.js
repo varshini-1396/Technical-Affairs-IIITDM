@@ -27,6 +27,8 @@ import Astra from './pages/teams/Astra';
 import Revolt from './pages/teams/Revolt';
 import Shunya from './pages/teams/Shunya';
 import Tad from './pages/teams/Tad';
+import Council from './pages/Council';
+
 function App() {
   const { isDarkMode } = useThemeContext();
 
@@ -61,6 +63,7 @@ function App() {
               <Route path="/teams/tad" element={<Tad />} />
               <Route path="/achievements" element={<Achievements />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/council" element={<Council />} />
             </Routes>
             <Footer />
           </Box>

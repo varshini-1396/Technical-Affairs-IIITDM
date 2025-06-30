@@ -22,8 +22,7 @@ import { NavLink } from 'react-router-dom';
 
 const navItems = [
   { name: 'Home', path: '/' },
-  { name: 'Clubs', path: '/clubs' },
-  { name: 'Teams', path: '/teams' },
+  { name: 'Council', path: '/council' },
   { name: 'Achievements', path: '/achievements' },
   { name: 'Contact', path: '/contact' },
 ];

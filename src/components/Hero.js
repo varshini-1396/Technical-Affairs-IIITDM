@@ -71,6 +71,7 @@ const Hero = () => {
     <Box
       id="hero"
       sx={{
+        mt: { xs: 4, md: 6 },
         height: '100vh',
         position: 'relative',
         display: 'flex',
@@ -169,18 +170,10 @@ const Hero = () => {
           <Button
             variant="contained"
             size="large"
-            href="/clubs"
+            href="/council"
             sx={{ px: 4, py: 1.5, fontSize: '1.1rem' }}
           >
-            Explore Clubs
-          </Button>
-          <Button
-            variant="outlined"
-            size="large"
-            href="/teams"
-            sx={{ px: 4, py: 1.5, fontSize: '1.1rem' }}
-          >
-            Explore Teams
+            Explore Council
           </Button>
         </Box>
       </Container>
