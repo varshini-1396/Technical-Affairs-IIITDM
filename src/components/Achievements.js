@@ -254,7 +254,7 @@ const Achievements = () => {
             <Button
               variant="contained"
               size="large"
-              href="#"
+              href="/achievements"
               sx={{
                 px: 4,
                 py: 1.5,

@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Clubs from './pages/Clubs';
 import Teams from './pages/Teams';
 import Achievements from './pages/Achievements';
-import Contact from './pages/Contact';
+import Committee from './pages/Committee';
 import Footer from './components/Footer';
 import { Box } from '@mui/material';
 import ScrollToTop from './components/ScrollToTop';
@@ -62,7 +62,7 @@ function App() {
               <Route path="/teams/shunya" element={<Shunya />} />
               <Route path="/teams/tad" element={<Tad />} />
               <Route path="/achievements" element={<Achievements />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/committee" element={<Committee />} />
               <Route path="/council" element={<Council />} />
             </Routes>
             <Footer />

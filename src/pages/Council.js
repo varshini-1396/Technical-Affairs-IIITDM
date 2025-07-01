@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Container, Typography, Grid, Card, CardContent, CardMedia, Tabs, Tab, Button, useMediaQuery, Avatar } from '@mui/material';
+import { Box, Container, Typography, Grid, Card, Tabs, Tab, useMediaQuery } from '@mui/material';
 import { styled, useTheme } from '@mui/material/styles';
 
 // Example data (replace/add real data as needed)
@@ -37,19 +37,6 @@ const tabOptions = [
   { label: 'Communities', data: communities },
 ];
 
-// Styled card for consistency with Clubs page
-const StyledCard = styled(Card)(({ theme }) => ({
-  height: 350,
-  width: 320,
-  display: 'flex',
-  flexDirection: 'column',
-  transition: 'transform 0.2s ease-in-out',
-  '&:hover': {
-    transform: 'translateY(-8px)',
-    boxShadow: theme.shadows[8],
-  },
-}));
-
 const TeamCard = styled(Card)(({ theme }) => ({
   width: 160,
   height: 200,
@@ -79,8 +66,6 @@ const Council = () => {
   const [tab, setTab] = useState(0);
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.only('xs'));
-  const isSm = useMediaQuery(theme.breakpoints.only('sm'));
-  const isMdUp = useMediaQuery(theme.breakpoints.up('md'));
 
   const handleTabChange = (event, newValue) => {
     setTab(newValue);

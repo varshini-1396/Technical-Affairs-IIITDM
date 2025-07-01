@@ -116,7 +116,7 @@ const socialMediaLinks = {
   youtube: "https://www.youtube.com/@iiitdm.technical",
 };
 
-function Contact() {
+function Committee() {
   const cardStyle = {
     height: "100%",
     display: "flex",
@@ -414,4 +414,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Committee;

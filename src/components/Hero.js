@@ -175,6 +175,14 @@ const Hero = () => {
           >
             Explore Council
           </Button>
+          <Button
+            variant="outlined"
+            size="large"
+            href="/committee"
+            sx={{ px: 4, py: 1.5, fontSize: '1.1rem' }}
+          >
+            Explore Committee
+          </Button>
         </Box>
       </Container>
     </Box>
