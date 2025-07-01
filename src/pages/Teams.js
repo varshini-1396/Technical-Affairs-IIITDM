@@ -26,32 +26,27 @@ const StyledCard = styled(Card)(({ theme }) => ({
 
 const teamsData = [
   {
-    name: 'Nira',
-    description: 'AUV Society',
-    image: '/teams/nira/logo.png',
-    link: '/teams/nira',
-  },
-  {
-    name: 'Team Astra',
-    description: 'SAE Club',
-    image: '/teams/astra/logo.png',
-    link: '/teams/astra',
-  },
-  {
-    name: 'Revolt Racers',
-    description: 'SAE Club',
-    image: '/teams/revolt/logo.png',
-    link: '/teams/revolt',
-  },
-  {
-    name: 'Team Shunya',
-    description: 'Mars Club',
+    name: 'Mars (Shunya) - Mars Rover Students\' Club',
     image: '/teams/shunya/logo.png',
     link: '/teams/shunya',
   },
   {
-    name: 'Team TAD',
-    description: 'TAD Club',
+    name: 'AUV (Nira)',
+    image: '/teams/nira/logo.png',
+    link: '/teams/nira',
+  },
+  {
+    name: 'SAE e-Baja (ReVolt Racers)',
+    image: '/teams/revolt/logo.png',
+    link: '/teams/revolt',
+  },
+  {
+    name: 'SAE Aerothon (Astra)',
+    image: '/teams/astra/logo.png',
+    link: '/teams/astra',
+  },
+  {
+    name: 'TAD - Talpade Aero Design',
     image: '/teams/tad/logo.png',
     link: '/teams/tad',
   },
@@ -179,13 +174,6 @@ function Teams() {
                       }}
                     >
                       {team.name}
-                    </Typography>
-                    <Typography
-                      variant="subtitle2"
-                      color="text.secondary"
-                      sx={{ mb: 2 }}
-                    >
-                      {team.description}
                     </Typography>
                   </Box>
                   <Button

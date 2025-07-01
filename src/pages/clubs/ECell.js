@@ -5,18 +5,17 @@ import {
   Typography,
   Grid,
   Card,
+  CardMedia,
   Avatar,
   IconButton,
-  CardMedia,
   Button,
 } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { styled, useTheme } from '@mui/material/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { useTheme } from '@mui/material/styles';
 
 // Styled components
 const TeamMemberCard = styled(Card)(({ theme }) => ({
@@ -32,9 +31,9 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
 }));
 
 const clubData = {
-  name: 'Mars Club',
-  logo: '/clubs/mars/logo.png',
-  description: `The Mars Club at IIITDM Kancheepuram is dedicated to fostering innovation and research in space technology and exploration. We focus on developing skills in rocketry, satellite systems, and space science. Our members work on various projects including rocket design, payload development, and participate in national-level competitions. The club organizes workshops, seminars, and hands-on sessions to enhance practical knowledge in aerospace engineering and related fields.`,
+  name: 'E-Cell',
+  logo: '/clubs/ecell/logo.png',
+  description: `The Entrepreneurship Cell (E-Cell) at IIITDM Kancheepuram fosters entrepreneurial spirit among students. E-Cell conducts workshops, speaker sessions, and startup events to encourage innovation and support budding entrepreneurs on campus.`,
   core: [
     {
       name: 'John Doe',
@@ -43,8 +42,8 @@ const clubData = {
       email: 'john.doe@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/johndoe',
       year: 'B.Tech 3rd Year',
-      department: 'Mechanical Engineering',
-      roll: 'me23b1001'
+      department: 'Computer Science Engineering',
+      roll: 'cs23b1001'
     },
     {
       name: 'Jane Smith',
@@ -53,8 +52,8 @@ const clubData = {
       email: 'jane.smith@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/janesmith',
       year: 'B.Tech 3rd Year',
-      department: 'Electronics Engineering',
-      roll: 'ec23b1002'
+      department: 'Computer Science Engineering',
+      roll: 'cs23b1002'
     }
   ],
   team: [
@@ -65,8 +64,8 @@ const clubData = {
       email: 'alice.johnson@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/alicejohnson',
       year: 'B.Tech 2nd Year',
-      department: 'Mechanical Engineering',
-      roll: 'me23b1003'
+      department: 'Computer Science Engineering',
+      roll: 'cs23b1003'
     },
     {
       name: 'Bob Wilson',
@@ -75,24 +74,23 @@ const clubData = {
       email: 'bob.wilson@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/bobwilson',
       year: 'B.Tech 2nd Year',
-      department: 'Electronics Engineering',
-      roll: 'ec23b1004'
+      department: 'Computer Science Engineering'
     }
   ],
   links: {
-    website: 'https://mars.iiitdm.ac.in',
-    instagram: 'https://instagram.com/mars_iiitdm',
-    github: 'https://github.com/mars-iiitdm'
+    website: '#',
+    instagram: '#',
+    github: '#'
   }
 };
 
-function MarsClub() {
+function ECell() {
   const theme = useTheme();
   return (
     <Box sx={{ py: 8, pt: { xs: 12, sm: 14, md: 16 }, bgcolor: 'background.default' }}>
       <Container maxWidth="lg">
         {/* Header Section with Logo and Title */}
-        <Grid container spacing={4} alignItems="center" sx={{ mb: 8, justifyContent: { xs: 'center', md: 'flex-start' } }}>
+        <Grid container spacing={4} alignItems="center" sx={{ mb: 6, justifyContent: { xs: 'center', md: 'flex-start' } }}>
           {/* Logo on the left */}
           <Grid item xs={12} md={4}>
             <Box sx={{ 
@@ -338,7 +336,7 @@ function MarsClub() {
               }}
             >
               <TeamMemberCard sx={{ 
-                width: '100%',
+                width: '100%', 
                 minWidth: 0,
                 maxWidth: { xs: '140px', sm: '180px', md: '250px' },
                 flexGrow: 1
@@ -359,7 +357,7 @@ function MarsClub() {
                   sx={{
                     fontSize: { xs: '0.8rem', sm: '0.9rem', md: '1.1rem' },
                     mb: { xs: 0.5, sm: 0.75, md: 0.75 },
-                    wordBreak: 'break-word',
+                    wordBreak: 'break-word', 
                   }}
                 >
                   {member.name}
@@ -371,7 +369,7 @@ function MarsClub() {
                   sx={{
                     fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.9rem' },
                     mb: { xs: 0.5, sm: 0.5, md: 0.75 },
-                    wordBreak: 'break-word',
+                    wordBreak: 'break-word', 
                   }}
                 >
                   {member.role}
@@ -383,7 +381,7 @@ function MarsClub() {
                   sx={{
                     fontSize: { xs: '0.6rem', sm: '0.7rem', md: '0.8rem' },
                     mb: { xs: 0.25, sm: 0.25, md: 0.5 },
-                    wordBreak: 'break-word',
+                    wordBreak: 'break-word', 
                   }}
                 >
                   {member.roll}
@@ -392,8 +390,8 @@ function MarsClub() {
                   mt: { xs: 0.75, sm: 1, md: 1.5 },
                   display: 'flex',
                   gap: { xs: 0.4, sm: 0.6, md: 0.8 },
-                  flexWrap: 'wrap',
-                  justifyContent: 'center',
+                  flexWrap: 'wrap', 
+                  justifyContent: 'center', 
                 }}>
                   <IconButton
                     component="a"
@@ -472,4 +470,4 @@ function MarsClub() {
   );
 }
 
-export default MarsClub; 
+export default ECell; 

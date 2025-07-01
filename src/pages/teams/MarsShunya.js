@@ -106,30 +106,31 @@ const EventYear = styled(Typography)(({ theme }) => ({
 }));
 
 const teamInfo = {
-  name: 'Technical Affairs Department',
-  club: 'Technical Affairs',
-  logo: '/teams/tad/logo.png',
-  description: `The Technical Affairs Department (TAD) is a crucial administrative body that oversees and manages all technical activities and events at our institute. 
-  We are responsible for organizing technical workshops, seminars, and competitions that enhance the technical skills and knowledge of our students.
+  name: "Mars (Shunya) - Mars Rover Students' Club",
+  club: 'MARS Club',
+  logo: '/teams/shunya/logo.png',
+  description: `Team Shunya is a Formula Student Electric (FSE) team under MARS Club that represents our institute in the prestigious Formula Student Electric competition. 
+  The team designs, builds, and races an electric formula-style race car, competing against teams from around the world.
   
-  Our department works closely with various technical clubs and teams to ensure smooth coordination of events and activities. 
-  We focus on fostering innovation, technical excellence, and professional development among students through various initiatives and programs.`,
+  Our team focuses on developing innovative solutions in electric vehicle technology, combining expertise in mechanical design, 
+  electrical systems, and vehicle dynamics. We participate in prestigious competitions like Formula Student Electric (FSE) 
+  and Formula Bharat, showcasing our engineering excellence and innovation in sustainable mobility.`,
   achievements: [
     {
-      title: 'Technical Symposium',
-      description: 'Successfully organized the annual technical symposium with 1000+ participants',
+      title: 'Formula Student Electric (FSE)',
+      description: 'Top 10 finish in the international competition',
       year: '2023',
       highlight: true
     },
     {
-      title: 'Workshop Series',
-      description: 'Conducted 20+ technical workshops across various domains',
+      title: 'Formula Bharat',
+      description: 'Best Engineering Design Award',
       year: '2023',
       highlight: false
     },
     {
-      title: 'Industry Connect',
-      description: 'Facilitated 15+ industry expert talks and networking sessions',
+      title: 'Formula Student India',
+      description: 'Best Business Plan Presentation',
       year: '2023',
       highlight: true
     }
@@ -138,27 +139,27 @@ const teamInfo = {
     {
       name: 'Team Lead Name',
       role: 'Team Lead',
-      image: '/teams/astra/members/lead.jpg',
+      image: '/teams/shunya/members/lead.jpg',
       email: 'team.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/team-lead',
       year: 'B.Tech 3rd Year',
-      department: 'Aerospace Engineering',
-      roll: 'ae23b1001'
+      department: 'Mechanical Engineering',
+      roll: 'me23b1001'
     },
     {
       name: 'Technical Lead Name',
       role: 'Technical Lead',
-      image: '/teams/astra/members/tech-lead.jpg',
+      image: '/teams/shunya/members/tech-lead.jpg',
       email: 'tech.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/tech-lead',
       year: 'B.Tech 3rd Year',
-      department: 'Electronics',
-      roll: 'ec22b1002'
+      department: 'Electrical Engineering',
+      roll: 'ee23b1002'
     },
   ],
 };
 
-function Tad() {
+function MarsShunya() {
   const theme = useTheme();
 
   return (
@@ -433,4 +434,4 @@ function Tad() {
   );
 }
 
-export default Tad; 
+export default MarsShunya; 

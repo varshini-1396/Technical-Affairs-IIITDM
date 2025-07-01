@@ -106,31 +106,31 @@ const EventYear = styled(Typography)(({ theme }) => ({
 }));
 
 const teamInfo = {
-  name: 'Team Shunya',
-  club: 'MARS Club',
-  logo: '/teams/shunya/logo.png',
-  description: `Team Shunya is a Formula Student Electric (FSE) team under MARS Club that represents our institute in the prestigious Formula Student Electric competition. 
-  The team designs, builds, and races an electric formula-style race car, competing against teams from around the world.
+  name: 'SAE Aerothon (Astra)',
+  club: 'SAE Club',
+  logo: '/teams/astra/logo.png',
+  description: `Team Astra is an Aero Design team under SAE Club that represents our institute in the prestigious SAE Aero Design competition. 
+  The team designs, builds, and flies radio-controlled aircraft capable of carrying payload and performing specific missions.
   
-  Our team focuses on developing innovative solutions in electric vehicle technology, combining expertise in mechanical design, 
-  electrical systems, and vehicle dynamics. We participate in prestigious competitions like Formula Student Electric (FSE) 
-  and Formula Bharat, showcasing our engineering excellence and innovation in sustainable mobility.`,
+  Our team focuses on developing innovative solutions in aerospace engineering, combining expertise in aerodynamics, 
+  structural design, and flight control. We participate in prestigious competitions like SAE Aero Design 
+  and SAE Collegiate Design Series, showcasing our engineering excellence and innovation in aerial mobility.`,
   achievements: [
     {
-      title: 'Formula Student Electric (FSE)',
-      description: 'Top 10 finish in the international competition',
+      title: 'Spaceport America Cup',
+      description: 'Top 5 finish in the international rocket competition',
       year: '2023',
       highlight: true
     },
     {
-      title: 'Formula Bharat',
-      description: 'Best Engineering Design Award',
+      title: 'International Rocket Engineering Competition',
+      description: 'Best Technical Innovation Award',
       year: '2023',
       highlight: false
     },
     {
-      title: 'Formula Student India',
-      description: 'Best Business Plan Presentation',
+      title: 'Drone Racing Championship',
+      description: 'National Champions in the UAV racing category',
       year: '2023',
       highlight: true
     }
@@ -139,27 +139,27 @@ const teamInfo = {
     {
       name: 'Team Lead Name',
       role: 'Team Lead',
-      image: '/teams/shunya/members/lead.jpg',
+      image: '/teams/astra/members/lead.jpg',
       email: 'team.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/team-lead',
       year: 'B.Tech 3rd Year',
-      department: 'Mechanical Engineering',
-      roll: 'me23b1001'
+      department: 'Aerospace Engineering',
+      roll: 'ae23b1001'
     },
     {
       name: 'Technical Lead Name',
       role: 'Technical Lead',
-      image: '/teams/shunya/members/tech-lead.jpg',
+      image: '/teams/astra/members/tech-lead.jpg',
       email: 'tech.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/tech-lead',
       year: 'B.Tech 3rd Year',
-      department: 'Electrical Engineering',
-      roll: 'ee23b1002'
+      department: 'Mechanical Engineering',
+      roll: 'me23b1002'
     },
   ],
 };
 
-function Shunya() {
+function SAEAerothon() {
   const theme = useTheme();
 
   return (
@@ -434,4 +434,4 @@ function Shunya() {
   );
 }
 
-export default Shunya; 
+export default SAEAerothon; 

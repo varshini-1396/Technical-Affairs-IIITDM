@@ -26,39 +26,19 @@ const StyledCard = styled(Card)(({ theme }) => ({
 
 const clubsData = [
   {
-    name: 'Mars Club',
-    image: '/clubs/mars/logo.png',
-    link: '/clubs/mars',
-  },
-  {
     name: 'CS Club',
     image: '/clubs/csclub/logo.png',
     link: '/clubs/cs',
   },
   {
-    name: 'Developers Club',
+    name: "Developer's Club",
     image: '/clubs/devclub/logo.jpg',
     link: '/clubs/dev',
-  },
-  {
-    name: 'AUV Society',
-    image: '/clubs/auv/logo.png',
-    link: '/clubs/auv',
-  },
-  {
-    name: 'TAD',
-    image: '/clubs/tad/logo.jpg',
-    link: '/clubs/tad',
   },
   {
     name: 'Robotics Club',
     image: '/clubs/robotics/logo.png',
     link: '/clubs/robotics',
-  },
-  {
-    name: 'SAE Collegiate<br />Club',
-    image: '/clubs/sae-collegiate/logo.png',
-    link: '/clubs/sae',
   },
 ];
 

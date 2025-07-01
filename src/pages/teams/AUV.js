@@ -8,6 +8,7 @@ import {
   Avatar,
   IconButton,
   CardMedia,
+  Button,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -106,30 +107,30 @@ const EventYear = styled(Typography)(({ theme }) => ({
 }));
 
 const teamInfo = {
-  name: 'Revolt Racers',
-  club: 'SAE Club',
-  logo: '/teams/revolt/logo.png',
-  description: `Revolt Racers is a Baja SAE team under SAE Club that represents our institute in the prestigious Baja SAE competition. 
-  The team designs, builds, and races an off-road vehicle capable of handling rough terrain and challenging obstacles.
+  name: 'AUV (Nira)',
+  club: 'AUV Society',
+  logo: '/teams/nira/logo.png',
+  description: `Team Nira is a competitive autonomous underwater vehicle (AUV) team that represents our institute in various national and international competitions. 
+  The team designs, builds, and programs autonomous underwater vehicles capable of performing complex tasks underwater without human intervention.
   
-  Our team focuses on developing robust solutions in off-road vehicle technology, combining expertise in mechanical design, 
-  suspension systems, and vehicle dynamics. We participate in prestigious competitions like Baja SAE India 
-  and SAE Collegiate Design Series, showcasing our engineering excellence and innovation in off-road mobility.`,
+  Our team focuses on developing cutting-edge solutions in the field of underwater robotics, combining expertise in mechanical design, 
+  electronics, computer vision, and control systems. We participate in prestigious competitions like SAUVC (Singapore AUV Challenge) 
+  and NIOT-SAVe (National Institute of Ocean Technology - Student Autonomous Vehicle competition).`,
   achievements: [
     {
-      title: 'ABU Robocon',
-      description: 'National Finalists in the prestigious robotics competition',
+      title: 'Singapore AUV Challenge (SAUVC)',
+      description: 'Secured 1st position in the prestigious international competition',
       year: '2023',
       highlight: true
     },
     {
-      title: 'e-Yantra Robotics Competition',
-      description: 'Best Innovation Award',
+      title: 'NIOT-SAVe',
+      description: 'Best Design Award in the national competition',
       year: '2023',
       highlight: false
     },
     {
-      title: 'International Robotics Challenge',
+      title: 'International AUV Competition',
       description: 'Represented India at the international finals',
       year: '2023',
       highlight: true
@@ -139,7 +140,7 @@ const teamInfo = {
     {
       name: 'Team Lead Name',
       role: 'Team Lead',
-      image: '/teams/revolt/members/lead.jpg',
+      image: '/teams/nira/members/lead.jpg',
       email: 'team.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/team-lead',
       year: 'B.Tech 3rd Year',
@@ -149,17 +150,17 @@ const teamInfo = {
     {
       name: 'Technical Lead Name',
       role: 'Technical Lead',
-      image: '/teams/revolt/members/tech-lead.jpg',
+      image: '/teams/nira/members/tech-lead.jpg',
       email: 'tech.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/tech-lead',
       year: 'B.Tech 3rd Year',
-      department: 'Electronics Engineering',
-      roll: 'ec23b1002'
+      department: 'Computer Science',
+      roll: 'cs23b1002'
     },
   ],
 };
 
-function Revolt() {
+function AUV() {
   const theme = useTheme();
 
   return (
@@ -434,4 +435,4 @@ function Revolt() {
   );
 }
 
-export default Revolt; 
+export default AUV; 

@@ -8,7 +8,6 @@ import {
   Avatar,
   IconButton,
   CardMedia,
-  Button,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -107,31 +106,30 @@ const EventYear = styled(Typography)(({ theme }) => ({
 }));
 
 const teamInfo = {
-  name: 'Team Nira',
-  club: 'AUV Society',
-  logo: '/teams/nira/logo.png',
-  description: `Team Nira is a competitive autonomous underwater vehicle (AUV) team that represents our institute in various national and international competitions. 
-  The team designs, builds, and programs autonomous underwater vehicles capable of performing complex tasks underwater without human intervention.
+  name: 'TAD - Talpade Aero Design',
+  club: 'Technical Affairs',
+  logo: '/teams/tad/logo.png',
+  description: `The Technical Affairs Department (TAD) is a crucial administrative body that oversees and manages all technical activities and events at our institute. 
+  We are responsible for organizing technical workshops, seminars, and competitions that enhance the technical skills and knowledge of our students.
   
-  Our team focuses on developing cutting-edge solutions in the field of underwater robotics, combining expertise in mechanical design, 
-  electronics, computer vision, and control systems. We participate in prestigious competitions like SAUVC (Singapore AUV Challenge) 
-  and NIOT-SAVe (National Institute of Ocean Technology - Student Autonomous Vehicle competition).`,
+  Our department works closely with various technical clubs and teams to ensure smooth coordination of events and activities. 
+  We focus on fostering innovation, technical excellence, and professional development among students through various initiatives and programs.`,
   achievements: [
     {
-      title: 'Singapore AUV Challenge (SAUVC)',
-      description: 'Secured 1st position in the prestigious international competition',
+      title: 'Technical Symposium',
+      description: 'Successfully organized the annual technical symposium with 1000+ participants',
       year: '2023',
       highlight: true
     },
     {
-      title: 'NIOT-SAVe',
-      description: 'Best Design Award in the national competition',
+      title: 'Workshop Series',
+      description: 'Conducted 20+ technical workshops across various domains',
       year: '2023',
       highlight: false
     },
     {
-      title: 'International AUV Competition',
-      description: 'Represented India at the international finals',
+      title: 'Industry Connect',
+      description: 'Facilitated 15+ industry expert talks and networking sessions',
       year: '2023',
       highlight: true
     }
@@ -140,27 +138,27 @@ const teamInfo = {
     {
       name: 'Team Lead Name',
       role: 'Team Lead',
-      image: '/teams/nira/members/lead.jpg',
+      image: '/teams/astra/members/lead.jpg',
       email: 'team.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/team-lead',
       year: 'B.Tech 3rd Year',
-      department: 'Mechanical Engineering',
-      roll: 'me23b1001'
+      department: 'Aerospace Engineering',
+      roll: 'ae23b1001'
     },
     {
       name: 'Technical Lead Name',
       role: 'Technical Lead',
-      image: '/teams/nira/members/tech-lead.jpg',
+      image: '/teams/astra/members/tech-lead.jpg',
       email: 'tech.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/tech-lead',
       year: 'B.Tech 3rd Year',
-      department: 'Computer Science',
-      roll: 'cs23b1002'
+      department: 'Electronics',
+      roll: 'ec22b1002'
     },
   ],
 };
 
-function Nira() {
+function TalpadeAeroDesign() {
   const theme = useTheme();
 
   return (
@@ -435,4 +433,4 @@ function Nira() {
   );
 }
 
-export default Nira; 
+export default TalpadeAeroDesign; 

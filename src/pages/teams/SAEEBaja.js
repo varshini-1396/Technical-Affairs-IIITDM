@@ -106,31 +106,31 @@ const EventYear = styled(Typography)(({ theme }) => ({
 }));
 
 const teamInfo = {
-  name: 'Team Astra',
+  name: 'SAE e-Baja (ReVolt Racers)',
   club: 'SAE Club',
-  logo: '/teams/astra/logo.png',
-  description: `Team Astra is an Aero Design team under SAE Club that represents our institute in the prestigious SAE Aero Design competition. 
-  The team designs, builds, and flies radio-controlled aircraft capable of carrying payload and performing specific missions.
+  logo: '/teams/revolt/logo.png',
+  description: `Revolt Racers is a Baja SAE team under SAE Club that represents our institute in the prestigious Baja SAE competition. 
+  The team designs, builds, and races an off-road vehicle capable of handling rough terrain and challenging obstacles.
   
-  Our team focuses on developing innovative solutions in aerospace engineering, combining expertise in aerodynamics, 
-  structural design, and flight control. We participate in prestigious competitions like SAE Aero Design 
-  and SAE Collegiate Design Series, showcasing our engineering excellence and innovation in aerial mobility.`,
+  Our team focuses on developing robust solutions in off-road vehicle technology, combining expertise in mechanical design, 
+  suspension systems, and vehicle dynamics. We participate in prestigious competitions like Baja SAE India 
+  and SAE Collegiate Design Series, showcasing our engineering excellence and innovation in off-road mobility.`,
   achievements: [
     {
-      title: 'Spaceport America Cup',
-      description: 'Top 5 finish in the international rocket competition',
+      title: 'ABU Robocon',
+      description: 'National Finalists in the prestigious robotics competition',
       year: '2023',
       highlight: true
     },
     {
-      title: 'International Rocket Engineering Competition',
-      description: 'Best Technical Innovation Award',
+      title: 'e-Yantra Robotics Competition',
+      description: 'Best Innovation Award',
       year: '2023',
       highlight: false
     },
     {
-      title: 'Drone Racing Championship',
-      description: 'National Champions in the UAV racing category',
+      title: 'International Robotics Challenge',
+      description: 'Represented India at the international finals',
       year: '2023',
       highlight: true
     }
@@ -139,27 +139,27 @@ const teamInfo = {
     {
       name: 'Team Lead Name',
       role: 'Team Lead',
-      image: '/teams/astra/members/lead.jpg',
+      image: '/teams/revolt/members/lead.jpg',
       email: 'team.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/team-lead',
       year: 'B.Tech 3rd Year',
-      department: 'Aerospace Engineering',
-      roll: 'ae23b1001'
+      department: 'Mechanical Engineering',
+      roll: 'me23b1001'
     },
     {
       name: 'Technical Lead Name',
       role: 'Technical Lead',
-      image: '/teams/astra/members/tech-lead.jpg',
+      image: '/teams/revolt/members/tech-lead.jpg',
       email: 'tech.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/tech-lead',
       year: 'B.Tech 3rd Year',
-      department: 'Mechanical Engineering',
-      roll: 'me23b1002'
+      department: 'Electronics Engineering',
+      roll: 'ec23b1002'
     },
   ],
 };
 
-function Astra() {
+function SAEEBaja() {
   const theme = useTheme();
 
   return (
@@ -434,4 +434,4 @@ function Astra() {
   );
 }
 
-export default Astra; 
+export default SAEEBaja; 

@@ -10,13 +10,12 @@ import {
   IconButton,
   Button,
 } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { styled, useTheme } from '@mui/material/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { useTheme } from '@mui/material/styles';
 
 // Styled components
 const TeamMemberCard = styled(Card)(({ theme }) => ({
@@ -32,9 +31,9 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
 }));
 
 const clubData = {
-  name: 'Technical Arts and Design (TAD)',
-  logo: '/clubs/tad/logo.jpg',
-  description: `The Technical Arts and Design (TAD) Club at IIITDM Kancheepuram bridges the gap between technology and creativity. We focus on digital art, graphic design, UI/UX design, and technical visualization. Our members work on various projects including poster design, website interfaces, 3D modeling, and digital art. The club organizes workshops on design tools, conducts design competitions, and collaborates with other technical clubs to enhance their visual communication.`,
+  name: 'System Coding Club (SCC)',
+  logo: '/clubs/scc/logo.png',
+  description: `The System Coding Club (SCC) at IIITDM Kancheepuram is dedicated to promoting system-level programming, open-source contributions, and competitive coding. SCC organizes workshops, coding contests, and collaborative projects to enhance students' coding skills and foster a strong coding culture on campus.`,
   core: [
     {
       name: 'John Doe',
@@ -43,16 +42,18 @@ const clubData = {
       email: 'john.doe@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/johndoe',
       year: 'B.Tech 3rd Year',
-      department: 'Design Engineering'
+      department: 'Computer Science Engineering',
+      roll: 'cs23b1001'
     },
     {
       name: 'Jane Smith',
-      role: 'Creative Head',
+      role: 'Technical Head',
       image: '/images/team/jane-smith.jpg',
       email: 'jane.smith@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/janesmith',
       year: 'B.Tech 3rd Year',
-      department: 'Design Engineering'
+      department: 'Computer Science Engineering',
+      roll: 'cs23b1002'
     }
   ],
   team: [
@@ -63,7 +64,8 @@ const clubData = {
       email: 'alice.johnson@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/alicejohnson',
       year: 'B.Tech 2nd Year',
-      department: 'Design Engineering'
+      department: 'Computer Science Engineering',
+      roll: 'cs23b1003'
     },
     {
       name: 'Bob Wilson',
@@ -72,17 +74,17 @@ const clubData = {
       email: 'bob.wilson@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/bobwilson',
       year: 'B.Tech 2nd Year',
-      department: 'Design Engineering'
+      department: 'Computer Science Engineering'
     }
   ],
   links: {
-    website: 'https://tad.iiitdm.ac.in',
-    instagram: 'https://instagram.com/tad_iiitdm',
-    github: 'https://github.com/tad-iiitdm'
+    website: 'https://dev.iiitdm.ac.in',
+    instagram: 'https://instagram.com/dev_iiitdm',
+    github: 'https://github.com/dev-iiitdm'
   }
 };
 
-function TAD() {
+function SCC() {
   const theme = useTheme();
   return (
     <Box sx={{ py: 8, pt: { xs: 12, sm: 14, md: 16 }, bgcolor: 'background.default' }}>
@@ -95,9 +97,9 @@ function TAD() {
               display: 'flex', 
               justifyContent: { xs: 'center', md: 'flex-start' },
               alignItems: 'center',
-              pt: { md: 4 }, // Top padding on laptops
-              pb: { xs: 2, md: 0 }, // Bottom padding on mobile
-              pr: { md: 4 }, // Right padding on laptops
+              pt: { md: 4 },
+              pb: { xs: 2, md: 0 },
+              pr: { md: 4 },
               height: '100%'
             }}>
               <CardMedia
@@ -121,6 +123,7 @@ function TAD() {
               display: 'flex', 
               flexDirection: 'column',
               alignItems: { xs: 'center', md: 'center' },
+              textAlign: { xs: 'center', md: 'center' }
             }}>
               <Typography
                 variant="h2"
@@ -258,19 +261,7 @@ function TAD() {
                      wordBreak: 'break-word',
                   }}
                 >
-                  {member.year}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  gutterBottom
-                  sx={{
-                    fontSize: { xs: '0.6rem', sm: '0.7rem', md: '0.8rem' },
-                    mb: { xs: 0.25, sm: 0.25, md: 0.5 },
-                     wordBreak: 'break-word',
-                  }}
-                >
-                  {member.department}
+                  {member.roll}
                 </Typography>
                 <Box sx={{ 
                   mt: { xs: 0.75, sm: 1, md: 1.5 },
@@ -393,7 +384,7 @@ function TAD() {
                     wordBreak: 'break-word', 
                   }}
                 >
-                  {member.year}
+                  {member.roll}
                 </Typography>
                 <Box sx={{ 
                   mt: { xs: 0.75, sm: 1, md: 1.5 },
@@ -479,4 +470,4 @@ function TAD() {
   );
 }
 
-export default TAD; 
+export default SCC; 

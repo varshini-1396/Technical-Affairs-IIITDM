@@ -13,21 +13,28 @@ import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopButton from './components/ScrollToTopButton';
 
 // Import club pages
-import MarsClub from './pages/clubs/MarsClub';
 import CSClub from './pages/clubs/CSClub';
 import DevClub from './pages/clubs/DevClub';
-import AUVSociety from './pages/clubs/AUVSociety';
-import TAD from './pages/clubs/TAD';
 import RoboticsClub from './pages/clubs/RoboticsClub';
-import SAECollegiateClub from './pages/clubs/SAECollegiateClub';
+import SCC from './pages/clubs/SCC';
+import ECell from './pages/clubs/ECell';
 
 // Import team pages
-import Nira from './pages/teams/Nira';
-import Astra from './pages/teams/Astra';
-import Revolt from './pages/teams/Revolt';
-import Shunya from './pages/teams/Shunya';
-import Tad from './pages/teams/Tad';
+import MarsShunya from './pages/teams/MarsShunya';
+import AUV from './pages/teams/AUV';
+import SAEEBaja from './pages/teams/SAEEBaja';
+import SAEAerothon from './pages/teams/SAEAerothon';
+import TalpadeAeroDesign from './pages/teams/TalpadeAeroDesign';
 import Council from './pages/Council';
+
+// Import community pages
+import Cybersecurity from './pages/communities/Cybersecurity';
+import GameDevelopers from './pages/communities/GameDevelopers';
+
+// Import society pages
+import IEEE from './pages/societies/IEEE';
+import OpticaStudentChapter from './pages/societies/OpticaStudentChapter';
+import ASMEStudentSection from './pages/societies/ASMEStudentSection';
 
 function App() {
   const { isDarkMode } = useThemeContext();
@@ -48,22 +55,25 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/clubs" element={<Clubs />} />
-              <Route path="/clubs/mars" element={<MarsClub />} />
               <Route path="/clubs/cs" element={<CSClub />} />
               <Route path="/clubs/dev" element={<DevClub />} />
-              <Route path="/clubs/auv" element={<AUVSociety />} />
-              <Route path="/clubs/tad" element={<TAD />} />
               <Route path="/clubs/robotics" element={<RoboticsClub />} />
-              <Route path="/clubs/sae" element={<SAECollegiateClub />} />
+              <Route path="/clubs/scc" element={<SCC />} />
+              <Route path="/clubs/ecell" element={<ECell />} />
               <Route path="/teams" element={<Teams />} />
-              <Route path="/teams/nira" element={<Nira />} />
-              <Route path="/teams/astra" element={<Astra />} />
-              <Route path="/teams/revolt" element={<Revolt />} />
-              <Route path="/teams/shunya" element={<Shunya />} />
-              <Route path="/teams/tad" element={<Tad />} />
+              <Route path="/teams/nira" element={<AUV />} />
+              <Route path="/teams/astra" element={<SAEAerothon />} />
+              <Route path="/teams/revolt" element={<SAEEBaja />} />
+              <Route path="/teams/shunya" element={<MarsShunya />} />
+              <Route path="/teams/tad" element={<TalpadeAeroDesign />} />
               <Route path="/achievements" element={<Achievements />} />
               <Route path="/committee" element={<Committee />} />
               <Route path="/council" element={<Council />} />
+              <Route path="/communities/cybersecurity" element={<Cybersecurity />} />
+              <Route path="/communities/gamedevelopers" element={<GameDevelopers />} />
+              <Route path="/societies/ieee" element={<IEEE />} />
+              <Route path="/societies/optica" element={<OpticaStudentChapter />} />
+              <Route path="/societies/asme" element={<ASMEStudentSection />} />
             </Routes>
             <Footer />
           </Box>
