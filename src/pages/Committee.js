@@ -17,6 +17,7 @@ import {
   YouTube,
   Email,
 } from "@mui/icons-material";
+import { useNavigate } from 'react-router-dom';
 
 // Team member data
 const teamData = {
@@ -117,6 +118,7 @@ const socialMediaLinks = {
 };
 
 function Committee() {
+  const navigate = useNavigate();
   const cardStyle = {
     height: "100%",
     display: "flex",
@@ -291,7 +293,7 @@ function Committee() {
         </Grid>
       </Box>
 
-      {/* Core Team Section */}
+      {/* Core Team Navigation Section */}
       <Box sx={{ mb: 6 }}>
         <Typography
           variant="h4"
@@ -300,62 +302,27 @@ function Committee() {
           gutterBottom
           sx={titleStyle}
         >
-          Core Team
+          Core Teams
         </Typography>
-        <Grid container spacing={1} justifyContent="center">
-          {teamData.coreTeam.map((member, index) => (
-            <Grid
-              item
-              xs={6}
-              sx={{ display: "flex", justifyContent: "center", width: "140px" }}
-              key={index}
-            >
-              <Card sx={cardStyle}>
-                <CardMedia
-                  component="img"
-                  image={member.image}
-                  alt={member.name}
-                  sx={imageStyle}
+        <Grid container spacing={2} justifyContent="center">
+          {[
+            { label: 'Tech Development', path: '/committee/tech-development' },
+            { label: 'Management', path: '/committee/management' },
+            { label: 'Innovation', path: '/committee/innovation' },
+            { label: 'Social Outreach', path: '/committee/social-outreach' },
+            { label: 'Media and Marketing', path: '/committee/media-and-marketing' },
+          ].map((team, idx) => (
+            <Grid item xs={12} sm={6} md={2} key={team.label} sx={{ display: 'flex', justifyContent: 'center' }}>
+              <Card
+                sx={{ cursor: 'pointer', minWidth: 180, minHeight: 160, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', p: 2, boxShadow: 3, transition: 'transform 0.2s', '&:hover': { transform: 'scale(1.05)' } }}
+                onClick={() => navigate(team.path)}
+              >
+                <img
+                  src="https://via.placeholder.com/80x80.png?text=Logo"
+                  alt={team.label + ' logo'}
+                  style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover', marginBottom: 12 }}
                 />
-                <CardContent sx={{ py: 1, px: 1 }}>
-                  <Box sx={{ minHeight: "5em" }}>
-                    <Typography variant="h6" component="h3" sx={nameStyle}>
-                      {member.name}
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="text.secondary"
-                      sx={descriptionStyle}
-                    >
-                      {member.position}
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      mt: 1,
-                    }}
-                  >
-                    <IconButton
-                      size="small"
-                      href={`mailto:${member.email}`}
-                      color="primary"
-                    >
-                      <Email fontSize="small" />
-                    </IconButton>
-                    <IconButton
-                      size="small"
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      color="primary"
-                    >
-                      <LinkedIn fontSize="small" />
-                    </IconButton>
-                  </Box>
-                </CardContent>
+                <Typography variant="h6" align="center">{team.label}</Typography>
               </Card>
             </Grid>
           ))}

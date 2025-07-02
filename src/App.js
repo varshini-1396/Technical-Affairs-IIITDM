@@ -3,8 +3,6 @@ import { useThemeContext } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import Clubs from './pages/Clubs';
-import Teams from './pages/Teams';
 import Achievements from './pages/Achievements';
 import Committee from './pages/Committee';
 import Footer from './components/Footer';
@@ -36,6 +34,13 @@ import IEEE from './pages/societies/IEEE';
 import OpticaStudentChapter from './pages/societies/OpticaStudentChapter';
 import ASMEStudentSection from './pages/societies/ASMEStudentSection';
 
+// Import tech-affairs-team pages
+import TechDevelopmentCore from './pages/tech-affairs-team/TechDevelopment';
+import ManagementCore from './pages/tech-affairs-team/Management';
+import InnovationCore from './pages/tech-affairs-team/Innovation';
+import SocialOutreachCore from './pages/tech-affairs-team/SocialOutreach';
+import MediaAndMarketingCore from './pages/tech-affairs-team/MediaAndMarketing';
+
 function App() {
   const { isDarkMode } = useThemeContext();
 
@@ -54,13 +59,11 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/clubs" element={<Clubs />} />
               <Route path="/clubs/cs" element={<CSClub />} />
               <Route path="/clubs/dev" element={<DevClub />} />
               <Route path="/clubs/robotics" element={<RoboticsClub />} />
               <Route path="/clubs/scc" element={<SCC />} />
               <Route path="/clubs/ecell" element={<ECell />} />
-              <Route path="/teams" element={<Teams />} />
               <Route path="/teams/nira" element={<AUV />} />
               <Route path="/teams/astra" element={<SAEAerothon />} />
               <Route path="/teams/revolt" element={<SAEEBaja />} />
@@ -74,6 +77,11 @@ function App() {
               <Route path="/societies/ieee" element={<IEEE />} />
               <Route path="/societies/optica" element={<OpticaStudentChapter />} />
               <Route path="/societies/asme" element={<ASMEStudentSection />} />
+              <Route path="/committee/tech-development" element={<TechDevelopmentCore />} />
+              <Route path="/committee/management" element={<ManagementCore />} />
+              <Route path="/committee/innovation" element={<InnovationCore />} />
+              <Route path="/committee/social-outreach" element={<SocialOutreachCore />} />
+              <Route path="/committee/media-and-marketing" element={<MediaAndMarketingCore />} />
             </Routes>
             <Footer />
           </Box>
