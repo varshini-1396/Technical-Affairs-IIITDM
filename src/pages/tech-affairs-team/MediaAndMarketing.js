@@ -52,12 +52,46 @@ const jtcores = [
 
 const coordinators = [
   {
-    name: 'Rohit Sinha',
-    role: 'Media and Marketing Coordinator',
-    image: 'https://randomuser.me/api/portraits/men/24.jpg',
-    email: 'rohit.sinha@example.com',
-    linkedin: 'https://linkedin.com/in/rohitsinha',
-    roll: 'EC20B1014',
+    name: 'PUTCHA SWAMINATHA',
+    image: 'https://drive.google.com/open?id=1MZONuCZWSMNtWX64ZhtcvgkWWEzbKn9R',
+    email: 'ec23b1091@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/putcha-swaminatha-a707b92a3/',
+    roll: 'EC23B1091',
+  },
+  {
+    name: 'P Sri Charan Reddy',
+    image: 'https://drive.google.com/open?id=1XFY4HN_4mC1ZWqwyXUUqlVIcmxkStP9m',
+    email: 'me24b1071@iiitdm.ac.in',
+    linkedin: '',
+    roll: 'ME24B1071',
+  },
+  {
+    name: 'P Vinay Kumar',
+    image: 'https://drive.google.com/open?id=1nyCc3viZgHvX4hdSX0VV3A0i-i9ijlKf',
+    email: 'cs24i1028@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/vinay-kumar-959891366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'CS24I1028',
+  },
+  {
+    name: 'Jeevani Yalamanchili',
+    image: 'https://drive.google.com/open?id=1JbG2k0pfIv94s6U9VuKeIwmGCjwChP3T',
+    email: 'cs24b1023@iiitdm.ac.in',
+    linkedin: 'www.linkedin.com/in/jeevani-yalamanchili-b47aa536b',
+    roll: 'CS24B1023',
+  },
+  {
+    name: 'Pranav',
+    image: 'https://drive.google.com/open?id=1eHRNxin9Bqj3PI7NJdPM0yNwHRYJTfHZ',
+    email: 'me24b1052@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/pranav-b-5b772531b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'ME24B1052',
+  },
+  {
+    name: 'Sharvesh Vikhranth H',
+    image: 'https://drive.google.com/open?id=1_OqZlRAPZIyfiDkkUsx2PfPedpECvKAw',
+    email: 'me23b1036@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/sharvesh-vikhranth-h-375ba72ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'ME23B1036',
   },
 ];
 

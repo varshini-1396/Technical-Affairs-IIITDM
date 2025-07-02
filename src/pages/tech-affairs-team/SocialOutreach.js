@@ -52,12 +52,18 @@ const jtcores = [
 
 const coordinators = [
   {
-    name: 'Karan Verma',
-    role: 'Social Outreach Coordinator',
-    image: 'https://randomuser.me/api/portraits/men/53.jpg',
-    email: 'karan.verma@example.com',
-    linkedin: 'https://linkedin.com/in/karanverma',
-    roll: 'EC20B1012',
+    name: 'Srinivasan',
+    image: 'https://drive.google.com/open?id=1oIOMTELLr8ZXDPlLNPPMTlM_hV1CAfg2',
+    email: 'me24i1015@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/srinivasan-s-a5a679359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'ME24I1015',
+  },
+  {
+    name: 'Vinay Sharma',
+    image: 'https://drive.google.com/open?id=1MawiQ1DvbqfMmy13ce7DjzZizLFTOxZy',
+    email: 'me24b2055@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/vinay-sharma-762308329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'ME24B2055',
   },
 ];
 

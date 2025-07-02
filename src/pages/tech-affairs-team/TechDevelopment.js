@@ -46,41 +46,34 @@ const cores = [
   },
 ];
 
-const jtcores = [
-  {
-    name: 'John Doe',
-    role: 'Tech Development Jt. Core',
-    image: 'https://randomuser.me/api/portraits/men/32.jpg',
-    email: 'john.doe@example.com',
-    linkedin: 'https://linkedin.com/in/johndoe',
-    roll: 'CS21B1001',
-  },
-  {
-    name: 'Jane Smith',
-    role: 'Tech Development Jt. Core',
-    image: 'https://randomuser.me/api/portraits/women/44.jpg',
-    email: 'jane.smith@example.com',
-    linkedin: 'https://linkedin.com/in/janesmith',
-    roll: 'CS21B1002',
-  },
-];
-
 const coordinators = [
   {
-    name: 'Alice Johnson',
-    role: 'Tech Development Coordinator',
-    image: 'https://randomuser.me/api/portraits/women/65.jpg',
-    email: 'alice.johnson@example.com',
-    linkedin: 'https://linkedin.com/in/alicejohnson',
-    roll: 'CS20B1003',
+    name: 'Thatipalli Santhoshini',
+    image: 'https://drive.google.com/open?id=1bSZoVOh8xPXbDMzL7aLyEox02OmwDQPr',
+    email: 'cs24i1013@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/santhoshini-thatipalli-265497306',
+    roll: 'CS24I1013',
   },
   {
-    name: 'Bob Wilson',
-    role: 'Tech Development Coordinator',
-    image: 'https://randomuser.me/api/portraits/men/76.jpg',
-    email: 'bob.wilson@example.com',
-    linkedin: 'https://linkedin.com/in/bobwilson',
-    roll: 'CS20B1004',
+    name: 'Yashvanth S',
+    image: 'https://drive.google.com/open?id=18BM8r5yzmsknvGZNZ5MAkVOfbIc2f0AR',
+    email: 'cs24i1029@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/yashvanths/',
+    roll: 'CS24I1029',
+  },
+  {
+    name: 'D Pritika',
+    image: 'https://drive.google.com/open?id=1l2krhq1tgnmDIDU2_KYR3Lkr1aO6y6iE',
+    email: 'cs24i1040@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/pritika-desinghu-aaa9a9363/',
+    roll: 'CS24I1040',
+  },
+  {
+    name: 'Narendhar T S',
+    image: 'https://drive.google.com/open?id=18KQrp7zu5t2j5vmQmAKKZ0DeQ5zYPxnV',
+    email: 'ec24b1053@iiitdm.ac.in',
+    linkedin: 'https://linkedin.com/in/narendharts',
+    roll: 'EC24B1053',
   },
 ];
 
@@ -159,10 +152,6 @@ export default function TechDevelopmentCore() {
       <Box sx={{ mt: 4 }}>
         <Typography variant="h5" gutterBottom sx={sectionTitleStyle}>Cores</Typography>
         <MemberGrid members={cores} />
-      </Box>
-      <Box sx={{ mt: 4 }}>
-        <Typography variant="h5" gutterBottom sx={sectionTitleStyle}>Jt. Cores</Typography>
-        <MemberGrid members={jtcores} />
       </Box>
       <Box sx={{ mt: 4 }}>
         <Typography variant="h5" gutterBottom sx={sectionTitleStyle}>Coordinators</Typography>

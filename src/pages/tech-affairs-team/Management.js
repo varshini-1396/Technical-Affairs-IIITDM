@@ -46,41 +46,71 @@ const cores = [
   },
 ];
 
-const jtcores = [
-  {
-    name: 'Priya Patel',
-    role: 'Management Jt. Core',
-    image: 'https://randomuser.me/api/portraits/women/55.jpg',
-    email: 'priya.patel@example.com',
-    linkedin: 'https://linkedin.com/in/priyapatel',
-    roll: 'CS21B1005',
-  },
-  {
-    name: 'Rahul Mehra',
-    role: 'Management Jt. Core',
-    image: 'https://randomuser.me/api/portraits/men/88.jpg',
-    email: 'rahul.mehra@example.com',
-    linkedin: 'https://linkedin.com/in/rahulmehra',
-    roll: 'CS21B1006',
-  },
-];
+
 
 const coordinators = [
   {
-    name: 'Sneha Reddy',
-    role: 'Management Coordinator',
-    image: 'https://randomuser.me/api/portraits/women/77.jpg',
-    email: 'sneha.reddy@example.com',
-    linkedin: 'https://linkedin.com/in/snehareddy',
-    roll: 'CS20B1007',
+    name: 'G S Raghava Ram',
+    image: 'https://drive.google.com/open?id=1RlXqlQiz0Eid8oO5eHlxht-SiEDLvNgK',
+    email: 'cs24i1005@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/g-sangeeth-raghava-ram-a87431323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'CS24I1005',
   },
   {
-    name: 'Amit Singh',
-    role: 'Management Coordinator',
-    image: 'https://randomuser.me/api/portraits/men/99.jpg',
-    email: 'amit.singh@example.com',
-    linkedin: 'https://linkedin.com/in/amitsingh',
-    roll: 'CS20B1008',
+    name: 'Nithin M',
+    image: 'https://drive.google.com/open?id=1Aim6O2tf2sBjG4gmojJWbpe5uqIvoEze',
+    email: 'ec24b1016@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/nithin-satya-sai-ram-maddala-59078431b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'EC24B1016',
+  },
+  {
+    name: 'MONISH KUMAR R',
+    image: 'https://drive.google.com/open?id=1EKE7lt__9B6zdoWnZRSnTCXqKvqhCRp9',
+    email: 'ec24b1051@iiitdm.ac.in',
+    linkedin: 'www.linkedin.com/in/monish-kumar-r01',
+    roll: 'EC24B1051',
+  },
+  {
+    name: 'Adithya Ajay',
+    image: 'https://drive.google.com/open?id=1YDW6nVmbGiij9zcYsjnBW4WbEfB4oLRT',
+    email: 'ec24b1099@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/adithya-ajay-2b92aa370/',
+    roll: 'EC24B1099',
+  },
+  {
+    name: 'Gautam Devaraj',
+    image: 'https://drive.google.com/open?id=1MP5Umcfx4Ohpg2K1_GO_bR9L6Ff0NKgP',
+    email: 'ec24b1039@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/gautam-devaraj-0332b7370/',
+    roll: 'EC24B1039',
+  },
+  {
+    name: 'Suranjana Mary',
+    image: 'https://drive.google.com/open?id=1iZaNgcOr4tme-wFmOgC3Q1wpgtBuSvnT',
+    email: 'me24b1016@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/suranjana-mary-12646736a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'ME24B1016',
+  },
+  {
+    name: 'Keerthan S',
+    image: 'https://drive.google.com/open?id=1ofQkioAgMduaR-IS8N-2mEfHbr2nzvVv',
+    email: 'me24b1006@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/keerthan-santha-kumar-428539304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'ME24B1006',
+  },
+  {
+    name: 'Bhavana sri',
+    image: 'https://drive.google.com/open?id=1ApQXPZ3nw7js7SP-QC4lwqVhZ4aBzygi',
+    email: 'cs24i1034@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/bhavana-sri-28233836a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'CS24I1034',
+  },
+  {
+    name: 'S Yagnesh',
+    image: 'https://drive.google.com/open?id=14OuEINR40x217-FQuEe2sY2kB-GwZMUg',
+    email: 'ec24b1103@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/s-yagnesh-529112324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'EC24B1103',
   },
 ];
 
@@ -159,10 +189,6 @@ export default function ManagementCore() {
       <Box sx={{ mt: 4 }}>
         <Typography variant="h5" gutterBottom sx={sectionTitleStyle}>Cores</Typography>
         <MemberGrid members={cores} />
-      </Box>
-      <Box sx={{ mt: 4 }}>
-        <Typography variant="h5" gutterBottom sx={sectionTitleStyle}>Jt. Cores</Typography>
-        <MemberGrid members={jtcores} />
       </Box>
       <Box sx={{ mt: 4 }}>
         <Typography variant="h5" gutterBottom sx={sectionTitleStyle}>Coordinators</Typography>

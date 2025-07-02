@@ -38,25 +38,42 @@ const cores = [
   },
 ];
 
-const jtcores = [
-  {
-    name: 'Vikas Kumar',
-    role: 'Innovation Jt. Core',
-    image: 'https://randomuser.me/api/portraits/men/45.jpg',
-    email: 'vikas.kumar@example.com',
-    linkedin: 'https://linkedin.com/in/vikaskumar',
-    roll: 'EC21B1009',
-  },
-];
 
 const coordinators = [
   {
-    name: 'Meera Nair',
-    role: 'Innovation Coordinator',
-    image: 'https://randomuser.me/api/portraits/women/33.jpg',
-    email: 'meera.nair@example.com',
-    linkedin: 'https://linkedin.com/in/meeranair',
-    roll: 'EC20B1010',
+    name: 'Savinay.k',
+    image: 'https://drive.google.com/open?id=1huj9SW47j0Yg9XpElA_lm0IlciIQpt_g',
+    email: 'ec24b1065@iiitdm.ac.in',
+    linkedin: '',
+    roll: 'EC24B1065',
+  },
+  {
+    name: 'S. Aasritha Sri Varshini',
+    image: 'https://drive.google.com/open?id=1DIi0OrBZ7qCRCmNMTkvE7PGLY5n06IhB',
+    email: 'ec24b1023@iiitdm.ac.in',
+    linkedin: '',
+    roll: 'EC24B1023',
+  },
+  {
+    name: 'G.Gouthami',
+    image: 'https://drive.google.com/open?id=19zKolEbpoihqZykYXeBsBW4hEV8xuLR1',
+    email: 'cs24b1041@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/gouthami-gogineni-bb340b370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'CS24B1041',
+  },
+  {
+    name: 'Lohith Chandra',
+    image: 'https://drive.google.com/open?id=11OocVeA0tfK9JlYczTJL0rkrkAkn1VTZ',
+    email: 'ec24i1006@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/lohith-chandra-gogineni-4a2657370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'EC24I1006',
+  },
+  {
+    name: 'M. AKSHARA',
+    image: 'https://drive.google.com/open?id=1EA3lnQqf5pL1Z3mLZE7fcyDnbeoTSPfS',
+    email: 'ec24b1127@iiitdm.ac.in',
+    linkedin: 'https://linkedin.com/in/akshara-muralikumar-0366b431b',
+    roll: 'EC24B1127',
   },
 ];
 
@@ -124,10 +141,7 @@ export default function InnovationCore() {
         <Typography variant="h5" gutterBottom>Cores</Typography>
         <MemberGrid members={cores} />
       </Box>
-      <Box sx={{ mt: 4 }}>
-        <Typography variant="h5" gutterBottom>Jt. Cores</Typography>
-        <MemberGrid members={jtcores} />
-      </Box>
+  
       <Box sx={{ mt: 4 }}>
         <Typography variant="h5" gutterBottom>Coordinators</Typography>
         <MemberGrid members={coordinators} />
