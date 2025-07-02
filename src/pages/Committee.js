@@ -24,91 +24,17 @@ const teamData = {
   secretary: {
     name: "P Kaarthick Natesh",
     position: "Technical Affairs Secretary",
-    image: "/technical-affairs-team/PKaarthickNatesh.png",
+    image: "/technical-affairs-team/sac/PKaarthickNatesh.png",
     email: "ec22b1004@iiitdm.ac.in",
     linkedin: "",
   },
   jointSecretary: {
     name: "Ranveer Gautam",
     position: "Technical Affairs Joint Secretary",
-    image: "/technical-affairs-team/RanveerGautam.jpg",
+    image: "/technical-affairs-team/sac/RanveerGautam.jpg",
     email: "me23b2031@iiitdm.ac.in",
     linkedin: "",
   },
-  coreTeam: [
-    {
-      name: "R Darshan Karthikeya",
-      position: "Tech Development Core",
-      image: "/technical-affairs-team/RDarshanKarthikeya.jpg",
-      email: "cs22b1022@iiitdm.ac.in",
-      linkedin: "https://www.linkedin.com/in/darshan-karthikeya",
-    },
-    {
-      name: "Avula Varshini",
-      position: "Tech Development Core",
-      image: "/technical-affairs-team/AVarshini.jpg",
-      email: "cs23b1015@iiitdm.ac.in",
-      linkedin: "https://www.linkedin.com/in/varshini-avula",
-    },
-    {
-      name: "S M Jawhra",
-      position: "Management Core",
-      image: "/technical-affairs-team/SMJawhra.jpg",
-      email: "cs23b1053@iiitdm.ac.in",
-      linkedin:
-        "https://www.linkedin.com/in/s-m-jawhra-2150902b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    },
-    {
-      name: "Dharun Thota",
-      position: "Management Core",
-      image: "/technical-affairs-team/DharunThota.jpg",
-      email: "cs22b1083@iiitdm.ac.in",
-      linkedin: "https://www.linkedin.com/in/dharun-thota-742915264/",
-    },
-    {
-      name: "Omkar Anand Iyer",
-      position: "Social Outreach Core",
-      image: "/technical-affairs-team/OmkarAnandIyer.jpg",
-      email: "ec23b1075@iiitdm.ac.in",
-      linkedin: "https://www.linkedin.com/in/omkar-anand-iyer",
-    },
-    {
-      name: "Parth Pandey",
-      position: "Publicity Jt Core",
-      image: "/technical-affairs-team/ParthPandey.png",
-      email: "cs23i1064@iiitdm.ac.in",
-      linkedin: "https://www.linkedin.com/in/parth-pandey-b20932299/",
-    },
-    {
-      name: "SHREEPAL",
-      position: "Innovation Core",
-      image: "/technical-affairs-team/Shreepal.jpg",
-      email: "ec23b1107@iiitdm.ac.in",
-      linkedin: "https://www.linkedin.com/in/shreepal29",
-    },
-    {
-      name: "Akash Patel",
-      position: "Design Jt Core",
-      image: "/technical-affairs-team/AkashPatel.jpg",
-      email: "cs23i1055@iiitdm.ac.in",
-      linkedin: "https://linkedin.com/in/whoakashpatel",
-    },
-    {
-      name: "P. Swaminatha",
-      position: "Sponsorship & Finance Jt Core",
-      image: "/technical-affairs-team/PSwaminatha.jpg",
-      email: "ec23b1091@iiitdm.ac.in",
-      linkedin: "https://www.linkedin.com/in/putcha-swaminatha-a707b92a3/",
-    },
-    {
-      name: "Satyam Kumar Pandey",
-      position: "Media and Marketing Core",
-      image: "/technical-affairs-team/SatyamKumarPandey.jpg",
-      email: "ec23b1103@iiitdm.ac.in",
-      linkedin:
-        "https://www.linkedin.com/in/satyam-pandey-1a10442a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    },
-  ],
 };
 
 const socialMediaLinks = {
@@ -302,7 +228,7 @@ function Committee() {
           gutterBottom
           sx={titleStyle}
         >
-          Core Teams
+          Teams
         </Typography>
         <Grid container spacing={2} justifyContent="center">
           {[

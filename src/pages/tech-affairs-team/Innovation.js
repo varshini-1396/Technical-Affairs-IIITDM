@@ -31,7 +31,7 @@ const cores = [
   {
     name: 'SHREEPAL',
     role: 'Innovation Core',
-    image: '/technical-affairs-team/Shreepal.jpg',
+    image: '/technical-affairs-team/innovation/cores/Shreepal.jpg',
     email: 'ec23b1107@iiitdm.ac.in',
     linkedin: 'https://www.linkedin.com/in/shreepal29',
     roll: 'EC23B1107',
@@ -41,39 +41,39 @@ const cores = [
 
 const coordinators = [
   {
+    name: 'M. AKSHARA',
+    image: '/technical-affairs-team/innovation/coordinators/EC24B1127.png',
+    email: 'ec24b1127@iiitdm.ac.in',
+    linkedin: 'https://linkedin.com/in/akshara-muralikumar-0366b431b',
+    roll: 'EC24B1127',
+  },
+  {
     name: 'Savinay.k',
-    image: 'https://drive.google.com/open?id=1huj9SW47j0Yg9XpElA_lm0IlciIQpt_g',
+    image: '/technical-affairs-team/innovation/coordinators/EC24B1065.jpg',
     email: 'ec24b1065@iiitdm.ac.in',
     linkedin: '',
     roll: 'EC24B1065',
   },
   {
-    name: 'S. Aasritha Sri Varshini',
-    image: 'https://drive.google.com/open?id=1DIi0OrBZ7qCRCmNMTkvE7PGLY5n06IhB',
-    email: 'ec24b1023@iiitdm.ac.in',
-    linkedin: '',
-    roll: 'EC24B1023',
-  },
-  {
-    name: 'G.Gouthami',
-    image: 'https://drive.google.com/open?id=19zKolEbpoihqZykYXeBsBW4hEV8xuLR1',
-    email: 'cs24b1041@iiitdm.ac.in',
-    linkedin: 'https://www.linkedin.com/in/gouthami-gogineni-bb340b370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-    roll: 'CS24B1041',
-  },
-  {
     name: 'Lohith Chandra',
-    image: 'https://drive.google.com/open?id=11OocVeA0tfK9JlYczTJL0rkrkAkn1VTZ',
+    image: '/technical-affairs-team/innovation/coordinators/EC24I1006.jpg',
     email: 'ec24i1006@iiitdm.ac.in',
     linkedin: 'https://www.linkedin.com/in/lohith-chandra-gogineni-4a2657370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     roll: 'EC24I1006',
   },
   {
-    name: 'M. AKSHARA',
-    image: 'https://drive.google.com/open?id=1EA3lnQqf5pL1Z3mLZE7fcyDnbeoTSPfS',
-    email: 'ec24b1127@iiitdm.ac.in',
-    linkedin: 'https://linkedin.com/in/akshara-muralikumar-0366b431b',
-    roll: 'EC24B1127',
+    name: 'G.Gouthami',
+    image: '/technical-affairs-team/innovation/coordinators/CS24B1041.jpg',
+    email: 'cs24b1041@iiitdm.ac.in',
+    linkedin: 'https://www.linkedin.com/in/gouthami-gogineni-bb340b370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    roll: 'CS24B1041',
+  },
+  {
+    name: 'S. Aasritha Sri Varshini',
+    image: '/technical-affairs-team/innovation/coordinators/EC24B1023.jpg',
+    email: 'ec24b1023@iiitdm.ac.in',
+    linkedin: '',
+    roll: 'EC24B1023',
   },
 ];
 
@@ -132,18 +132,29 @@ const teamTitleStyle = {
 };
 const teamDescription = 'The Innovation team drives creative thinking and new initiatives, fostering a culture of experimentation and entrepreneurship. We encourage and support novel ideas and projects.';
 
+const sectionTitleStyle = {
+  textAlign: 'center',
+  fontWeight: 'bold',
+  fontSize: { xs: '1.4rem', sm: '1.7rem', md: '2rem' },
+  background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
+  backgroundClip: 'text',
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent',
+  mb: 4,
+};
+
 export default function InnovationCore() {
   return (
     <Container maxWidth="md" sx={{ py: 8 }}>
       <Typography variant="h2" sx={teamTitleStyle} gutterBottom>Innovation</Typography>
       <Typography variant="body1" sx={{ textAlign: 'center', color: 'text.secondary', mb: 6 }}>{teamDescription}</Typography>
       <Box sx={{ mt: 4 }}>
-        <Typography variant="h5" gutterBottom>Cores</Typography>
+        <Typography variant="h5" gutterBottom sx={sectionTitleStyle}>Cores</Typography>
         <MemberGrid members={cores} />
       </Box>
   
       <Box sx={{ mt: 4 }}>
-        <Typography variant="h5" gutterBottom>Coordinators</Typography>
+        <Typography variant="h5" gutterBottom sx={sectionTitleStyle}>Coordinators</Typography>
         <MemberGrid members={coordinators} />
       </Box>
     </Container>
