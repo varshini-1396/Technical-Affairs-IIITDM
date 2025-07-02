@@ -24,7 +24,7 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
   wordBreak: 'break-word',
   [theme.breakpoints.down('sm')]: {
     padding: theme.spacing(1),
-    width: 160,
+    width: 120,
   }
 }));
 
@@ -64,7 +64,7 @@ const coordinators = [
 function MemberGrid({ members }) {
   if (!members.length) return <Typography color="text.secondary" align="center">No data available.</Typography>;
   return (
-    <Grid container spacing={2} justifyContent='center' sx={{ maxWidth: '1200px', mx: 'auto' }}>
+    <Grid container spacing={1} justifyContent='center' sx={{ maxWidth: '1200px', mx: 'auto' }}>
       {members.map((member, idx) => (
         <Grid item xs={6} sm={6} md={3} key={member.name} sx={{ display: 'flex', justifyContent: 'center', minWidth: 0 }}>
           <TeamMemberCard sx={{ width: '100%', minWidth: 0, flexGrow: 1 }}>
