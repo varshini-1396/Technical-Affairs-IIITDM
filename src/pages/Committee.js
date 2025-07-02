@@ -314,7 +314,23 @@ function Committee() {
           ].map((team, idx) => (
             <Grid item xs={12} sm={6} md={2} key={team.label} sx={{ display: 'flex', justifyContent: 'center' }}>
               <Card
-                sx={{ cursor: 'pointer', minWidth: 180, minHeight: 160, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', p: 2, boxShadow: 3, transition: 'transform 0.2s', '&:hover': { transform: 'scale(1.05)' } }}
+                sx={{
+                  cursor: 'pointer',
+                  width: { xs: 120, sm: 180 },
+                  height: { xs: 150, sm: 200 },
+                  minWidth: { xs: 120, sm: 180 },
+                  minHeight: { xs: 150, sm: 200 },
+                  maxWidth: { xs: 120, sm: 180 },
+                  maxHeight: { xs: 150, sm: 200 },
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  p: 2,
+                  boxShadow: 3,
+                  transition: 'transform 0.2s',
+                  '&:hover': { transform: 'scale(1.05)' }
+                }}
                 onClick={() => navigate(team.path)}
               >
                 <img
@@ -322,7 +338,7 @@ function Committee() {
                   alt={team.label + ' logo'}
                   style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover', marginBottom: 12 }}
                 />
-                <Typography variant="h6" align="center">{team.label}</Typography>
+                <Typography variant="h6" align="center" sx={{ fontSize: { xs: '0.8rem', sm: '1rem' } }}>{team.label}</Typography>
               </Card>
             </Grid>
           ))}
