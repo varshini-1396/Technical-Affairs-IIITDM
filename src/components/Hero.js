@@ -71,13 +71,13 @@ const Hero = () => {
     <Box
       id="hero"
       sx={{
-        mt: { xs: 4, md: 6 },
+        mt: { xs: 2, md: 6 },
         height: '100vh',
         position: 'relative',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        pt: { xs: 8, md: 12 },
+        pt: { xs: 4, md: 12 },
         pb: { xs: 4, md: 6 },
         overflow: 'hidden',
       }}
