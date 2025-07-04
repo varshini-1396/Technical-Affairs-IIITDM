@@ -114,7 +114,7 @@ const Hero = () => {
             <Typography
               component="h1"
               sx={{
-                fontSize: { xs: '3.5rem', md: '7rem' },
+                fontSize: { xs: '2.1rem', md: '7rem' },
                 fontWeight: 800,
                 letterSpacing: '-0.03em',
                 whiteSpace: 'pre-wrap',
@@ -140,7 +140,7 @@ const Hero = () => {
               component="img"
               src={getLogoSrc()}
               alt="Logo"
-              sx={{ width: 300, height: 300 }}
+              sx={{ width: { xs: 180, md: 300 }, height: { xs: 180, md: 300 } }}
             />
           </Box>
         </Box>
@@ -149,7 +149,7 @@ const Hero = () => {
         <Typography
           variant="h5"
           sx={{
-            pt: 10,
+            pt: 5,
             textAlign: 'center',
             color: theme.palette.text.secondary,
           }}
@@ -171,7 +171,7 @@ const Hero = () => {
             variant="contained"
             size="large"
             href="/council"
-            sx={{ px: 4, py: 1.5, fontSize: '1.1rem' }}
+            sx={{ px: { xs: 2, sm: 4 }, py: { xs: 0.7, sm: 1.5 }, fontSize: { xs: '0.95rem', sm: '1.1rem' } }}
           >
             Explore Council
           </Button>
@@ -179,7 +179,7 @@ const Hero = () => {
             variant="outlined"
             size="large"
             href="/committee"
-            sx={{ px: 4, py: 1.5, fontSize: '1.1rem' }}
+            sx={{ px: { xs: 2, sm: 4 }, py: { xs: 0.7, sm: 1.5 }, fontSize: { xs: '0.95rem', sm: '1.1rem' } }}
           >
             Explore Committee
           </Button>
