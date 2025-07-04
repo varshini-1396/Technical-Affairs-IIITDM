@@ -230,7 +230,7 @@ function Committee() {
         >
           Teams
         </Typography>
-        <Grid container spacing={2} justifyContent="center">
+        <Grid container spacing={{ xs: 1, sm: 2 }} justifyContent="center">
           {[
             { label: 'Tech Development', path: '/committee/tech-development' },
             { label: 'Management', path: '/committee/management' },
@@ -238,15 +238,15 @@ function Committee() {
             { label: 'Social Outreach', path: '/committee/social-outreach' },
             { label: 'Media and Marketing', path: '/committee/media-and-marketing' },
           ].map((team, idx) => (
-            <Grid item xs={12} sm={6} md={2} key={team.label} sx={{ display: 'flex', justifyContent: 'center' }}>
+            <Grid item xs={6} sm={6} md={2} key={team.label} sx={{ display: 'flex', justifyContent: 'center' }}>
               <Card
                 sx={{
-                  width: { xs: 100, sm: 160 },
-                  height: { xs: 90, sm: 130 },
-                  minWidth: { xs: 100, sm: 160 },
-                  minHeight: { xs: 90, sm: 130 },
-                  maxWidth: { xs: 100, sm: 160 },
-                  maxHeight: { xs: 90, sm: 130 },
+                  width: { xs: 120, sm: 160 },
+                  height: { xs: 140, sm: 130 },
+                  minWidth: { xs: 120, sm: 160 },
+                  minHeight: { xs: 140, sm: 130 },
+                  maxWidth: { xs: 120, sm: 160 },
+                  maxHeight: { xs: 140, sm: 130 },
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
@@ -262,7 +262,7 @@ function Committee() {
                     variant="h6" 
                     align="center" 
                     sx={{ 
-                      fontSize: { xs: '0.65rem', sm: '1rem' }, 
+                      fontSize: { xs: '1.1rem', sm: '1rem' }, 
                       fontWeight: 700, 
                       letterSpacing: 1, 
                       color: 'primary.main',
