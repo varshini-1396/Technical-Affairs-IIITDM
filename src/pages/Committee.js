@@ -232,8 +232,8 @@ function Committee() {
         </Typography>
         <Grid container spacing={{ xs: 1, sm: 2 }} justifyContent="center">
           {[
-            { label: 'Tech Development', path: '/committee/tech-development' },
             { label: 'Management', path: '/committee/management' },
+            { label: 'Tech Development', path: '/committee/tech-development' },
             { label: 'Innovation', path: '/committee/innovation' },
             { label: 'Social Outreach', path: '/committee/social-outreach' },
             { label: 'Media and Marketing', path: '/committee/media-and-marketing' },
@@ -241,12 +241,12 @@ function Committee() {
             <Grid item xs={6} sm={6} md={2} key={team.label} sx={{ display: 'flex', justifyContent: 'center' }}>
               <Card
                 sx={{
-                  width: { xs: 120, sm: 160 },
-                  height: { xs: 140, sm: 130 },
-                  minWidth: { xs: 120, sm: 160 },
-                  minHeight: { xs: 140, sm: 130 },
-                  maxWidth: { xs: 120, sm: 160 },
-                  maxHeight: { xs: 140, sm: 130 },
+                  width: { xs: 180, sm: 160 },
+                  height: { xs: 170, sm: 130 },
+                  minWidth: { xs: 180, sm: 160 },
+                  minHeight: { xs: 170, sm: 130 },
+                  maxWidth: { xs: 180, sm: 160 },
+                  maxHeight: { xs: 170, sm: 130 },
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
@@ -275,10 +275,9 @@ function Committee() {
                 <button
                   className="team-view-btn"
                   style={{
-                    width: '60%',
                     alignSelf: 'center',
-                    fontSize: '0.7em',
-                    padding: '0.4em 0.8em',
+                    fontSize: '0.9em',
+                    padding: '0.5em 1.2em',
                     minWidth: 0,
                     borderRadius: '0.5em',
                     background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
