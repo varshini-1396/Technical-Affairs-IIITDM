@@ -241,30 +241,59 @@ function Committee() {
             <Grid item xs={12} sm={6} md={2} key={team.label} sx={{ display: 'flex', justifyContent: 'center' }}>
               <Card
                 sx={{
-                  cursor: 'pointer',
-                  width: { xs: 120, sm: 180 },
-                  height: { xs: 150, sm: 200 },
-                  minWidth: { xs: 120, sm: 180 },
-                  minHeight: { xs: 150, sm: 200 },
-                  maxWidth: { xs: 120, sm: 180 },
-                  maxHeight: { xs: 150, sm: 200 },
+                  width: { xs: 100, sm: 160 },
+                  height: { xs: 90, sm: 130 },
+                  minWidth: { xs: 100, sm: 160 },
+                  minHeight: { xs: 90, sm: 130 },
+                  maxWidth: { xs: 100, sm: 160 },
+                  maxHeight: { xs: 90, sm: 130 },
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
-                  justifyContent: 'center',
-                  p: 2,
+                  justifyContent: 'flex-start',
+                  p: 1.5,
                   boxShadow: 3,
                   transition: 'transform 0.2s',
                   '&:hover': { transform: 'scale(1.05)' }
                 }}
-                onClick={() => navigate(team.path)}
               >
-                <img
-                  src="https://via.placeholder.com/80x80.png?text=Logo"
-                  alt={team.label + ' logo'}
-                  style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover', marginBottom: 12 }}
-                />
-                <Typography variant="h6" align="center" sx={{ fontSize: { xs: '0.8rem', sm: '1rem' } }}>{team.label}</Typography>
+                <Box sx={{ flexGrow: 1, width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Typography 
+                    variant="h6" 
+                    align="center" 
+                    sx={{ 
+                      fontSize: { xs: '0.65rem', sm: '1rem' }, 
+                      fontWeight: 700, 
+                      letterSpacing: 1, 
+                      color: 'primary.main',
+                      textShadow: '0 1px 4px rgba(25, 118, 210, 0.15)'
+                    }}
+                  >
+                    {team.label}
+                  </Typography>
+                </Box>
+                <button
+                  className="team-view-btn"
+                  style={{
+                    width: '60%',
+                    alignSelf: 'center',
+                    fontSize: '0.7em',
+                    padding: '0.4em 0.8em',
+                    minWidth: 0,
+                    borderRadius: '0.5em',
+                    background: 'linear-gradient(45deg, #1976d2, #9c27b0)',
+                    color: 'white',
+                    fontWeight: 700,
+                    border: 'none',
+                    cursor: 'pointer',
+                    boxShadow: '0 2px 8px rgba(25, 118, 210, 0.08)',
+                    marginTop: '0.3em',
+                    marginBottom: '0.3em',
+                  }}
+                  onClick={() => navigate(team.path)}
+                >
+                  View Team
+                </button>
               </Card>
             </Grid>
           ))}
