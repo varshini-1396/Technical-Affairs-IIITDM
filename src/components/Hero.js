@@ -114,7 +114,7 @@ const Hero = () => {
             <Typography
               component="h1"
               sx={{
-                fontSize: { xs: '3rem', md: '6rem' },
+                fontSize: { xs: '3.5rem', md: '7rem' },
                 fontWeight: 800,
                 letterSpacing: '-0.03em',
                 whiteSpace: 'pre-wrap',
@@ -160,7 +160,7 @@ const Hero = () => {
         {/* Buttons */}
         <Box
           sx={{
-            mt: 6,
+            mt: 2,
             display: 'flex',
             flexDirection: { xs: 'column', sm: 'row' },
             gap: 2,
