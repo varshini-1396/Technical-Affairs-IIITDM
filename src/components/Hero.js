@@ -71,13 +71,13 @@ const Hero = () => {
     <Box
       id="hero"
       sx={{
-        mt: { xs: 2, md: 6 },
+        mt: 0.5,
         height: '100vh',
         position: 'relative',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        pt: { xs: 4, md: 12 },
+        pt: 2,
         pb: { xs: 4, md: 6 },
         overflow: 'hidden',
       }}
@@ -149,7 +149,7 @@ const Hero = () => {
         <Typography
           variant="h5"
           sx={{
-            pt: 5,
+            pt: 7,
             textAlign: 'center',
             color: theme.palette.text.secondary,
           }}
