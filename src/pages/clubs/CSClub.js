@@ -37,22 +37,18 @@ const clubData = {
     {
       name: 'Avinaash A',
       role: 'Head Core',
-      image: '/images/team/john-doe.jpg',
+      image: '/clubs/csclub/headcores/avinaash.jpeg',
       email: 'cs22b1064@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/avinaash-a-7955a1289',
-      year: 'B.Tech 4th Year',
-      department: 'Computer Science Engineering',
-      roll: 'cs22b1064'
+      roll: 'cs22b1064',
     },
     {
       name: 'Nivedh Biju Pazhayedathuparambil',
       role: 'Technical Lead',
-      image: '/images/team/jane-smith.jpg',
+      image: '/clubs/csclub/headcores/nivedh.png',
       email: 'cs22b1021@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/nivedh-biju-b7b11b292',
-      year: 'B.Tech 4th Year',
-      department: 'Computer Science Engineering',
-      roll: 'cs22b1021'
+      roll: 'cs22b1021',
     }
   ],
   team: [

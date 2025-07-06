@@ -37,24 +37,19 @@ const clubData = {
   core: [
     {
       name: 'Sai Pranav',
-      role: 'Club Head',
-      image: '/clubs/Sai Pranav.jpg',
+      role: ' Head Core',
+      image: '/clubs/devclub/headcores/Sai Pranav.jpg',
       email: 'cs22b1027@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/sai-pranav-m-3340a0251',
-      year: 'B.Tech 4th Year',
-      department: 'Computer Science Engineering',
-      roll: 'cs22b1027'
+      roll: 'cs22b1027',
     },
     {
-      name: 'Madhav',
-      role: 'Technical Head',
-      image: '/clubs/sainath.jpg',
+      name: 'Sainath Reddy',
+      role: 'Vice Head Core',
+      image: '/clubs/devclub/headcores/sainath.jpg',
       email: 'cs22b1005@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/janesmith',
-      year: 'B.Tech 4th Year',
-      department: 'Computer Science Engineering',
-      roll: 'cs22b1005'
-    }
+      linkedin: 'https://linkedin.com/in/janesmith'
+    },
   ],
   team: [
     {

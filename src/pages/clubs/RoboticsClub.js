@@ -39,11 +39,10 @@ const clubData = {
     {
       name: 'Dhanvanth Saravanan',
       role: 'Club Head',
-      image: '/clubs/dhanvanth.jpg',
+      image: '/clubs/robotics/headcores/dhanvanth.jpg',
       email: 'ec23b1097@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/dhanvanth-saravanan-366956288',
-      year: 'B.Tech 3rd Year',
-      department: 'Electronics and Communication Engineering'
+      roll: 'ec23b1097',
     },
     {
       name: 'Hemachandra K S',
@@ -51,8 +50,7 @@ const clubData = {
       image: '/images/team/jane-smith.jpg',
       email: 'me23b2020@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/hemachandra-k-s-323382332',
-      year: 'B.Tech 3rd Year',
-      department: 'Mechanical Engineering'
+      roll: 'me23b2020',
     }
   ],
   team: [
