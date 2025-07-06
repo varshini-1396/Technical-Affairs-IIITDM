@@ -75,7 +75,7 @@ const clubData = {
   ],
   links: {
     website: '#',
-    instagram: '#',
+    instagram: 'https://www.instagram.com/ecell_iiitdm/',
     github: '#'
   }
 };

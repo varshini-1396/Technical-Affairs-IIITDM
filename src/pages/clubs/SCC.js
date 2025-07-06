@@ -74,9 +74,9 @@ const clubData = {
     }
   ],
   links: {
-    website: 'https://dev.iiitdm.ac.in',
-    instagram: 'https://instagram.com/dev_iiitdm',
-    github: 'https://github.com/dev-iiitdm'
+    website: '#',
+    instagram: 'https://www.instagram.com/systemcodingclub_iiitdm/',
+    github: '#'
   }
 };
 
