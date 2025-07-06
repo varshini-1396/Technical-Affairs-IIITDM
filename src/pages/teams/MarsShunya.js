@@ -104,36 +104,57 @@ const EventYear = styled(Typography)(({ theme }) => ({
   color: theme.palette.text.secondary,
   opacity: 0.8
 }));
-
 const teamInfo = {
-  name: "Mars (Shunya) - Mars Rover Students' Club",
+  name: 'Team Shunya',
   club: 'MARS Club',
-  logo: '/teams/shunya/logo.png',
-  description: `Team Shunya is a Formula Student Electric (FSE) team under MARS Club that represents our institute in the prestigious Formula Student Electric competition. 
-  The team designs, builds, and races an electric formula-style race car, competing against teams from around the world.
-  
-  Our team focuses on developing innovative solutions in electric vehicle technology, combining expertise in mechanical design, 
-  electrical systems, and vehicle dynamics. We participate in prestigious competitions like Formula Student Electric (FSE) 
-  and Formula Bharat, showcasing our engineering excellence and innovation in sustainable mobility.`,
+  logo: '/clubs/mars/logo.png',
+  description: `Team Shunya comprises over 30 passionate and driven students from Mechanical, Electronics, and Computer Science backgrounds. This collaborative team works year-round
+  to develop resilient, all-terrain rovers and high-precision robotic arms. Each member brings unique skills—from CAD modeling and circuit design to embedded systems and autonomous
+  navigation— making Team Shunya a true force of innovation in the field of robotics and space exploration.`,
   achievements: [
     {
-      title: 'Formula Student Electric (FSE)',
-      description: 'Top 10 finish in the international competition',
+      title: 'European Rover Challenge',
+      description: '6th place (Remote) and 21st place (Onsite) internationally',
       year: '2023',
       highlight: true
     },
-    {
-      title: 'Formula Bharat',
-      description: 'Best Engineering Design Award',
+     {
+      title: 'European Rover Challenge Proposal Round',
+      description: '2nd place internationally (Remote)',
       year: '2023',
       highlight: false
     },
     {
-      title: 'Formula Student India',
-      description: 'Best Business Plan Presentation',
-      year: '2023',
+      title: 'International Rover Challenge',
+      description: '21st place internationally (Onsite)',
+      year: '2024',
+      highlight: true
+    },
+    {
+      title: 'Australian Rover Challenge',
+      description: '5th place (Documentation) and 12th place (Onsite) internationally',
+      year: '2024',
+      highlight: false
+    },
+     {
+      title: 'ISRO Robotics Challenge (IRoC)',
+      description: '6th place internationally (Onsite) , winning a prize money of 2 lakhs',
+      year: '2024',
+      highlight: true
+    },
+     {
+      title: 'National Space Day Recognition',
+      description: `On National Space Day, our team was invited to Bharat Mandapam in Delhi by ISRO to participate in the maiden celebration, where we presented our rover to the Hon'ble President of India, Smt.Droupadi Murmu`,
+      year: '2024',
+      highlight: false
+    },
+     {
+      title: 'International Rover Challenge',
+      description: '16th place internationally (Onsite)',
+      year: '2025',
       highlight: true
     }
+    
   ],
   members: [
     {
@@ -147,9 +168,9 @@ const teamInfo = {
       roll: 'me23b1001'
     },
     {
-      name: 'Technical Lead Name',
+      name: 'R Sarang',
       role: 'Technical Lead',
-      image: '/teams/shunya/members/tech-lead.jpg',
+      image: '/clubs/mars/R SARANG_MaRS_Co-Lead.jpg',
       email: 'tech.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/tech-lead',
       year: 'B.Tech 3rd Year',
@@ -158,6 +179,7 @@ const teamInfo = {
     },
   ],
 };
+
 
 function MarsShunya() {
   const theme = useTheme();
