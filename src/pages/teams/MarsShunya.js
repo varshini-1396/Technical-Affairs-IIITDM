@@ -107,7 +107,7 @@ const EventYear = styled(Typography)(({ theme }) => ({
 const teamInfo = {
   name: 'Team Shunya',
   club: 'MARS Club',
-  logo: '/clubs/mars/logo.png',
+  logo: '/teams/mars/logo.png',
   description: `Team Shunya comprises over 30 passionate and driven students from Mechanical, Electronics, and Computer Science backgrounds. This collaborative team works year-round
   to develop resilient, all-terrain rovers and high-precision robotic arms. Each member brings unique skills—from CAD modeling and circuit design to embedded systems and autonomous
   navigation— making Team Shunya a true force of innovation in the field of robotics and space exploration.`,
@@ -158,21 +158,21 @@ const teamInfo = {
   ],
   members: [
     {
-      name: 'Team Lead Name',
+      name: 'Avichal Anurag',
       role: 'Team Lead',
-      image: '/teams/shunya/members/lead.jpg',
+      image: '/teams/mars/lead.JPG',
       email: 'team.lead@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/team-lead',
+      linkedin: 'https://www.linkedin.com/in/avichal-anurag-0757392b2/',
       year: 'B.Tech 3rd Year',
       department: 'Mechanical Engineering',
       roll: 'me23b1001'
     },
     {
       name: 'R Sarang',
-      role: 'Technical Lead',
-      image: '/clubs/mars/R SARANG_MaRS_Co-Lead.jpg',
+      role: 'Co-Lead',
+      image: '/teams/mars/co-lead.jpg',
       email: 'tech.lead@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/tech-lead',
+      linkedin: 'https://www.linkedin.com/in/sarang-raghavan-a04a2b308/',
       year: 'B.Tech 3rd Year',
       department: 'Electrical Engineering',
       roll: 'ee23b1002'

@@ -106,39 +106,35 @@ const EventYear = styled(Typography)(({ theme }) => ({
 }));
 
 const teamInfo = {
-  name: 'TAD - Talpade Aero Design',
-  club: 'Technical Affairs',
+  name: 'Team Tad',
+  club: 'TAD Club',
   logo: '/teams/tad/logo.png',
-  description: `The Technical Affairs Department (TAD) is a crucial administrative body that oversees and manages all technical activities and events at our institute. 
-  We are responsible for organizing technical workshops, seminars, and competitions that enhance the technical skills and knowledge of our students.
-  
-  Our department works closely with various technical clubs and teams to ensure smooth coordination of events and activities. 
-  We focus on fostering innovation, technical excellence, and professional development among students through various initiatives and programs.`,
+  description: ` Team Tad is a vibrant student group passionate about aero design and innovation. Focused on building high-performance RC planes, the club unites like-minded engineers to design, construct, and compete in national-level aeromodelling contests, pushing the boundaries of precision and creativity in the field of aeronautics`,
   achievements: [
     {
-      title: 'Technical Symposium',
-      description: 'Successfully organized the annual technical symposium with 1000+ participants',
-      year: '2023',
+      title: 'IIT Bombay Competition',
+      description: `TAD participated with two teams and both of the teams sucessfully cleared the abstract round and they made into the top 50's out of 500 teams by flying RC planes with payload`,
+      year: '2024',
       highlight: true
     },
     {
-      title: 'Workshop Series',
-      description: 'Conducted 20+ technical workshops across various domains',
-      year: '2023',
+      title: 'IIT Madras-Boeing National Aeromodelling Competition',
+      description: 'TAD participated with six teams comprising one senior team and five junior teams and all these teams sucessfully cleared the abstract round',
+      year: '2024',
       highlight: false
     },
     {
-      title: 'Industry Connect',
-      description: 'Facilitated 15+ industry expert talks and networking sessions',
-      year: '2023',
+      title: 'IAC-Conference by ASoI',
+      description: 'TAD won RUNNER-UP at the Industrial Academia Conclave 2024 by ASoI, for designing a docking mechanism to charge electric-hybrid UAVs, supporting sustainable aviation in India',
+      year: '2024',
       highlight: true
     }
   ],
   members: [
     {
-      name: 'Team Lead Name',
+      name: 'Vamsi J S',
       role: 'Team Lead',
-      image: '/teams/astra/members/lead.jpg',
+      image: '/teams/tad/lead.jpg',
       email: 'team.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/team-lead',
       year: 'B.Tech 3rd Year',

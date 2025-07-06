@@ -106,7 +106,7 @@ const EventYear = styled(Typography)(({ theme }) => ({
 }));
 
 const teamInfo = {
-  name: 'SAE e-Baja (ReVolt Racers)',
+  name: 'Revolt Racers',
   club: 'SAE Club',
   logo: '/teams/revolt/logo.png',
   description: `Revolt Racers is a Baja SAE team under SAE Club that represents our institute in the prestigious Baja SAE competition. 
@@ -117,29 +117,48 @@ const teamInfo = {
   and SAE Collegiate Design Series, showcasing our engineering excellence and innovation in off-road mobility.`,
   achievements: [
     {
-      title: 'ABU Robocon',
-      description: 'National Finalists in the prestigious robotics competition',
-      year: '2023',
+      title: 'Phase 1 of SAE eBaja',
+      description: 'Achieved All India Rank of 16 in 86 teams all over the nation. With this rank we were standing at 4th in Tamil Nadu and we were 5th in all the debutant teams that participated',
+      year: '2024',
       highlight: true
     },
     {
-      title: 'e-Yantra Robotics Competition',
-      description: 'Best Innovation Award',
-      year: '2023',
+      title: 'Phase 2 of SAE eBaja',
+      description: `Achieved Overall VDE-AIR 5, Design-AIR 25, Cost-AIR 20, Sustainability: AIR 7 `,
+      year: '2024',
       highlight: false
     },
     {
-      title: 'International Robotics Challenge',
-      description: 'Represented India at the international finals',
-      year: '2023',
+      title: 'Phase 3 of SAE eBaja',
+      description: 'We successfully concluded our competition with an All-India Rank of 35 out of 86 teams',
+      year: '2025',
       highlight: true
-    }
+    },
+     {
+      title: 'Phase 1 of SAE mBaja',
+      description: `Achieved an overall rank AIR 9 and TamilNadu rank 2`,
+      year: '2024',
+      highlight: false
+    },
+     {
+      title: 'Phase 2 of SAE mBaja',
+      description: 'Secured ranks below AIR 10 for specific events in Phase 2 and got selected for the finals of the CAE,Design, and Cost events.',
+      year: '2024',
+      highlight: true
+    },
+     {
+      title: 'Phase 3 of SAE mBaja',
+      description: `Considering our performance across all three phases, Team Rebel Racers 3.0 secured an impressive overall All India Rank (AIR) of 18`,
+      year: '2025',
+      highlight: false
+    },
+
   ],
   members: [
     {
-      name: 'Team Lead Name',
-      role: 'Team Lead',
-      image: '/teams/revolt/members/lead.jpg',
+      name: 'Harish N',
+      role: 'Captain',
+      image: '/teams/revolt/captain.jpg',
       email: 'team.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/team-lead',
       year: 'B.Tech 3rd Year',
@@ -147,9 +166,9 @@ const teamInfo = {
       roll: 'me23b1001'
     },
     {
-      name: 'Technical Lead Name',
-      role: 'Technical Lead',
-      image: '/teams/revolt/members/tech-lead.jpg',
+      name: 'Gurubaran V',
+      role: 'Vice-Captain',
+      image: '/teams/revolt/vice-captain.jpg',
       email: 'tech.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/tech-lead',
       year: 'B.Tech 3rd Year',

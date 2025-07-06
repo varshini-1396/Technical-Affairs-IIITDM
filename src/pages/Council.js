@@ -12,8 +12,8 @@ const clubs = [
 ];
 
 const teams = [
-  { name: "MaRS (Shunya) - Mars Rover Students' Club", image: '/teams/shunya/logo.png', link: '/teams/shunya' },
-  { name: 'AUV (Nira)', image: '/teams/nira/logo.png', link: '/teams/nira' },
+  { name: "MaRS (Shunya) - Mars Rover Students' Club", image: '/teams/mars/logo.png', link: '/teams/shunya' },
+  { name: 'AUV (Nira)', image: '/teams/nira/logo.jpg', link: '/teams/nira' },
   { name: 'SAE e-Baja (ReVolt Racers)', image: '/teams/revolt/logo.png', link: '/teams/revolt' },
   { name: 'SAE Aerothon (Astra)', image: '/teams/astra/logo.png', link: '/teams/astra' },
   { name: 'TAD - Talpade Aero Design', image: '/teams/tad/logo.png', link: '/teams/tad' },
