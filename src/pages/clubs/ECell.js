@@ -36,24 +36,20 @@ const clubData = {
   description: `The Entrepreneurship Cell (E-Cell) at IIITDM Kancheepuram fosters entrepreneurial spirit among students. E-Cell conducts workshops, speaker sessions, and startup events to encourage innovation and support budding entrepreneurs on campus.`,
   core: [
     {
-      name: 'John Doe',
-      role: 'Club Head',
+      name: 'Asmit Kumar Sahoo',
+      role: ' Head Core',
       image: '/images/team/john-doe.jpg',
-      email: 'john.doe@iiitdm.ac.in',
+      email: 'me23b2026@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/johndoe',
-      year: 'B.Tech 3rd Year',
-      department: 'Computer Science Engineering',
-      roll: 'cs23b1001'
+      roll: 'me23b2026',
     },
     {
-      name: 'Jane Smith',
-      role: 'Technical Head',
-      image: '/images/team/jane-smith.jpg',
-      email: 'jane.smith@iiitdm.ac.in',
+      name: 'Vishal Singh',
+      role: 'Head Core',
+      image: '/clubs/Ecell/headcores/vishal.jpg',
+      email: 'cs23i1039@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/janesmith',
-      year: 'B.Tech 3rd Year',
-      department: 'Computer Science Engineering',
-      roll: 'cs23b1002'
+      roll: 'cs23i1039',
     }
   ],
   team: [
@@ -79,7 +75,7 @@ const clubData = {
   ],
   links: {
     website: '#',
-    instagram: '#',
+    instagram: 'https://www.instagram.com/ecell_iiitdm/',
     github: '#'
   }
 };

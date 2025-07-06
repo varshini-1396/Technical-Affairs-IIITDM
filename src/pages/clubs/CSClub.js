@@ -35,24 +35,20 @@ const clubData = {
   description: `The Computer Science Club at IIITDM Kancheepuram is dedicated to advancing computer science knowledge and skills among students. We focus on core computer science concepts, algorithms, data structures, and software development. The club organizes coding competitions, workshops on emerging technologies, and hackathons. Our members actively participate in national and international programming contests, contributing to the institute's reputation in the field of computer science.`,
   core: [
     {
-      name: 'John Doe',
-      role: 'Club Head',
-      image: '/images/team/john-doe.jpg',
-      email: 'john.doe@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/johndoe',
-      year: 'B.Tech 3rd Year',
-      department: 'Computer Science Engineering',
-      roll: 'cs23b1001'
+      name: 'Avinaash A',
+      role: 'Head Core',
+      image: '/clubs/csclub/headcores/avinaash.jpeg',
+      email: 'cs22b1064@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/avinaash-a-7955a1289',
+      roll: 'cs22b1064',
     },
     {
-      name: 'Jane Smith',
-      role: 'Technical Head',
-      image: '/images/team/jane-smith.jpg',
-      email: 'jane.smith@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/janesmith',
-      year: 'B.Tech 3rd Year',
-      department: 'Computer Science Engineering',
-      roll: 'cs23b1002'
+      name: 'Nivedh Biju Pazhayedathuparambil',
+      role: 'Technical Lead',
+      image: '/clubs/csclub/headcores/nivedh.png',
+      email: 'cs22b1021@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/nivedh-biju-b7b11b292',
+      roll: 'cs22b1021',
     }
   ],
   team: [
@@ -78,8 +74,8 @@ const clubData = {
     }
   ],
   links: {
-    website: 'https://cs.iiitdm.ac.in',
-    instagram: 'https://instagram.com/cs_iiitdm',
+    website: 'https://csclub.netlify.app/',
+    instagram:'https://www.instagram.com/cs.club.iiitdm/',
     github: 'https://github.com/cs-iiitdm'
   }
 };

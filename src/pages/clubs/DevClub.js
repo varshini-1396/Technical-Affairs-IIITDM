@@ -36,25 +36,20 @@ const clubData = {
   description: `The Development Club at IIITDM Kancheepuram is focused on fostering software development skills and creating innovative solutions. We emphasize practical development experience through hands-on projects, hackathons, and workshops. Our members work on various technologies including web development, mobile app development, and software engineering. The club organizes regular coding sessions, tech talks, and collaborative projects to enhance members' development skills and industry readiness.`,
   core: [
     {
-      name: 'John Doe',
-      role: 'Club Head',
-      image: '/images/team/john-doe.jpg',
-      email: 'john.doe@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/johndoe',
-      year: 'B.Tech 3rd Year',
-      department: 'Computer Science Engineering',
-      roll: 'cs23b1001'
+      name: 'Sai Pranav',
+      role: ' Head Core',
+      image: '/clubs/devclub/headcores/Sai Pranav.jpg',
+      email: 'cs22b1027@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/sai-pranav-m-3340a0251',
+      roll: 'cs22b1027',
     },
     {
-      name: 'Jane Smith',
-      role: 'Technical Head',
-      image: '/images/team/jane-smith.jpg',
-      email: 'jane.smith@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/janesmith',
-      year: 'B.Tech 3rd Year',
-      department: 'Computer Science Engineering',
-      roll: 'cs23b1002'
-    }
+      name: 'Sainath Reddy',
+      role: 'Vice Head Core',
+      image: '/clubs/devclub/headcores/sainath.jpg',
+      email: 'cs22b1005@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/janesmith'
+    },
   ],
   team: [
     {
@@ -78,8 +73,8 @@ const clubData = {
     }
   ],
   links: {
-    website: 'https://dev.iiitdm.ac.in',
-    instagram: 'https://instagram.com/dev_iiitdm',
+    website: 'devclub.iiitdm.ac.in',
+    instagram: 'https://www.instagram.com/dev.club.iiitdm/',
     github: 'https://github.com/dev-iiitdm'
   }
 };

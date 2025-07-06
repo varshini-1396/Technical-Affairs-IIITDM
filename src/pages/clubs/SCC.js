@@ -36,24 +36,20 @@ const clubData = {
   description: `The System Coding Club (SCC) at IIITDM Kancheepuram is dedicated to promoting system-level programming, open-source contributions, and competitive coding. SCC organizes workshops, coding contests, and collaborative projects to enhance students' coding skills and foster a strong coding culture on campus.`,
   core: [
     {
-      name: 'John Doe',
-      role: 'Club Head',
-      image: '/images/team/john-doe.jpg',
-      email: 'john.doe@iiitdm.ac.in',
+      name: 'A.Nikhileswar',
+      role: 'Head Core',
+      image: '/clubs/scc/headcores/nikhileswar.jpg',
+      email: 'ec23b1021@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/johndoe',
-      year: 'B.Tech 3rd Year',
-      department: 'Computer Science Engineering',
-      roll: 'cs23b1001'
+      roll: 'ec23b1021'
     },
     {
-      name: 'Jane Smith',
-      role: 'Technical Head',
-      image: '/images/team/jane-smith.jpg',
-      email: 'jane.smith@iiitdm.ac.in',
+      name: 'Tarun Vignesh',
+      role: 'Project Lead',
+      image: '/clubs/scc/headcores/vignesh.jpg',
+      email: 'ec23b1047@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/janesmith',
-      year: 'B.Tech 3rd Year',
-      department: 'Computer Science Engineering',
-      roll: 'cs23b1002'
+      roll: 'ec23b1047'
     }
   ],
   team: [
@@ -78,9 +74,9 @@ const clubData = {
     }
   ],
   links: {
-    website: 'https://dev.iiitdm.ac.in',
-    instagram: 'https://instagram.com/dev_iiitdm',
-    github: 'https://github.com/dev-iiitdm'
+    website: '#',
+    instagram: 'https://www.instagram.com/systemcodingclub_iiitdm/',
+    github: '#'
   }
 };
 
