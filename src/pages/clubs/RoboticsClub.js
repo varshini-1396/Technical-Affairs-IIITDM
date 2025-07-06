@@ -38,7 +38,7 @@ const clubData = {
   core: [
     {
       name: 'Dhanvanth Saravanan',
-      role: 'Club Head',
+      role: 'Club Lead',
       image: '/clubs/robotics/headcores/dhanvanth.jpg',
       email: 'ec23b1097@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/dhanvanth-saravanan-366956288',
@@ -46,12 +46,26 @@ const clubData = {
     },
     {
       name: 'Hemachandra K S',
-      role: 'Club Head',
+      role: 'Software Lead',
       image: '/images/team/jane-smith.jpg',
       email: 'me23b2020@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/hemachandra-k-s-323382332',
       roll: 'me23b2020',
-    }
+    },
+    {
+      name: 'Alice Johnson',
+      role: 'Electronics Lead',
+      image: '/images/team/alice-johnson.jpg',
+      email: 'alice.johnson@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/alicejohnson',
+    },
+    {
+      name: 'Alice Johnson',
+      role: 'Mechanical Lead',
+      image: '/images/team/alice-johnson.jpg',
+      email: 'alice.johnson@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/alicejohnson',
+    },
   ],
   team: [
     {
