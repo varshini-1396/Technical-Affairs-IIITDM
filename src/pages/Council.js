@@ -12,11 +12,11 @@ const clubs = [
 ];
 
 const teams = [
-  { name: "MaRS (Shunya) - Mars Rover Students' Club", image: '/teams/mars/logo.png', link: '/teams/shunya' },
-  { name: 'AUV (Nira)', image: '/teams/nira/logo.jpg', link: '/teams/nira' },
-  { name: 'SAE e-Baja (ReVolt Racers)', image: '/teams/revolt/logo.png', link: '/teams/revolt' },
-  { name: 'SAE Aerothon (Astra)', image: '/teams/astra/logo.png', link: '/teams/astra' },
-  { name: 'TAD - Talpade Aero Design', image: '/teams/tad/logo.png', link: '/teams/tad' },
+  { name: "MaRS (Shunya)", image: '/teams/mars/logo.png', link: '/teams/shunya' },
+  { name: 'AUV Society', image: '/teams/nira/logo.jpg', link: '/teams/nira' },
+  { name: 'SAE e-Baja ', image: '/teams/revolt/logo.png', link: '/teams/revolt' },
+  { name: 'SAE Aerothon', image: '/teams/astra/logo.png', link: '/teams/astra' },
+  { name: 'Talpade Aero Design', image: '/teams/tad/logo.png', link: '/teams/tad' },
 ];
 
 const societies = [
@@ -88,7 +88,7 @@ const Council = () => {
           variant="h2"
           component="h2"
           sx={{
-            fontSize: { xs: '1.1rem', sm: '1.5rem', md: '2.1rem' },
+            fontSize: { xs: '2rem', sm: '2.8rem', md: '3.5rem' },
             fontWeight: 'bold',
             mb: 2,
             textAlign: 'center',
