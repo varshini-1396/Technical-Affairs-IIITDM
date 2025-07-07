@@ -1,7 +1,7 @@
 import React from 'react';
 import { useThemeContext } from './context/ThemeContext';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Achievements from './pages/Achievements';
 import Committee from './pages/Committee';
@@ -59,11 +59,11 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/clubs/cs" element={<CSClub />} />
-              <Route path="/clubs/dev" element={<DevClub />} />
-              <Route path="/clubs/robotics" element={<RoboticsClub />} />
-              <Route path="/clubs/scc" element={<SCC />} />
-              <Route path="/clubs/ecell" element={<ECell />} />
+              <Route path="/council/clubs/cs" element={<CSClub />} />
+              <Route path="/council/clubs/dev" element={<DevClub />} />
+              <Route path="/council/clubs/robotics" element={<RoboticsClub />} />
+              <Route path="/council/clubs/scc" element={<SCC />} />
+              <Route path="/council/clubs/ecell" element={<ECell />} />
               <Route path="/teams/nira" element={<AUV />} />
               <Route path="/teams/astra" element={<SAEAerothon />} />
               <Route path="/teams/revolt" element={<SAEEBaja />} />
@@ -71,7 +71,11 @@ function App() {
               <Route path="/teams/tad" element={<TalpadeAeroDesign />} />
               <Route path="/achievements" element={<Achievements />} />
               <Route path="/committee" element={<Committee />} />
-              <Route path="/council" element={<Council />} />
+              <Route path="/council" element={<Navigate to="/council/clubs" replace />} />
+              <Route path="/council/clubs" element={<Council />} />
+              <Route path="/council/teams" element={<Council />} />
+              <Route path="/council/societies" element={<Council />} />
+              <Route path="/council/communities" element={<Council />} />
               <Route path="/communities/cybersecurity" element={<Cybersecurity />} />
               <Route path="/communities/gamedevelopers" element={<GameDevelopers />} />
               <Route path="/societies/ieee" element={<IEEE />} />

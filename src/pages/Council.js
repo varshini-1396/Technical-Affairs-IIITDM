@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Container, Typography, Grid, Card, Tabs, Tab, useMediaQuery } from '@mui/material';
 import { styled, useTheme } from '@mui/material/styles';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 // Example data (replace/add real data as needed)
 const clubs = [
-  { name: 'CS Club', image: '/clubs/csclub/logo.png', link: '/clubs/cs' },
-  { name: "Developer's Club", image: '/clubs/devclub/logo.jpg', link: '/clubs/dev' },
-  { name: 'System Coding Club', image: '/clubs/scc/logo.png', link: '/clubs/scc' },
-  { name: 'E-Cell', image: '/clubs/ecell/logo.png', link: '/clubs/ecell' },
-  { name: 'Robotics', image: '/clubs/robotics/logo.png', link: '/clubs/robotics' },
+  { name: 'CS Club', image: '/clubs/csclub/logo.png', link: '/council/clubs/cs' },
+  { name: "Developer's Club", image: '/clubs/devclub/logo.jpg', link: '/council/clubs/dev' },
+  { name: 'System Coding Club', image: '/clubs/scc/logo.png', link: '/council/clubs/scc' },
+  { name: 'E-Cell', image: '/clubs/ecell/logo.png', link: '/council/clubs/ecell' },
+  { name: 'Robotics', image: '/clubs/robotics/logo.png', link: '/council/clubs/robotics' },
 ];
 
 const teams = [
@@ -31,10 +32,10 @@ const communities = [
 ];
 
 const tabOptions = [
-  { label: 'Clubs', data: clubs },
-  { label: 'Teams', data: teams },
-  { label: 'Societies', data: societies },
-  { label: 'Communities', data: communities },
+  { label: 'Clubs', data: clubs, route: 'clubs' },
+  { label: 'Teams', data: teams, route: 'teams' },
+  { label: 'Societies', data: societies, route: 'societies' },
+  { label: 'Communities', data: communities, route: 'communities' },
 ];
 
 const TeamCard = styled(Card)(({ theme }) => ({
@@ -63,12 +64,31 @@ const TeamCard = styled(Card)(({ theme }) => ({
 }));
 
 const Council = () => {
-  const [tab, setTab] = useState(0);
+  const location = useLocation();
+  const navigate = useNavigate();
+  // Determine initial tab from URL
+  const getTabFromPath = () => {
+    const match = location.pathname.match(/\/council\/(\w+)/);
+    if (match) {
+      const idx = tabOptions.findIndex(opt => opt.route === match[1].toLowerCase());
+      return idx !== -1 ? idx : 0;
+    }
+    return 0;
+  };
+  const [tab, setTab] = useState(getTabFromPath());
+
+  // Sync tab with URL changes (back/forward)
+  useEffect(() => {
+    setTab(getTabFromPath());
+    // eslint-disable-next-line
+  }, [location.pathname]);
+
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.only('xs'));
 
   const handleTabChange = (event, newValue) => {
     setTab(newValue);
+    navigate(`/council/${tabOptions[newValue].route}`);
   };
 
   const currentList = tabOptions[tab].data;
