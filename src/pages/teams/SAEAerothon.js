@@ -106,7 +106,7 @@ const EventYear = styled(Typography)(({ theme }) => ({
 }));
 
 const teamInfo = {
-  name: 'SAE Aerothon (Astra)',
+  name: 'Team Astra',
   club: 'SAE Club',
   logo: '/teams/astra/logo.png',
   description: `Team Astra is an Aero Design team under SAE Club that represents our institute in the prestigious SAE Aero Design competition. 
@@ -117,44 +117,44 @@ const teamInfo = {
   and SAE Collegiate Design Series, showcasing our engineering excellence and innovation in aerial mobility.`,
   achievements: [
     {
-      title: 'Spaceport America Cup',
-      description: 'Top 5 finish in the international rocket competition',
-      year: '2023',
+      title: 'IIT Roorkee Autonomous Drone Challenge',
+      description: 'Top 4 position nationally among top institutions across India.The team successfully completed the assigned autonomous mission, showcasing real-time drone decision-making and navigation',
+      year: '2024',
       highlight: true
     },
     {
-      title: 'International Rocket Engineering Competition',
-      description: 'Best Technical Innovation Award',
-      year: '2023',
+      title: 'SAE Aerothon',
+      description: `Qualified in Phase I among Top 20 teams out of 81+ participants and successfully executed both autonomous and manual operations in Phase II`,
+      year: '2024',
       highlight: false
     },
     {
-      title: 'Drone Racing Championship',
-      description: 'National Champions in the UAV racing category',
-      year: '2023',
+      title: 'ISRO IROC-U',
+      description: 'Successfully qualified for Round 2 of ISRO robotics Challenge, competition, showcasing our capability in drone-based autonomous missions',
+      year: '2025',
       highlight: true
     }
   ],
   members: [
     {
-      name: 'Team Lead Name',
-      role: 'Team Lead',
+      name: 'Abhishek Sen',
+      role: 'Captain',
       image: '/teams/astra/members/lead.jpg',
       email: 'team.lead@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/team-lead',
+      linkedin: 'https://www.linkedin.com/in/abhishek-sen-aab105259/',
       year: 'B.Tech 3rd Year',
       department: 'Aerospace Engineering',
-      roll: 'ae23b1001'
+      roll: 'ec22b1098'
     },
     {
-      name: 'Technical Lead Name',
-      role: 'Technical Lead',
+      name: 'Neshanth R',
+      role: 'Vice-Captain',
       image: '/teams/astra/members/tech-lead.jpg',
       email: 'tech.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/tech-lead',
       year: 'B.Tech 3rd Year',
       department: 'Mechanical Engineering',
-      roll: 'me23b1002'
+      roll: 'me22b2030'
     },
   ],
 };

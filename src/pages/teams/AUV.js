@@ -107,9 +107,9 @@ const EventYear = styled(Typography)(({ theme }) => ({
 }));
 
 const teamInfo = {
-  name: 'AUV (Nira)',
+  name: 'Team Nira',
   club: 'AUV Society',
-  logo: '/teams/nira/logo.png',
+  logo: '/teams/nira/logo.jpg',
   description: `Team Nira is a competitive autonomous underwater vehicle (AUV) team that represents our institute in various national and international competitions. 
   The team designs, builds, and programs autonomous underwater vehicles capable of performing complex tasks underwater without human intervention.
   
@@ -117,45 +117,57 @@ const teamInfo = {
   electronics, computer vision, and control systems. We participate in prestigious competitions like SAUVC (Singapore AUV Challenge) 
   and NIOT-SAVe (National Institute of Ocean Technology - Student Autonomous Vehicle competition).`,
   achievements: [
-    {
-      title: 'Singapore AUV Challenge (SAUVC)',
-      description: 'Secured 1st position in the prestigious international competition',
-      year: '2023',
+      {
+      title: 'Aqua Quest',
+      description: 'Hosted a Nationwide ROV competition on Feb 2024',
+      year: '2024',
       highlight: true
     },
-    {
-      title: 'NIOT-SAVe',
-      description: 'Best Design Award in the national competition',
-      year: '2023',
+      {
+      title: 'Research Paper-5',
+      description: 'Optimisation of Visual SLAM for Underwater Robotics using OAK-D Smart Camera OCEANS 2024 ',
+      year: '2024',
       highlight: false
     },
     {
-      title: 'International AUV Competition',
-      description: 'Represented India at the international finals',
-      year: '2023',
+      title: 'Singapore AUV Challenge (SAUVC)',
+      description: 'Secured 5th position globally in the on-site of the prestigious international competition, out of 41 teams from 13 countries.',
+      year: '2025',
+      highlight: true
+    },
+    {
+      title: 'AqUaVision-IIT Madras',
+      description: 'Secured 2nd place nationally in this competition hosted by IIT Madras, in collaboration with IEEE OES Madras Chapter and NIOT Chennai',
+      year: '2025',
+      highlight: false
+    },
+    {
+      title: 'International AUV Challenge',
+      description: 'Secured 1st place in this nationwide AUV competition hosted by IIT Bombay',
+      year: '2025',
       highlight: true
     }
   ],
   members: [
     {
-      name: 'Team Lead Name',
+      name: 'Abinav Rajagopal',
       role: 'Team Lead',
-      image: '/teams/nira/members/lead.jpg',
+      image: '/teams/nira/lead1.jpg',
       email: 'team.lead@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/team-lead',
+      linkedin: 'https://www.linkedin.com/in/abinav-rajagopal-2ba65a286/',
       year: 'B.Tech 3rd Year',
       department: 'Mechanical Engineering',
       roll: 'me23b1001'
     },
     {
-      name: 'Technical Lead Name',
-      role: 'Technical Lead',
-      image: '/teams/nira/members/tech-lead.jpg',
+      name: 'Shree Mithun N',
+      role: 'Team Lead',
+      image: '/teams/nira/lead2.jpg',
       email: 'tech.lead@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/tech-lead',
+      linkedin: 'https://www.linkedin.com/in/shree-mithun-n-43ba49241/',
       year: 'B.Tech 3rd Year',
-      department: 'Computer Science',
-      roll: 'cs23b1002'
+      department: 'Mechanical Engineering',
+      roll: 'me23b2024'
     },
   ],
 };
