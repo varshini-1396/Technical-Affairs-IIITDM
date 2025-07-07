@@ -119,13 +119,13 @@ const teamInfo = {
   achievements: [
       {
       title: 'Aqua Quest',
-      description: 'Hosted a Nationwide ROV competition on Fb 2024',
+      description: 'Hosted a Nationwide ROV competition on Feb 2024',
       year: '2024',
       highlight: true
     },
       {
       title: 'Research Paper-5',
-      description: 'Visual SLAM for Underwater Robotics using OAK-D Smart Camera OCEANS 2024 ',
+      description: 'Optimisation of Visual SLAM for Underwater Robotics using OAK-D Smart Camera OCEANS 2024 ',
       year: '2024',
       highlight: false
     },
@@ -166,8 +166,8 @@ const teamInfo = {
       email: 'tech.lead@iiitdm.ac.in',
       linkedin: 'https://www.linkedin.com/in/shree-mithun-n-43ba49241/',
       year: 'B.Tech 3rd Year',
-      department: 'Computer Science',
-      roll: 'cs23b1002'
+      department: 'Mechanical Engineering',
+      roll: 'me23b2024'
     },
   ],
 };

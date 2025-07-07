@@ -163,7 +163,7 @@ const teamInfo = {
       linkedin: 'https://linkedin.com/in/team-lead',
       year: 'B.Tech 3rd Year',
       department: 'Mechanical Engineering',
-      roll: 'me23b1001'
+      roll: 'me22b1083'
     },
     {
       name: 'Gurubaran V',
@@ -173,7 +173,27 @@ const teamInfo = {
       linkedin: 'https://linkedin.com/in/tech-lead',
       year: 'B.Tech 3rd Year',
       department: 'Electronics Engineering',
-      roll: 'ec23b1002'
+      roll: 'me23b1042'
+    },
+      {
+      name: 'Keshavprasad K',
+      role: 'Manager',
+      image: '/teams/revolt/manager.jpg',
+      email: 'team.lead@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/team-lead',
+      year: 'B.Tech 3rd Year',
+      department: 'Mechanical Engineering',
+      roll: 'me22b2014'
+    },
+      {
+      name: 'Shricharan R G',
+      role: 'Joint Manager',
+      image: '/teams/revolt/joint-manager.jpg',
+      email: 'team.lead@iiitdm.ac.in',
+      linkedin: 'https://linkedin.com/in/team-lead',
+      year: 'B.Tech 3rd Year',
+      department: 'Mechanical Engineering',
+      roll: 'me23b1046'
     },
   ],
 };

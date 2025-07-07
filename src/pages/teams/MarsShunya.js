@@ -164,8 +164,8 @@ const teamInfo = {
       email: 'team.lead@iiitdm.ac.in',
       linkedin: 'https://www.linkedin.com/in/avichal-anurag-0757392b2/',
       year: 'B.Tech 3rd Year',
-      department: 'Mechanical Engineering',
-      roll: 'me23b1001'
+      department: 'Electrical Engineering',
+      roll: 'ec23i1015'
     },
     {
       name: 'R Sarang',
@@ -175,7 +175,7 @@ const teamInfo = {
       linkedin: 'https://www.linkedin.com/in/sarang-raghavan-a04a2b308/',
       year: 'B.Tech 3rd Year',
       department: 'Electrical Engineering',
-      roll: 'ee23b1002'
+      roll: 'ec23i2015'
     },
   ],
 };

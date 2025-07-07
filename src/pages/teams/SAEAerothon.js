@@ -137,24 +137,24 @@ const teamInfo = {
   ],
   members: [
     {
-      name: 'lead 1',
+      name: 'Abhishek Sen',
       role: 'Captain',
       image: '/teams/astra/members/lead.jpg',
       email: 'team.lead@iiitdm.ac.in',
-      linkedin: 'https://linkedin.com/in/team-lead',
+      linkedin: 'https://www.linkedin.com/in/abhishek-sen-aab105259/',
       year: 'B.Tech 3rd Year',
       department: 'Aerospace Engineering',
-      roll: 'ae23b1001'
+      roll: 'ec22b1098'
     },
     {
-      name: 'lead 2',
+      name: 'Neshanth R',
       role: 'Vice-Captain',
       image: '/teams/astra/members/tech-lead.jpg',
       email: 'tech.lead@iiitdm.ac.in',
       linkedin: 'https://linkedin.com/in/tech-lead',
       year: 'B.Tech 3rd Year',
       department: 'Mechanical Engineering',
-      roll: 'me23b1002'
+      roll: 'me22b2030'
     },
   ],
 };
