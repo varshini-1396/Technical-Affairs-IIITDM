@@ -14,10 +14,10 @@ const clubs = [
 
 const teams = [
   { name: "MaRS (Shunya)", image: '/teams/mars/logo.png', link: '/teams/shunya' },
-  { name: 'AUV Society', image: '/teams/nira/logo.jpg', link: '/teams/nira' },
-  { name: 'SAE e-Baja ', image: '/teams/revolt/logo.png', link: '/teams/revolt' },
-  { name: 'SAE Aerothon', image: '/teams/astra/logo.png', link: '/teams/astra' },
-  { name: 'Talpade Aero Design', image: '/teams/tad/logo.png', link: '/teams/tad' },
+  { name: 'AUV (Nira)', image: '/teams/nira/logo.jpg', link: '/teams/nira' },
+  { name: 'Revolt Racers ', image: '/teams/revolt/logo.png', link: '/teams/revolt' },
+  { name: 'Astra', image: '/teams/astra/logo.png', link: '/teams/astra' },
+  { name: 'TAD', image: '/teams/tad/logo.png', link: '/teams/tad' },
 ];
 
 const societies = [
