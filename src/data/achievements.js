@@ -213,7 +213,7 @@ export const achievements = [
     description: 'Achieved All India Rank of 16 out of 86 teams, standing 4th in Tamil Nadu.',
     year: '2025',
     club: 'SAE Collegiate Club',
-    logo: '/clubs/sae-collegiate/logo.png',
+    logo: '/teams/revolt/logo.png',
   },
   {
     id: 28,
@@ -221,7 +221,7 @@ export const achievements = [
     description: 'Secured strong ranks: Design (25th), Cost (20th), Sustainability (7th), and IPG Event (5th).',
     year: '2025',
     club: 'SAE Collegiate Club',
-    logo: '/clubs/sae-collegiate/logo.png',
+    logo: '/teams/revolt/logo.png',
   },
   {
     id: 29,
@@ -229,7 +229,7 @@ export const achievements = [
     description: 'Finished with an overall All-India Rank of 35 out of 86 teams.',
     year: '2025',
     club: 'SAE Collegiate Club',
-    logo: '/clubs/sae-collegiate/logo.png',
+    logo: '/teams/revolt/logo.png',
   },
   {
     id: 30,
@@ -237,7 +237,7 @@ export const achievements = [
     description: 'Achieved an overall All India Rank of 9 and 2nd in Tamil Nadu.',
     year: '2025',
     club: 'SAE Collegiate Club',
-    logo: '/clubs/sae-collegiate/logo.png',
+    logo: '/teams/revolt/logo.png',
   },
   {
     id: 31,
@@ -245,7 +245,7 @@ export const achievements = [
     description: 'Secured top ranks in multiple categories: Design (AIR 7), Cost (AIR 7), and Sustainability (AIR 10).',
     year: '2025',
     club: 'SAE Collegiate Club',
-    logo: '/clubs/sae-collegiate/logo.png',
+    logo: '/teams/revolt/logo.png',
   },
   {
     id: 32,
@@ -253,7 +253,7 @@ export const achievements = [
     description: 'Achieved top final ranks in key static events: Design (AIR 7), Cost (AIR 5), and CAE (AIR 5).',
     year: '2025',
     club: 'SAE Collegiate Club',
-    logo: '/clubs/sae-collegiate/logo.png',
+    logo: '/teams/revolt/logo.png',
   },
   {
     id: 33,
@@ -261,7 +261,7 @@ export const achievements = [
     description: 'Secured an impressive overall All India Rank (AIR) of 18.',
     year: '2025',
     club: 'SAE Collegiate Club',
-    logo: '/clubs/sae-collegiate/logo.png',
+    logo: '/teams/revolt/logo.png',
   },
 ];
 
