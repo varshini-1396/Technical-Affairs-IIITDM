@@ -10,8 +10,6 @@ import {
   IconButton,
 } from "@mui/material";
 import {
-  Facebook,
-  Twitter,
   Instagram,
   LinkedIn,
   YouTube,
@@ -305,22 +303,6 @@ function Committee() {
           Connect With Us
         </Typography>
         <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
-          <IconButton
-            color="primary"
-            href={socialMediaLinks.facebook}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Facebook fontSize="large" />
-          </IconButton>
-          <IconButton
-            color="primary"
-            href={socialMediaLinks.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Twitter fontSize="large" />
-          </IconButton>
           <IconButton
             color="primary"
             href={socialMediaLinks.instagram}
