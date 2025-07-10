@@ -12,46 +12,32 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const achievements = [
   {
-    title: 'Robocon 2023',
-    description: 'Secured 3rd position in ABU Robocon 2023 competition.',
-    image: '/achievements-sample.png',
-    date: 'August 2023',
-    category: 'Robotics',
+    title: 'SAUVC 2025',
+    description: 'Secured 5th place globally in the Singapore AUV Challenge 2025',
+    image: '/teams/nira/logo.jpg',
+    date: '2025',
+    category: 'AUV Society',
   },
   {
-    title: 'SAE Aero Design',
-    description: 'Achieved 2nd place in SAE Aero Design West competition.',
-    image: '/achievements-sample.png',
-    date: 'March 2023',
-    category: 'Aerospace',
+    title: 'International Rover Challenge 2025 (Onsite)',
+    description: '16th place internationally',
+    image: '/teams/mars/logo.png',
+    date: '2025',
+    category: 'Mars Club',
   },
   {
-    title: 'Smart India Hackathon',
-    description: 'Won 1st prize in Smart India Hackathon 2023.',
-    image: '/achievements-sample.png',
-    date: 'January 2023',
-    category: 'Innovation',
+    title: 'SAE eBaja 2025 - Overall',
+    description: 'Finished with an overall All-India Rank of 35 out of 86 teams.',
+    image: '/clubs/sae-collegiate/logo.png',
+    date: '2025',
+    category: 'SAE Collegiate Club',
   },
   {
-    title: 'Efficycle 2023',
-    description: 'Secured 4th position in SAE Efficycle competition.',
-    image: '/achievements-sample.png',
-    date: 'October 2023',
-    category: 'Automotive',
-  },
-  {
-    title: 'AUV Competition',
-    description: 'Achieved 2nd place in NIOT AUV competition.',
-    image: '/achievements-sample.png',
-    date: 'December 2023',
-    category: 'Marine',
-  },
-  {
-    title: 'Hackathon Winners',
-    description: 'Won 1st prize in IEEE Hackathon 2023.',
-    image: '/achievements-sample.png',
-    date: 'November 2023',
-    category: 'Coding',
+    title: 'SAE mBaja 2025 - Overall',
+    description: 'Secured an impressive overall All India Rank (AIR) of 18.',
+    image: '/clubs/sae-collegiate/logo.png',
+    date: '2025',
+    category: 'SAE Collegiate Club',
   },
 ];
 
@@ -148,18 +134,20 @@ const Achievements = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <Box // Placeholder grey box for the image
+                  <Box // Image container
+                    component="img"
+                    src={achievement.image}
+                    alt={achievement.title}
                     sx={{
                       width: { xs: '80px', sm: '100px' }, // Reduced box size
                       height: { xs: '80px', sm: '100px' }, // Reduced box size
                       borderRadius: '8px', // Square shape with smooth curves
-                      bgcolor: 'grey.400', // Grey background color
                       mb: 2, // Margin below the box
                       flexShrink: 0, // Prevent shrinking
+                      objectFit: 'contain', // Maintain aspect ratio
+                      bgcolor: 'grey.100', // Light grey background for images
                     }}
-                  >
-                    {/* Placeholder content if needed */}
-                  </Box>
+                  />
                 </motion.div>
 
                 <Typography
