@@ -28,14 +28,14 @@ const achievements = [
   {
     title: 'SAE eBaja 2025 - Overall',
     description: 'Finished with an overall All-India Rank of 35 out of 86 teams.',
-    image: '/clubs/sae-collegiate/logo.png',
+    image: '/teams/revolt/logo.png',
     date: '2025',
     category: 'SAE Collegiate Club',
   },
   {
     title: 'SAE mBaja 2025 - Overall',
     description: 'Secured an impressive overall All India Rank (AIR) of 18.',
-    image: '/clubs/sae-collegiate/logo.png',
+    image: '/teams/revolt/logo.png',
     date: '2025',
     category: 'SAE Collegiate Club',
   },
