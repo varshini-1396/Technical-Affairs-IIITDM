@@ -7,7 +7,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 const clubs = [
   { name: 'CS Club', image: '/clubs/csclub/logo.png', link: '/council/clubs/cs' },
   { name: "Developer's Club", image: '/clubs/devclub/logo.jpg', link: '/council/clubs/dev' },
-  { name: 'System Coding Club', image: '/clubs/scc/logo.png', link: '/council/clubs/scc' },
+  { name: 'System Coding Club', image: '/clubs/SCC/logo.png', link: '/council/clubs/scc' },
   { name: 'E-Cell', image: '/clubs/ecell/logo.png', link: '/council/clubs/ecell' },
   { name: 'Robotics', image: '/clubs/robotics/logo.png', link: '/council/clubs/robotics' },
 ];
@@ -22,8 +22,8 @@ const teams = [
 
 const societies = [
   { name: 'IEEE', image: '/societies/ieee/logo.png', link: '/societies/ieee' },
-  { name: 'Optica Student Chapter', image: '/societies/optica/logo.png', link: '/societies/optica' },
-  { name: 'ASME Student Section', image: '/societies/asme/logo.png', link: '/societies/asme' },
+  { name: 'Optica Student Chapter', image: '/societies/OpticaStudentChapter/logo.jpg', link: '/societies/optica' },
+  { name: 'ASME Student Section', image: '/societies/ASMEStudentSection/logo.png', link: '/societies/asme' },
 ];
 
 const communities = [
