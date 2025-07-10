@@ -108,9 +108,7 @@ const teamInfo = {
   name: 'Team Shunya',
   club: 'MARS Club',
   logo: '/teams/mars/logo.png',
-  description: `Team Shunya comprises over 30 passionate and driven students from Mechanical, Electronics, and Computer Science backgrounds. This collaborative team works year-round
-  to develop resilient, all-terrain rovers and high-precision robotic arms. Each member brings unique skills—from CAD modeling and circuit design to embedded systems and autonomous
-  navigation— making Team Shunya a true force of innovation in the field of robotics and space exploration.`,
+  description: `Team Shunya is the official competitive team of the MARS Club at IIITDM Kancheepuram, specializing in the development of autonomous planetary rovers and robotic systems. The team represents the institute in prestigious competitions such as the Indian Rover Challenge (IRC) and ISRO Rover Challenge (IRoC), where student teams design and demonstrate rovers capable of performing complex tasks in simulated extraterrestrial environments.\nTeam Shunya focuses on end-to-end rover development, covering areas such as:\nMechanical design of rugged, all-terrain unmanned ground vehicles (UGVs)\n\nAutonomous navigation and obstacle avoidance\n\nRobotic arm systems for manipulation tasks\n\nEmbedded systems and power management\n\nSensor integration for real-time data acquisition and environment mapping\n\nCombining innovation, technical rigor, and collaborative problem-solving, Team Shunya pushes the boundaries of autonomous ground robotics, preparing students for the challenges of space robotics and exploration missions.`,
   achievements: [
     {
       title: 'European Rover Challenge',

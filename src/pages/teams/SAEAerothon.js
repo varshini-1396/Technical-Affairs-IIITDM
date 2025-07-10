@@ -109,12 +109,7 @@ const teamInfo = {
   name: 'Team Astra',
   club: 'SAE Club',
   logo: '/teams/astra/logo.png',
-  description: `Team Astra is an Aero Design team under SAE Club that represents our institute in the prestigious SAE Aero Design competition. 
-  The team designs, builds, and flies radio-controlled aircraft capable of carrying payload and performing specific missions.
-  
-  Our team focuses on developing innovative solutions in aerospace engineering, combining expertise in aerodynamics, 
-  structural design, and flight control. We participate in prestigious competitions like SAE Aero Design 
-  and SAE Collegiate Design Series, showcasing our engineering excellence and innovation in aerial mobility.`,
+  description: `Team Astra is the official Aero Design team of IIITDM Kancheepuram, operating under the SAE Club. The team represents the institute at esteemed platforms such as the SAE Aero Design Competition and the SAE Collegiate Design Series, where student engineers from across the globe showcase their skills in aerospace innovation. Specializing in the design, construction, and flight of radio-controlled aircraft, Team Astra develops systems capable of executing mission-specific tasks such as payload delivery and performance-based challenges. The team blends core knowledge in aerodynamics, structural engineering, and flight control to create efficient, high-performing aircraft. With a strong emphasis on practical learning and technical excellence, Team Astra continues to push the boundaries of aerial mobility, proudly reflecting the institute’s commitment to innovation in aerospace engineering.`,
   achievements: [
     {
       title: 'IIT Roorkee Autonomous Drone Challenge',

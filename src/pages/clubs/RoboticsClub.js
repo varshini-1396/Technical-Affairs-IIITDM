@@ -36,7 +36,7 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
 const clubData = {
   name: 'Robotics Club',
   logo: '/clubs/robotics/logo.png',
-  description: `The Robotics Club at IIITDM Kancheepuram is dedicated to fostering innovation in robotics and automation. Our club focuses on developing practical robotics solutions, participating in national and international competitions, and conducting workshops on robotics fundamentals. Members work on projects spanning various domains including autonomous vehicles, industrial automation, computer vision, and control systems. We emphasize hands-on learning through regular workshops, hackathons, and collaborative projects with industry partners.`,
+  description: `The Robotics Club at IIITDM Kancheepuram is a student-driven community dedicated to exploring and advancing the field of robotics and automation. The club provides hands-on experience in designing, building, and programming autonomous robots and automated systems, encouraging members to apply their theoretical knowledge in practical scenarios.\nStudents work on interdisciplinary projects involving embedded systems, computer vision, control systems, and mechanical design, developing solutions for real-world applications such as industrial automation, intelligent vehicles, and smart systems.\nThe club actively participates in national and international robotics competitions and conducts workshops, hackathons, and technical sessions to nurture a culture of innovation, teamwork, and problem-solving within the robotics domain.`,
   core: [
     {
       name: 'Dhanvanth Saravanan',

@@ -109,12 +109,7 @@ const teamInfo = {
   name: 'Revolt Racers',
   club: 'SAE Club',
   logo: '/teams/revolt/logo.png',
-  description: `Revolt Racers is a Baja SAE team under SAE Club that represents our institute in the prestigious Baja SAE competition. 
-  The team designs, builds, and races an off-road vehicle capable of handling rough terrain and challenging obstacles.
-  
-  Our team focuses on developing robust solutions in off-road vehicle technology, combining expertise in mechanical design, 
-  suspension systems, and vehicle dynamics. We participate in prestigious competitions like Baja SAE India 
-  and SAE Collegiate Design Series, showcasing our engineering excellence and innovation in off-road mobility.`,
+  description: `ReVolt Racers is the E-Baja team of IIITDM Kancheepuram, specializing in the design and construction of electric all-terrain vehicles for Baja SAE India’s E-Baja competition. The team integrates expertise in electric powertrains, battery management systems, and control systems to build sustainable, high-performance off-road vehicles.\nReVolt Racers emphasizes the practical application of electric vehicle technologies, promoting sustainable mobility while equipping members with critical skills in the growing field of electric automotive engineering.`,
   achievements: [
     {
       title: 'Phase 1 of SAE eBaja',

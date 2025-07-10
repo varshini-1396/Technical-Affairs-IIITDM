@@ -34,7 +34,7 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
 const clubData = {
   name: 'CS Club',
   logo: '/clubs/csclub/logo.png',
-  description: `The Computer Science Club at IIITDM Kancheepuram is dedicated to advancing computer science knowledge and skills among students. We focus on core computer science concepts, algorithms, data structures, and software development. The club organizes coding competitions, workshops on emerging technologies, and hackathons. Our members actively participate in national and international programming contests, contributing to the institute's reputation in the field of computer science.`,
+  description: `The CS Club of IIITDM Kancheepuram is a student-led community that aims to foster interest, learning, and collaboration in the field of computer science. It serves as a platform where students can enhance their technical skills, explore various domains such as competitive programming, software development, and open-source contributions, and engage in meaningful learning experiences beyond the classroom. The club organizes workshops, coding contests, and speaker sessions, while also encouraging students to participate in national and international competitions. By facilitating peer-to-peer learning and collaboration, the CS Club strives to build a strong and active technical community within the institute and to create opportunities for students to grow as innovators, developers, and problem solvers.`,
   core: [
     {
       name: 'Avinaash A',
