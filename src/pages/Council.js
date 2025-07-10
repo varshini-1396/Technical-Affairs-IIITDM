@@ -27,7 +27,7 @@ const societies = [
 ];
 
 const communities = [
-  { name: 'Cybersecurity', image: '/communities/cybersecurity/logo.png', link: '/communities/cybersecurity' },
+  { name: 'Cybersecurity', image: '/communities/CyberSecurity/logo.png', link: '/communities/cybersecurity' },
   { name: 'Game Developers', image: '/communities/gamedevelopers/logo.png', link: '/communities/gamedevelopers' },
 ];
 
