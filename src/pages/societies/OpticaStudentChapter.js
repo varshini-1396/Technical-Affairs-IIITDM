@@ -32,7 +32,7 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
 const clubData = {
   name: 'Optica Student Chapter',
   logo: '/societies/OpticaStudentChapter/logo.png',
-  description: `The Optica Student Chapter at IIITDM Kancheepuram is a student chapter of Optica (formerly OSA). We focus on optics, photonics, and optical engineering. The chapter organizes workshops on laser technology, optical design competitions, and research presentations. Our members actively participate in Optica conferences, contribute to optical research projects, and develop innovative applications in areas like fiber optics, imaging systems, and quantum optics.`,
+  description: `The OPTICA Student Chapter at IIITDM Kancheepuram is a student-led community affiliated with OPTICA (formerly OSA - Optical Society of America), dedicated to promoting interest and research in the fields of optics, photonics, and optical communication technologies.\nThe chapter aims to cultivate technical knowledge and practical skills in areas such as laser systems, optical sensing, fiber optics, imaging, and photonic devices. By encouraging students to explore both fundamental and applied aspects of light-based technologies, the chapter provides a platform for collaborative learning and research discussions.\nThe chapter aspires to contribute to the growing global optics community by engaging students in cutting-edge research topics and encouraging innovation in light-driven technologies.`,
   core: [
     {
       name: 'Riya Gupta',

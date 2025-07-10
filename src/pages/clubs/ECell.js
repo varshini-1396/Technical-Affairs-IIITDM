@@ -35,7 +35,7 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
 const clubData = {
   name: 'E-Cell',
   logo: '/clubs/ecell/logo.png',
-  description: `The Entrepreneurship Cell (E-Cell) at IIITDM Kancheepuram fosters entrepreneurial spirit among students. E-Cell conducts workshops, speaker sessions, and startup events to encourage innovation and support budding entrepreneurs on campus.`,
+  description: `The Entrepreneurship Cell (E-Cell) at IIITDM Kancheepuram is a student-driven initiative dedicated to cultivating an entrepreneurial mindset and fostering innovation-driven leadership on campus. E-Cell serves as a platform where aspiring entrepreneurs, innovators, and creators come together to explore ideas, build startups, and transform solutions into scalable ventures.\nThrough workshops, speaker sessions, business plan competitions, startup showcases, and mentorship programs, E-Cell empowers students to develop critical skills in business strategy, product development, finance, and leadership. The cell actively works to build a vibrant entrepreneurial ecosystem by collaborating with industry leaders, startups, and incubation networks.\nBy nurturing the next generation of innovators, E-Cell IIITDM aims to contribute to India's growing startup culture and empower students to drive positive change through entrepreneurship.`,
   core: [
     {
       name: 'Asmit Kumar S',
