@@ -24,8 +24,10 @@ const TeamMemberCard = styled(Card)(({ theme }) => ({
   alignItems: 'center',
   padding: theme.spacing(1.5),
   textAlign: 'center',
+  width: '180px',
   [theme.breakpoints.down('sm')]: {
     padding: theme.spacing(1),
+    width: '140px',
   }
 }));
 
@@ -43,7 +45,7 @@ const clubData = {
       roll: 'cs22b1064',
     },
     {
-      name: 'Nivedh Biju Pazhayedathuparambil',
+      name: 'Nivedh Biju P',
       role: 'Technical Lead',
       image: '/clubs/csclub/headcores/nivedh.png',
       email: 'cs22b1021@iiitdm.ac.in',
@@ -191,9 +193,9 @@ function CSClub() {
         </Typography>
         <Grid 
           container 
-          spacing={2} 
+          spacing={2}
           justifyContent='center'
-          sx={{ 
+          sx={{
             mb: 8,
             maxWidth: '1200px',
             mx: 'auto'
@@ -209,14 +211,11 @@ function CSClub() {
               sx={{
                 display: 'flex', 
                 justifyContent: 'center',
-                minWidth: 0, 
+                width: { xs: '140px', sm: '180px' },
+                flex: '0 0 auto'
               }}
             >
-              <TeamMemberCard sx={{ 
-                width: '100%', 
-                minWidth: 0,
-                flexGrow: 1
-              }}>
+              <TeamMemberCard sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                 <Avatar
                   src={member.image}
                   alt={member.name}
@@ -229,11 +228,16 @@ function CSClub() {
                 <Typography
                   variant="h6"
                   component="h3"
-                  gutterBottom
                   sx={{
                     fontSize: { xs: '0.8rem', sm: '0.9rem', md: '1.1rem' },
                     mb: { xs: 0.5, sm: 0.75, md: 0.75 },
-                    wordBreak: 'break-word', 
+                    width: '100%',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    display: '-webkit-box',
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: 'vertical',
+                    lineHeight: 1.2
                   }}
                 >
                   {member.name}
@@ -241,33 +245,27 @@ function CSClub() {
                 <Typography
                   variant="subtitle1"
                   color="primary"
-                  gutterBottom
                   sx={{
                     fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.9rem' },
                     mb: { xs: 0.5, sm: 0.5, md: 0.75 },
-                    wordBreak: 'break-word', 
+                    width: '100%',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    display: '-webkit-box',
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: 'vertical',
+                    lineHeight: 1.2
                   }}
                 >
                   {member.role}
                 </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  gutterBottom
-                  sx={{
-                    fontSize: { xs: '0.6rem', sm: '0.7rem', md: '0.8rem' },
-                    mb: { xs: 0.25, sm: 0.25, md: 0.5 },
-                     wordBreak: 'break-word', 
-                  }}
-                >
-                  {member.roll}
-                </Typography>
+
                 <Box sx={{ 
-                  mt: { xs: 0.75, sm: 1, md: 1.5 },
+                  mt: 'auto',
+                  pt: { xs: 0.75, sm: 1, md: 1.5 },
                   display: 'flex',
                   gap: { xs: 0.4, sm: 0.6, md: 0.8 },
-                  flexWrap: 'wrap', 
-                  justifyContent: 'center', 
+                  justifyContent: 'center'
                 }}>
                   <IconButton
                     component="a"
@@ -298,127 +296,7 @@ function CSClub() {
           ))}
         </Grid>
 
-        {/* Team Members Section */}
-        <Typography
-          variant="h4"
-          component="h2"
-          sx={{
-            mb: 4,
-            textAlign: 'center',
-            fontWeight: 'bold',
-            color: theme.palette.primary.main,
-          }}
-        >
-          Team Members
-        </Typography>
-        <Grid 
-          container 
-          spacing={2}
-          justifyContent='center'
-          sx={{
-            mb: 8,
-            maxWidth: '1200px',
-            mx: 'auto'
-          }}
-        >
-          {clubData.team.map((member) => (
-            <Grid 
-              item 
-              xs={6} 
-              sm={6} 
-              md={3} 
-              key={member.name} 
-              sx={{
-                display: 'flex', 
-                justifyContent: 'center',
-                minWidth: 0, 
-              }}
-            >
-              <TeamMemberCard sx={{ 
-                width: '100%', 
-                minWidth: 0,
-                flexGrow: 1
-              }}>
-                <Avatar
-                  src={member.image}
-                  alt={member.name}
-                  sx={{
-                    width: { xs: 70, sm: 90, md: 110 },
-                    height: { xs: 70, sm: 90, md: 110 },
-                    mb: { xs: 0.75, sm: 1, md: 1.5 }
-                  }}
-                />
-                <Typography
-                  variant="h6"
-                  component="h3"
-                  gutterBottom
-                  sx={{
-                    fontSize: { xs: '0.8rem', sm: '0.9rem', md: '1.1rem' },
-                    mb: { xs: 0.5, sm: 0.75, md: 0.75 },
-                     wordBreak: 'break-word', 
-                  }}
-                >
-                  {member.name}
-                </Typography>
-                <Typography
-                  variant="subtitle1"
-                  color="primary"
-                  gutterBottom
-                  sx={{
-                    fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.9rem' },
-                    mb: { xs: 0.5, sm: 0.5, md: 0.75 },
-                    wordBreak: 'break-word', 
-                  }}
-                >
-                  {member.role}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  gutterBottom
-                  sx={{
-                    fontSize: { xs: '0.6rem', sm: '0.7rem', md: '0.8rem' },
-                    mb: { xs: 0.25, sm: 0.25, md: 0.5 },
-                     wordBreak: 'break-word', 
-                  }}
-                >
-                  {member.roll}
-                </Typography>
-                <Box sx={{ 
-                  mt: { xs: 0.75, sm: 1, md: 1.5 },
-                  display: 'flex',
-                  gap: { xs: 0.4, sm: 0.6, md: 0.8 },
-                  flexWrap: 'wrap', 
-                  justifyContent: 'center', 
-                }}>
-                  <IconButton
-                    component="a"
-                    href={`mailto:${member.email}`}
-                    color="primary"
-                    size="small"
-                    sx={{
-                      padding: { xs: '3px', sm: '6px', md: '10px' }
-                    }}
-                  >
-                    <EmailIcon sx={{ fontSize: { xs: '0.9rem', sm: '1.1rem', md: '1.3rem' } }} />
-                  </IconButton>
-                  <IconButton
-                    component="a"
-                    href={member.linkedin}
-                    target="_blank"
-                    color="primary"
-                    size="small"
-                    sx={{
-                      padding: { xs: '3px', sm: '6px', md: '10px' }
-                    }}
-                  >
-                    <LinkedInIcon sx={{ fontSize: { xs: '0.9rem', sm: '1.1rem', md: '1.3rem' } }} />
-                  </IconButton>
-                </Box>
-              </TeamMemberCard>
-            </Grid>
-          ))}
-        </Grid>
+
 
         {/* Links Section */}
         <Box sx={{ textAlign: 'center', mb: 4 }}>
