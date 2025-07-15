@@ -41,7 +41,7 @@ const About = () => {
               textShadow: '0px 2px 4px rgba(0,0,0,0.1)',
             }}
           >
-            About Technical Affairs
+            About Us
           </Typography>
         </motion.div>
 
@@ -50,7 +50,11 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
         >
+          <div style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'center', backgroundColor: 'white', borderRadius: '9999px', padding: '1rem' }}>
+          <img alt="Institute Logo" src="/iiitdm_logo.png" height={150} width={150} />
+          </div>
           <Typography
             variant="body1"
             sx={{
@@ -58,6 +62,7 @@ const About = () => {
               textAlign: 'center',
               maxWidth: '800px',
               mx: 'auto',
+              my: 'aut</div>o',
               color: 'text.secondary',
               fontSize: '1.1rem',
               lineHeight: 1.8,
