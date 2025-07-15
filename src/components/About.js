@@ -62,7 +62,6 @@ const About = () => {
               textAlign: 'center',
               maxWidth: '800px',
               mx: 'auto',
-              my: 'aut</div>o',
               color: 'text.secondary',
               fontSize: '1.1rem',
               lineHeight: 1.8,
