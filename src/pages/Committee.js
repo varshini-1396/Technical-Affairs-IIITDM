@@ -41,6 +41,24 @@ const socialMediaLinks = {
   youtube: "https://www.youtube.com/@iiitdm.technical",
 };
 
+const facultyHeads = [
+  {
+    name: 'Dr. Sivaselvan B',
+    role: 'Dean - Student Affairs',
+    image: '/faculty/sivaselvan.jpg',
+  },
+  {
+    name: 'Dr. Siva Prasad A V S',
+    role: 'PIC- Co-curricular Affairs',
+    image: '/faculty/sivaprasad.jpg',
+  },
+  {
+    name: 'Dr. Parvathy Das',
+    role: 'PIC - Co-curricular Affairs',
+    image: '/faculty/parvathydas.jpg',
+  },
+];
+
 function Committee() {
   const navigate = useNavigate();
   const cardStyle = {
@@ -94,6 +112,46 @@ function Committee() {
 
   return (
     <Container maxWidth="lg" sx={{ py: 12 }}>
+      {/* Faculty Heads Section */}
+      <Box sx={{ mb: 6 }}>
+        <Typography
+          variant="h4"
+          component="h2"
+          align="center"
+          gutterBottom
+          sx={titleStyle}
+        >
+          Faculty Heads
+        </Typography>
+        <Grid container spacing={2} justifyContent="center">
+          {facultyHeads.map((head) => (
+            <Grid item xs="auto" key={head.name} sx={{ display: 'flex', justifyContent: 'center' }}>
+              <Card sx={cardStyle}>
+                <CardMedia
+                  component="img"
+                  image={head.image}
+                  alt={head.name}
+                  sx={imageStyle}
+                />
+                <CardContent sx={{ py: 1, px: 1 }}>
+                  <Box sx={{ minHeight: '5em' }}>
+                    <Typography variant="h6" component="h3" sx={nameStyle}>
+                      {head.name}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={descriptionStyle}
+                    >
+                      {head.role}
+                    </Typography>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
       {/* SAC Technical Affairs Section */}
       <Box sx={{ mb: 6 }}>
         <Typography
