@@ -45,7 +45,7 @@ const facultyHeads = [
   {
     name: 'Dr. Sivaselvan B',
     role: 'Dean - Student Affairs',
-    image: '/facultyheads/sivaselvan.png',
+    image: '/faculty/sivaselvan.png',
   },
   {
     name: 'Dr. Siva Prasad A V S',
@@ -55,7 +55,7 @@ const facultyHeads = [
   {
     name: 'Dr. Parvathy Das',
     role: 'PIC - Co-curricular Affairs',
-    image: '/facultyheads/parvathydas.png',
+    image: '/faculty/parvathydas.png',
   },
 ];
 
