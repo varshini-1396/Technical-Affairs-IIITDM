@@ -43,19 +43,19 @@ const socialMediaLinks = {
 
 const facultyHeads = [
   {
-    name: 'Dr. Sivaselvan B',
-    role: 'Dean - Student Affairs',
-    image: '/faculty/sivaselvan.jpg',
+    name: 'Dr.M D Selvaraj',
+    role: 'Dean DII',
+    image: '/facultyheads/selvaraj.png',
   },
   {
-    name: 'Dr. Siva Prasad A V S',
-    role: 'PIC- Co-curricular Affairs',
-    image: '/faculty/sivaprasad.jpg',
+    name: 'Dr.Vikash Kumar',
+    role: 'PIC- Technical Affairs',
+    image: '/facultyheads/vikash.png',
   },
   {
-    name: 'Dr. Parvathy Das',
-    role: 'PIC - Co-curricular Affairs',
-    image: '/faculty/parvathydas.jpg',
+    name: 'Dr.Bhukya Krishna Priya',
+    role: 'PIC - Technical Affairs',
+    image: '/facultyheads/krishnapriya.png',
   },
 ];
 
