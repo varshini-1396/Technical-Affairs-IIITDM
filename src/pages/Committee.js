@@ -123,10 +123,38 @@ function Committee() {
         >
           Faculty Heads
         </Typography>
+        {/* Dean DII at the top */}
+        <Grid container spacing={2} justifyContent="center" sx={{ mb: 1 }}>
+          <Grid item xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+            <Card sx={{ ...cardStyle, height: 'auto', minWidth: '180px', maxWidth: '180px' }}>
+              <CardMedia
+                component="img"
+                image={facultyHeads[0].image}
+                alt={facultyHeads[0].name}
+                sx={imageStyle}
+              />
+              <CardContent sx={{ py: 1, px: 1 }}>
+                <Box>
+                  <Typography variant="h6" component="h3" sx={nameStyle}>
+                    {facultyHeads[0].name}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    sx={descriptionStyle}
+                  >
+                    {facultyHeads[0].role}
+                  </Typography>
+                </Box>
+              </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
+        {/* PICs in the next row */}
         <Grid container spacing={2} justifyContent="center">
-          {facultyHeads.map((head) => (
-            <Grid item xs="auto" key={head.name} sx={{ display: 'flex', justifyContent: 'center' }}>
-              <Card sx={cardStyle}>
+          {facultyHeads.slice(1).map((head) => (
+            <Grid item xs={12} sm={6} md={4} key={head.name} sx={{ display: 'flex', justifyContent: 'center' }}>
+              <Card sx={{ ...cardStyle, height: 'auto', minWidth: '180px', maxWidth: '180px' }}>
                 <CardMedia
                   component="img"
                   image={head.image}
@@ -134,7 +162,7 @@ function Committee() {
                   sx={imageStyle}
                 />
                 <CardContent sx={{ py: 1, px: 1 }}>
-                  <Box sx={{ minHeight: '5em' }}>
+                  <Box>
                     <Typography variant="h6" component="h3" sx={nameStyle}>
                       {head.name}
                     </Typography>
@@ -170,7 +198,7 @@ function Committee() {
             xs="auto"
             sx={{ display: "flex", justifyContent: "center" }}
           >
-            <Card sx={cardStyle}>
+            <Card sx={{ ...cardStyle, height: 'auto', minWidth: '180px', maxWidth: '180px' }}>
               <CardMedia
                 component="img"
                 image={teamData.secretary.image}
@@ -178,7 +206,7 @@ function Committee() {
                 sx={imageStyle}
               />
               <CardContent sx={{ py: 1, px: 1 }}>
-                <Box sx={{ minHeight: "5em" }}>
+                <Box>
                   <Typography variant="h6" component="h3" sx={nameStyle}>
                     {teamData.secretary.name}
                   </Typography>
@@ -224,7 +252,7 @@ function Committee() {
             xs="auto"
             sx={{ display: "flex", justifyContent: "center" }}
           >
-            <Card sx={cardStyle}>
+            <Card sx={{ ...cardStyle, height: 'auto', minWidth: '180px', maxWidth: '180px' }}>
               <CardMedia
                 component="img"
                 image={teamData.jointSecretary.image}
@@ -232,7 +260,7 @@ function Committee() {
                 sx={imageStyle}
               />
               <CardContent sx={{ py: 1, px: 1 }}>
-                <Box sx={{ minHeight: "5em" }}>
+                <Box>
                   <Typography variant="h6" component="h3" sx={nameStyle}>
                     {teamData.jointSecretary.name}
                   </Typography>
